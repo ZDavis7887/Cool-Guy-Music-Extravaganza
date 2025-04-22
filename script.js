@@ -1,4 +1,3 @@
-const API_KEY = "AIzaSyB8iu1ZZ58qnpufkEV0j3hMcgsX91xOgzs";
 let tracklist = [];
 let player;
 
@@ -19,53 +18,60 @@ function onYouTubeIframeAPIReady() {
   nextSong();
 }
 
-async function searchYouTube(query) {
-  const apiUrl = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=1&q=${encodeURIComponent(query)}&key=${API_KEY}`;
-  const response = await fetch(apiUrl);
-  const data = await response.json();
-  if (data.items && data.items.length > 0) {
-    return data.items[0].id.videoId;
-  } else {
-    return null;
-  }
-}
+function playTrack(track) {
+  const videoUrl = track.YouTubeLink;
 
-async function playTrack(track) {
-  const query = `${track.Artist} ${track.Title}`;
-  const videoId = await searchYouTube(query);
-  if (videoId) {
-    if (player) {
-      player.loadVideoById(videoId);
+  if (videoUrl && videoUrl !== "Not Found") {
+    const urlParams = new URLSearchParams(new URL(videoUrl).search);
+    const videoId = urlParams.get('v');
+
+    if (videoId) {
+      if (player) {
+        player.loadVideoById(videoId);
+      } else {
+        player = new YT.Player('player', {
+          height: '315',
+          width: '560',
+          videoId: videoId,
+          events: {
+            'onStateChange': onPlayerStateChange,
+            'onError': onPlayerError
+          }
+        });
+      }
+
+      document.getElementById('now-playing').innerText = `Now Playing: ${track.Artist} - ${track.Title}`;
     } else {
-      player = new YT.Player('player', {
-        height: '315',
-        width: '560',
-        videoId: videoId,
-        events: {
-          'onStateChange': onPlayerStateChange
-        }
-      });
+      console.error("❌ Invalid YouTube URL format");
+      nextSong();
     }
-    document.getElementById('now-playing').innerText = `Now Playing: ${track.Artist} - ${track.Title}`;
   } else {
-    document.getElementById('player').innerHTML = "No video found!";
+    console.error("❌ No valid YouTube link for this track");
+    nextSong();
   }
 }
 
-async function nextSong() {
+function nextSong() {
+  if (tracklist.length === 0) return;
+
   const randomIndex = Math.floor(Math.random() * tracklist.length);
   const track = tracklist[randomIndex];
-  await playTrack(track);
+  playTrack(track);
 }
 
-async function shuffleSong() {
-  await nextSong();
+function shuffleSong() {
+  nextSong();
 }
 
 function onPlayerStateChange(event) {
   if (event.data === YT.PlayerState.ENDED) {
     nextSong();
   }
+}
+
+function onPlayerError(event) {
+  console.error("❌ Player encountered an error, skipping to next song...");
+  nextSong();
 }
 
 window.nextSong = nextSong;
