@@ -18,7 +18,7 @@ SAVE_EVERY_N_TRACKS = 100                # Save checkpoint every 100 songs
 # =============================
 
 def clean_title(title):
-    cleaned = re.sub(r'[\u2010\u2011\u2012\u2013\u2014\u2015]', '-', title)
+    cleaned = re.sub(r'[‐‑‒–—―]', '-', title)
     cleaned = re.sub(r'[^\w\s\-]', '', cleaned)
     cleaned = re.sub(r'\s+', ' ', cleaned).strip()
     return cleaned
@@ -78,8 +78,10 @@ def fetch_tracks_with_youtube(csv_path):
         print("❌ CSV missing expected columns.")
         return []
 
-    clean_df = df[['albums.tracks.grandparentTitle', 'albums.tracks.title']].dropna()
-    clean_df.columns = ['Artist', 'Title']
+    clean_df = df[['albums.tracks.grandparentTitle', 'albums.tracks.title', 'albums.tracks.parentTitle', 'albums.tracks.year']]
+    clean_df.columns = ['Artist', 'Title', 'Album', 'Year']
+
+    clean_df = clean_df.dropna(subset=['Artist', 'Title'])
 
     print(f"✅ Loaded {len(clean_df)} tracks from CSV.")
 
@@ -110,6 +112,8 @@ def fetch_tracks_with_youtube(csv_path):
         track_data = {
             'Artist': row['Artist'],
             'Title': row['Title'],
+            'Album': row['Album'] if pd.notna(row['Album']) else 'Unknown',
+            'Year': int(row['Year']) if not pd.isna(row['Year']) else 'Unknown',
             'YouTubeLink': youtube_link or "Not Found"
         }
         track_list.append(track_data)
@@ -148,7 +152,6 @@ def refresh_dead_links():
         if url and url != "Not Found" and is_link_alive(url):
             updated_tracks.append(track)
         else:
-            # Try to refresh the link
             artist = clean_title(track['Artist'])
             title = clean_title(track['Title'])
             search_query = f"{artist} {title}"

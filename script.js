@@ -1,3 +1,4 @@
+const API_KEY = "67151f1c5943c2b35b9750ab48ac296f";
 let tracklist = [];
 let player;
 
@@ -18,93 +19,99 @@ function onYouTubeIframeAPIReady() {
   nextSong();
 }
 
-function playTrack(track) {
-  const videoUrl = track.YouTubeLink;
+async function playTrack(track) {
+  if (!track.YouTubeLink || track.YouTubeLink === "Not Found") {
+    console.error("❌ No valid YouTube link for track:", track);
+    document.getElementById('player').innerHTML = "No video found!";
+    return;
+  }
 
-  if (videoUrl && videoUrl !== "Not Found") {
-    let videoId = null;
-    try {
-      const url = new URL(videoUrl);
-      if (url.hostname.includes("youtu.be")) {
-        videoId = url.pathname.slice(1);
-      } else if (url.hostname.includes("youtube.com")) {
-        const params = new URLSearchParams(url.search);
-        videoId = params.get('v');
-      }
-    } catch (e) {
-      console.error("❌ Invalid YouTube URL:", videoUrl);
-    }
+  const videoId = extractVideoId(track.YouTubeLink);
 
-    if (videoId) {
-      if (player) {
-        player.loadVideoById(videoId);
-      } else {
-        player = new YT.Player('player', {
-          height: '0', // Start hidden
-          width: '0',
-          videoId: videoId,
-          events: {
-            'onStateChange': onPlayerStateChange,
-            'onError': onPlayerError
-          }
-        });
-      }
-
-      const nowPlaying = document.getElementById('now-playing');
-      nowPlaying.innerText = `${track.Artist} - ${track.Title}`;
-
-      requestAnimationFrame(() => {
-        if (nowPlaying.scrollWidth > nowPlaying.parentElement.clientWidth) {
-          nowPlaying.classList.add('scrolling');
-        } else {
-          nowPlaying.classList.remove('scrolling');
+  if (videoId) {
+    if (player) {
+      player.loadVideoById(videoId);
+    } else {
+      player = new YT.Player('player', {
+        height: '315',
+        width: '560',
+        videoId: videoId,
+        events: {
+          'onStateChange': onPlayerStateChange
         }
       });
-    } else {
-      console.error("❌ Could not extract video ID");
-      nextSong();
     }
+
+    document.getElementById('now-playing').innerText = `Now Playing: ${track.Artist} - ${track.Title}`;
+    document.getElementById('album-art').src = track.AlbumArtLink || 'default_album.png';
+    document.getElementById('album-name').innerText = track.Album || 'Unknown Album';
+    document.getElementById('album-year').innerText = track.ReleaseDate || 'Unknown Release Date';
+
+    const summaryEl = document.getElementById('artist-summary');
+    const summaryToggle = document.getElementById('summary-toggle');
+
+    const fullSummary = track.Summary || 'No artist info available.';
+    const shortSummary = fullSummary.length > 300 ? fullSummary.slice(0, 300) + '...' : fullSummary;
+
+    summaryEl.innerHTML = "";
+    summaryEl.style.color = "#00ff00";
+
+    let i = 0;
+    function typeSummary(text) {
+      if (i < text.length) {
+        summaryEl.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(() => typeSummary(text), 10);
+      }
+    }
+
+    typeSummary(shortSummary);
+
+    summaryToggle.style.display = fullSummary.length > 300 ? 'inline' : 'none';
+    summaryToggle.innerText = 'Read more';
+    summaryToggle.onclick = () => {
+      if (summaryToggle.innerText === 'Read more') {
+        summaryEl.innerText = fullSummary;
+        summaryToggle.innerText = 'Show less';
+      } else {
+        summaryEl.innerText = shortSummary;
+        summaryToggle.innerText = 'Read more';
+      }
+    };
   } else {
-    console.error("❌ No valid YouTube link for this track");
-    nextSong();
+    console.error("❌ Could not extract video ID from:", track);
+    document.getElementById('player').innerHTML = "No video found!";
   }
 }
 
-function nextSong() {
-  if (tracklist.length === 0) return;
+function extractVideoId(url) {
+  const regex = /[?&]v=([^&#]*)/;
+  const match = url.match(regex);
+  return match ? match[1] : null;
+}
 
+async function nextSong() {
   const randomIndex = Math.floor(Math.random() * tracklist.length);
   const track = tracklist[randomIndex];
-  playTrack(track);
+  await playTrack(track);
+}
+
+async function shuffleSong() {
+  await nextSong();
 }
 
 function prevSong() {
   shuffleSong();
 }
 
-function shuffleSong() {
-  nextSong();
+function toggleVideo() {
+  const playerDiv = document.getElementById('player');
+  playerDiv.style.display = playerDiv.style.display === 'none' ? 'block' : 'none';
 }
 
 function onPlayerStateChange(event) {
   if (event.data === YT.PlayerState.ENDED) {
     nextSong();
-  }
-}
-
-function onPlayerError(event) {
-  console.error("❌ Player encountered an error, skipping to next song...");
-  nextSong();
-}
-
-function toggleVideo() {
-  const playerElement = document.getElementById('player');
-  if (playerElement.style.display === 'none') {
-    playerElement.style.display = 'block';
-    playerElement.style.width = '512px';
-    playerElement.style.height = '288px';
-  } else {
-    playerElement.style.display = 'none';
   }
 }
 
