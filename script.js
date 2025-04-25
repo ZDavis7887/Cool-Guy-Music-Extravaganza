@@ -79,7 +79,7 @@ async function playTrack(track, index = null) {
     const nowPlayingEl = document.getElementById('now-playing');
     nowPlayingEl.innerText = `Now Playing: ${track.Artist} - ${track.Title}`;
     nowPlayingEl.classList.remove('scrolling-text');
-    void nowPlayingEl.offsetWidth; // Force reflow to restart animation
+    void nowPlayingEl.offsetWidth; // trigger reflow
     nowPlayingEl.classList.add('scrolling-text');
     document.getElementById('album-art').src = track.AlbumArtLink || 'default_album.png';
     document.getElementById('album-name').innerText = track.Album || 'Unknown Album';
