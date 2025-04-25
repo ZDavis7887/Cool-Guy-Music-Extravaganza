@@ -5,7 +5,7 @@ import json
 import time
 
 # Load files
-with open("tracks.json", "r", encoding="utf-8") as f:
+with open("new_tracks.json", "r", encoding="utf-8") as f:
     tracks = json.load(f)
 
 with open("mismatched_tracks.json", "r", encoding="utf-8") as f:
