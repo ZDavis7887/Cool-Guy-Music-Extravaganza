@@ -15,8 +15,13 @@ async function loadTracks() {
 }
 
 function generatePlaybackQueue() {
-  const shuffled = [...tracklist].sort(() => Math.random() - 0.5);
-  playbackQueue = shuffled;
+  // Fisher-Yates shuffle for stronger randomness
+  const array = [...tracklist];
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  playbackQueue = array;
 }
 
 function loadYouTubeAPI() {
@@ -71,7 +76,11 @@ async function playTrack(track, index = null) {
       });
     }
 
-    document.getElementById('now-playing').innerText = `Now Playing: ${track.Artist} - ${track.Title}`;
+    const nowPlayingEl = document.getElementById('now-playing');
+    nowPlayingEl.innerText = `Now Playing: ${track.Artist} - ${track.Title}`;
+    nowPlayingEl.classList.remove('scrolling-text');
+    void nowPlayingEl.offsetWidth; // Force reflow to restart animation
+    nowPlayingEl.classList.add('scrolling-text');
     document.getElementById('album-art').src = track.AlbumArtLink || 'default_album.png';
     document.getElementById('album-name').innerText = track.Album || 'Unknown Album';
     document.getElementById('album-year').innerText = track.ReleaseDate || 'Unknown Release Date';
@@ -91,15 +100,15 @@ async function playTrack(track, index = null) {
     summaryToggle.style.display = fullSummary.length > 300 ? 'inline' : 'none';
     summaryToggle.innerText = 'Read more';
     summaryToggle.onclick = () => {
+  summaryEl.style.minHeight = '6em';
+  summaryEl.style.maxHeight = '500px';
+  summaryEl.style.overflowY = 'auto';
+
   if (summaryToggle.innerText === 'Read more') {
-    const remainingText = fullSummary.slice(summaryEl.innerText.length);
-    summaryEl.innerText = summaryEl.innerText.trim();
-    currentSummaryIndex = 0;
-    typeRPG(remainingText, summaryEl, 0);
+    summaryEl.innerText = fullSummary;
     summaryToggle.innerText = 'Show less';
   } else {
-    summarySegmentIndex = 0;
-    summaryEl.innerText = "";
+    summaryEl.innerText = '';
     currentSummaryIndex = 0;
     typeRPG(shortSummary, summaryEl);
     summaryToggle.innerText = 'Read more';
@@ -175,4 +184,3 @@ window.shuffleSong = shuffleSong;
 window.toggleVideo = toggleVideo;
 
 loadTracks();
-
