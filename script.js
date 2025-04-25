@@ -1,11 +1,22 @@
 const API_KEY = "67151f1c5943c2b35b9750ab48ac296f";
 let tracklist = [];
 let player;
+let currentTrackIndex = -1;
+let playbackQueue = [];
+let typing = null;
+let currentSummaryIndex = 0;
+let summarySegmentIndex = 0;
 
 async function loadTracks() {
   const response = await fetch('tracks.json');
   tracklist = await response.json();
+  generatePlaybackQueue();
   loadYouTubeAPI();
+}
+
+function generatePlaybackQueue() {
+  const shuffled = [...tracklist].sort(() => Math.random() - 0.5);
+  playbackQueue = shuffled;
 }
 
 function loadYouTubeAPI() {
@@ -19,11 +30,29 @@ function onYouTubeIframeAPIReady() {
   nextSong();
 }
 
-async function playTrack(track) {
+function typeRPG(text, container, start = 0, speed = 12) {
+  clearInterval(typing);
+  currentSummaryIndex = start;
+  container.innerText = text.slice(0, start);
+  typing = setInterval(() => {
+    if (currentSummaryIndex < text.length) {
+      container.innerText += text.charAt(currentSummaryIndex);
+      currentSummaryIndex++;
+    } else {
+      clearInterval(typing);
+    }
+  }, speed);
+}
+
+async function playTrack(track, index = null) {
   if (!track.YouTubeLink || track.YouTubeLink === "Not Found") {
     console.error("❌ No valid YouTube link for track:", track);
     document.getElementById('player').innerHTML = "No video found!";
     return;
+  }
+
+  if (index !== null) {
+    currentTrackIndex = index;
   }
 
   const videoId = extractVideoId(track.YouTubeLink);
@@ -53,31 +82,31 @@ async function playTrack(track) {
     const fullSummary = track.Summary || 'No artist info available.';
     const shortSummary = fullSummary.length > 300 ? fullSummary.slice(0, 300) + '...' : fullSummary;
 
-    summaryEl.innerHTML = "";
+    summaryEl.style.minHeight = '6em';
+    summaryEl.innerText = "";
     summaryEl.style.color = "#00ff00";
 
-    let i = 0;
-    function typeSummary(text) {
-      if (i < text.length) {
-        summaryEl.innerHTML += text.charAt(i);
-        i++;
-        setTimeout(() => typeSummary(text), 10);
-      }
-    }
-
-    typeSummary(shortSummary);
+    typeRPG(shortSummary, summaryEl);
 
     summaryToggle.style.display = fullSummary.length > 300 ? 'inline' : 'none';
     summaryToggle.innerText = 'Read more';
     summaryToggle.onclick = () => {
-      if (summaryToggle.innerText === 'Read more') {
-        summaryEl.innerText = fullSummary;
-        summaryToggle.innerText = 'Show less';
-      } else {
-        summaryEl.innerText = shortSummary;
-        summaryToggle.innerText = 'Read more';
-      }
-    };
+  if (summaryToggle.innerText === 'Read more') {
+    const remainingText = fullSummary.slice(summaryEl.innerText.length);
+    summaryEl.innerText = summaryEl.innerText.trim();
+    currentSummaryIndex = 0;
+    typeRPG(remainingText, summaryEl, 0);
+    summaryToggle.innerText = 'Show less';
+  } else {
+    summarySegmentIndex = 0;
+    summaryEl.innerText = "";
+    currentSummaryIndex = 0;
+    typeRPG(shortSummary, summaryEl);
+    summaryToggle.innerText = 'Read more';
+  }
+};
+
+    renderUpcomingTracks();
   } else {
     console.error("❌ Could not extract video ID from:", track);
     document.getElementById('player').innerHTML = "No video found!";
@@ -90,10 +119,36 @@ function extractVideoId(url) {
   return match ? match[1] : null;
 }
 
+function renderUpcomingTracks() {
+  const container = document.getElementById('upcoming-tracks');
+  if (!container) return;
+
+  container.innerHTML = '<h3>Upcoming Tracks</h3>';
+  const nextTracks = playbackQueue.slice(currentTrackIndex + 1, currentTrackIndex + 11);
+  nextTracks.forEach((track, i) => {
+    const div = document.createElement('div');
+    div.className = 'track-item';
+    div.style.marginBottom = '5px';
+    const link = document.createElement('a');
+    link.href = '#';
+    link.className = 'upcoming-track-link';
+    link.innerText = `${track.Artist} - ${track.Title}`;
+    link.onclick = function (e) {
+      e.preventDefault();
+      playTrack(playbackQueue[currentTrackIndex + 1 + i], currentTrackIndex + 1 + i);
+    };
+    div.appendChild(link);
+    container.appendChild(div);
+  });
+}
+
 async function nextSong() {
-  const randomIndex = Math.floor(Math.random() * tracklist.length);
-  const track = tracklist[randomIndex];
-  await playTrack(track);
+  currentTrackIndex++;
+  if (currentTrackIndex >= playbackQueue.length) {
+    generatePlaybackQueue();
+    currentTrackIndex = 0;
+  }
+  await playTrack(playbackQueue[currentTrackIndex], currentTrackIndex);
 }
 
 async function shuffleSong() {
@@ -120,3 +175,4 @@ window.shuffleSong = shuffleSong;
 window.toggleVideo = toggleVideo;
 
 loadTracks();
+

@@ -4,6 +4,13 @@
   <meta charset="UTF-8">
   <title>Cool Guy Music Mix</title>
   <style>
+.upcoming-track-link {
+  color: #00ff00;
+  text-decoration: none;
+}
+.upcoming-track-link:hover {
+  color: yellow !important;
+}
     body {
       background-color: black;
       color: limegreen;
@@ -21,7 +28,7 @@
       background-color: black;
       border: 2px solid gray;
       padding: 16px;
-      width: 900px;
+      width: 1530px;
       font-family: 'Courier New', Courier, monospace;
       color: limegreen;
     }
@@ -54,11 +61,15 @@
     }
 
     #artist-summary {
-  font-style: italic;
-  font-size: 1rem;
-  color: #ccc;
-  margin-top: 0.5rem;
+      font-size: 1rem;
   line-height: 1.4;
+   overflow-y: auto;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  white-space: pre-wrap;
+  color: #00ff00;
+  padding: 23px;
+  box-sizing: border-box;
 }
 
 
@@ -104,6 +115,22 @@
       height: 32px;
       margin-bottom: 16px;
     }
+    .rpg-box {
+  padding: 8px;
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  font-family: monospace;
+  color: #00ff00;
+  white-space: pre-line;
+}
+
+.rpg-text {
+  height: 100%;
+  overflow-y: hidden;
+}
 
     #now-playing {
       display: inline-block;
@@ -116,7 +143,14 @@
     .scrolling {
       animation: scroll-text 10s linear infinite;
     }
-
+    .scrolling-text {
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  animation: scroll-left 20s linear infinite;
+  color: #00ff00;
+  font-size: 1.2rem;
+}
     @keyframes scroll-text {
       0% { transform: translateX(100%); }
       100% { transform: translateX(-100%); }
@@ -150,6 +184,9 @@
       height: 315px;
       display: block;
     }
+
+  
+
   </style>
 </head>
 <body>
@@ -159,7 +196,11 @@
     <img id="album-art" src="default_album.png" alt="Album Art">
     <div id="album-name">Loading Album...</div>
     <div id="album-year">Loading Year...</div>
-    <div id="artist-summary" style="max-width: 600px;"></div>
+    <div id="artist-summary-container" class="rpg-box">
+      <div id="artist-summary" class="rpg-text"></div>
+    </div>
+    <button id="summary-toggle">Read more</button>
+    
 <button id="summary-toggle" style="display: none; margin-top: 6px;">Read more</button>
 
     
@@ -174,7 +215,7 @@
 
   <div id="music-player">
     <div id="now-playing-wrapper">
-      <div id="now-playing">Loading track...</div>
+      <div id="now-playing" class="scrolling-text">Loading track...</div>
     </div>
     <div id="controls">
       <button onclick="prevSong()">Prev</button>
@@ -184,6 +225,10 @@
     </div>
     <div id="player"></div>
   </div>
+  <div id="upcoming-tracks" style="margin-left: 20px; background-color: #111; padding: 10px; border: 1px solid #0f0; width: 250px; font-size: 0.9rem; color: #0f0;">
+    <!-- Next 10 tracks will load here -->
+  </div>
+  
 </div>
 
 <script src="script.js"></script>
