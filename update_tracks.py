@@ -95,7 +95,6 @@ def fetch_tracks_with_youtube(csv_path):
 
     track_list = existing_tracks.copy()
     failed_tracks = []
-    start_index = 0
 
     driver = create_browser()
 
@@ -128,10 +127,15 @@ def fetch_tracks_with_youtube(csv_path):
         time.sleep(random.uniform(1, 3))
 
     driver.quit()
-
     save_to_json(failed_tracks, failed_file)
 
-    return track_list
+    # ===== NEW SECTION: Clean old tracks =====
+    csv_pairs = set((row['Artist'], row['Title']) for _, row in clean_df.iterrows())
+    cleaned_track_list = [track for track in track_list if (track['Artist'], track['Title']) in csv_pairs]
+
+    print(f"🧹 Cleaned: {len(track_list) - len(cleaned_track_list)} obsolete tracks removed.")
+
+    return cleaned_track_list
 
 def refresh_dead_links():
     if not os.path.exists(json_file):
