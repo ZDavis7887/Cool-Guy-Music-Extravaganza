@@ -223,3 +223,42 @@ searchInput.addEventListener('input', function () {
 
   searchResults.style.display = 'block';
 });
+let selectedIndex = -1;
+
+searchInput.addEventListener('keydown', function (e) {
+  const results = Array.from(searchResults.querySelectorAll('.search-result'));
+  if (!results.length) return;
+
+  if (e.key === 'ArrowDown') {
+    e.preventDefault();
+    if (selectedIndex < results.length - 1) {
+      selectedIndex++;
+    } else {
+      selectedIndex = 0; // wrap to top
+    }
+    updateHighlight(results);
+  }
+
+  else if (e.key === 'ArrowUp') {
+    e.preventDefault();
+    if (selectedIndex > 0) {
+      selectedIndex--;
+    } else {
+      selectedIndex = results.length - 1; // wrap to bottom
+    }
+    updateHighlight(results);
+  }
+
+  else if (e.key === 'Enter') {
+    e.preventDefault();
+    if (selectedIndex >= 0 && selectedIndex < results.length) {
+      results[selectedIndex].click();
+    }
+  }
+});
+
+function updateHighlight(results) {
+  results.forEach((el, i) => {
+    el.style.backgroundColor = i === selectedIndex ? '#003300' : 'transparent';
+  });
+}
