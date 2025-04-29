@@ -260,5 +260,11 @@ searchInput.addEventListener('keydown', function (e) {
 function updateHighlight(results) {
   results.forEach((el, i) => {
     el.style.backgroundColor = i === selectedIndex ? '#003300' : 'transparent';
+    if (i === selectedIndex) {
+      el.scrollIntoView({
+        block: 'nearest',
+        behavior: 'smooth'
+      });
+    }
   });
 }
