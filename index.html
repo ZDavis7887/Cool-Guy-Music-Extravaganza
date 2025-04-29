@@ -189,9 +189,15 @@
 
   </style>
 </head>
-<body>
 
+<body>
+  
 <div id="winamp-container">
+  <div style="margin-top: 20px;">
+    <input id="search-bar" type="text" placeholder="Search by artist or title..." style="width: 300px; padding: 8px;">
+    <div id="search-results" style="margin-top: 10px; max-height: 300px; overflow-y: auto; border: 1px solid #ccc; padding: 5px;"></div>
+  </div>
+  
   <div id="album-info">
     <img id="album-art" src="default_album.png" alt="Album Art">
     <div id="album-name">Loading Album...</div>
@@ -225,6 +231,8 @@
     </div>
     <div id="player"></div>
   </div>
+
+  
   <div id="upcoming-tracks" style="margin-left: 20px; background-color: #111; padding: 10px; border: 1px solid #0f0; width: 250px; font-size: 0.9rem; color: #0f0;">
     <!-- Next 10 tracks will load here -->
   </div>
