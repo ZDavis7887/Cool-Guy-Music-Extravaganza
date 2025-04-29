@@ -191,12 +191,21 @@
 </head>
 
 <body>
+  <div id="search-container"
+     style="position: absolute; top: 10px; left: 0; right: 0; z-index: 9999; display: flex; justify-content: center;">
+  <div style="width: 100%; max-width: 600px;">
+    <input id="search-bar" type="text" placeholder="Search..."
+           style="width: 100%; padding: 10px; font-size: 16px; background-color: black; color: #00ff00; border: 1px solid #00ff00; text-align: center;">
+    <div id="search-results"
+         style="position: absolute; max-height: 300px; overflow-y: auto; background-color: black; color: #00ff00; border: 1px solid #00ff00; padding: 8px; margin-top: 4px; display: none;">
+    </div>
+  </div>
+</div>
+
+  
   
 <div id="winamp-container">
-  <div style="margin-top: 20px;">
-    <input id="search-bar" type="text" placeholder="Search by artist or title..." style="width: 300px; padding: 8px;">
-    <div id="search-results" style="margin-top: 10px; max-height: 300px; overflow-y: auto; border: 1px solid #ccc; padding: 5px;"></div>
-  </div>
+  
   
   <div id="album-info">
     <img id="album-art" src="default_album.png" alt="Album Art">

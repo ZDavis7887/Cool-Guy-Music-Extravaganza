@@ -188,28 +188,38 @@ loadTracks();
 const searchInput = document.getElementById('search-bar');
 const searchResults = document.getElementById('search-results');
 
-searchInput.addEventListener('input', function() {
+searchInput.addEventListener('input', function () {
   const query = searchInput.value.toLowerCase();
   searchResults.innerHTML = '';
 
-  if (!query.trim()) return;
+  if (!query.trim()) {
+    searchResults.style.display = 'none';
+    return;
+  }
 
   const matches = tracklist.filter(track =>
     track.Artist.toLowerCase().includes(query) ||
     track.Title.toLowerCase().includes(query)
   );
 
-  matches.forEach((track) => {
-    const div = document.createElement('div');
-    div.className = 'search-result';
-    div.style.marginBottom = '5px';
-    div.innerHTML = `<strong>${track.Artist}</strong> - ${track.Title}`;
-    div.style.cursor = 'pointer';
-    div.onclick = () => {
-      playTrack(track);
-      searchResults.innerHTML = '';
-      searchInput.value = '';
-    };
-    searchResults.appendChild(div);
-  });
+  if (matches.length === 0) {
+    searchResults.innerHTML = '<div style="padding:5px;">No results found.</div>';
+  } else {
+    matches.forEach((track) => {
+      const div = document.createElement('div');
+      div.className = 'search-result';
+      div.style.marginBottom = '5px';
+      div.style.cursor = 'pointer';
+      div.innerHTML = `<strong>${track.Artist}</strong> - ${track.Title}`;
+      div.onclick = () => {
+        playTrack(track);
+        searchResults.innerHTML = '';
+        searchInput.value = '';
+        searchResults.style.display = 'none';
+      };
+      searchResults.appendChild(div);
+    });
+  }
+
+  searchResults.style.display = 'block';
 });
