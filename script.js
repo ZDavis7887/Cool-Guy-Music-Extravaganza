@@ -266,5 +266,7 @@ function updateHighlight(results) {
         behavior: 'smooth'
       });
     }
+
+    
   });
 }
