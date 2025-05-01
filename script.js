@@ -84,7 +84,7 @@ async function playTrack(track, index = null) {
     document.getElementById('album-art').src = track.AlbumArtLink || 'default_album.png';
     document.getElementById('album-name').innerText = track.Album || 'Unknown Album';
     document.getElementById('album-year').innerText = track.ReleaseDate || 'Unknown Release Date';
-
+    
     const summaryEl = document.getElementById('artist-summary');
     const summaryToggle = document.getElementById('summary-toggle');
 
@@ -95,7 +95,12 @@ async function playTrack(track, index = null) {
     summaryEl.innerText = "";
     summaryEl.style.color = "#00ff00";
 
-    typeRPG(shortSummary, summaryEl);
+    if (window.innerWidth > 768) {
+      typeRPG(shortSummary, summaryEl);
+    } else {
+      summaryEl.innerText = shortSummary;
+    
+    
 
     summaryToggle.style.display = fullSummary.length > 300 ? 'inline' : 'none';
     summaryToggle.innerText = 'Read more';
@@ -114,7 +119,7 @@ async function playTrack(track, index = null) {
     summaryToggle.innerText = 'Read more';
   }
 };
-
+    }
     renderUpcomingTracks();
   } else {
     console.error("❌ Could not extract video ID from:", track);

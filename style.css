@@ -287,9 +287,13 @@
   
     #player {
         order: 1;
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
         aspect-ratio: 16 / 9;
-        margin-bottom: 10px;
+        background: black; /* optional fallback */
+        z-index: 999;
       }
   
  
@@ -346,11 +350,17 @@
     margin-top: 4px;
   }
 
-    #music-player {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
+  #music-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: calc(100vw * 9 / 16 + 105px); /* add spacing margin below player */
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    z-index: 999;
+  }
+  
       
 #upcoming-tracks {
     order: 7;
@@ -359,6 +369,22 @@
     padding: 0 16px;
     text-align:center;
   }
+
+  #controls,
+#now-playing-wrapper,
+#search-container-mobile,
+#album-info,
+#artist-summary,
+#upcoming-tracks {
+  z-index: 1;
+  position: relative;
+}
+
+body, html {
+    min-height: 100vh;
+    height: auto;
+  }
+  
   }
   
   
