@@ -190,88 +190,84 @@ window.toggleVideo = toggleVideo;
 
 loadTracks();
 
-const searchInput = document.getElementById('search-bar');
-const searchResults = document.getElementById('search-results');
+const desktopSearchInput = document.getElementById('search-bar');
+const desktopSearchResults = document.getElementById('search-results');
+const mobileSearchInput = document.getElementById('search-bar-mobile');
+const mobileSearchResults = document.getElementById('search-results-mobile');
 
-searchInput.addEventListener('input', function () {
-  const query = searchInput.value.toLowerCase();
-  searchResults.innerHTML = '';
+function setupSearch(input, resultsBox) {
+  let selectedIndex = -1;
 
-  if (!query.trim()) {
-    searchResults.style.display = 'none';
-    return;
-  }
+  input.addEventListener('input', function () {
+    const query = input.value.toLowerCase().trim();
+    resultsBox.innerHTML = '';
+    selectedIndex = -1;
 
-  const matches = tracklist.filter(track =>
-    track.Artist.toLowerCase().includes(query) ||
-    track.Title.toLowerCase().includes(query)
-  );
+    if (!query) {
+      resultsBox.style.display = 'none';
+      return;
+    }
 
-  if (matches.length === 0) {
-    searchResults.innerHTML = '<div style="padding:5px;">No results found.</div>';
-  } else {
-    matches.forEach((track) => {
-      const div = document.createElement('div');
-      div.className = 'search-result';
-      div.style.marginBottom = '5px';
-      div.style.cursor = 'pointer';
-      div.innerHTML = `<strong>${track.Artist}</strong> - ${track.Title}`;
-      div.onclick = () => {
-        playTrack(track);
-        searchResults.innerHTML = '';
-        searchInput.value = '';
-        searchResults.style.display = 'none';
-      };
-      searchResults.appendChild(div);
-    });
-  }
+    const matches = tracklist.filter(track =>
+      track.Artist.toLowerCase().includes(query) ||
+      track.Title.toLowerCase().includes(query)
+    );
 
-  searchResults.style.display = 'block';
-});
-let selectedIndex = -1;
-
-searchInput.addEventListener('keydown', function (e) {
-  const results = Array.from(searchResults.querySelectorAll('.search-result'));
-  if (!results.length) return;
-
-  if (e.key === 'ArrowDown') {
-    e.preventDefault();
-    if (selectedIndex < results.length - 1) {
-      selectedIndex++;
+    if (matches.length === 0) {
+      resultsBox.innerHTML = '<div style="padding:5px;">No results found.</div>';
     } else {
-      selectedIndex = 0; // wrap to top
-    }
-    updateHighlight(results);
-  }
-
-  else if (e.key === 'ArrowUp') {
-    e.preventDefault();
-    if (selectedIndex > 0) {
-      selectedIndex--;
-    } else {
-      selectedIndex = results.length - 1; // wrap to bottom
-    }
-    updateHighlight(results);
-  }
-
-  else if (e.key === 'Enter') {
-    e.preventDefault();
-    if (selectedIndex >= 0 && selectedIndex < results.length) {
-      results[selectedIndex].click();
-    }
-  }
-});
-
-function updateHighlight(results) {
-  results.forEach((el, i) => {
-    el.style.backgroundColor = i === selectedIndex ? '#003300' : 'transparent';
-    if (i === selectedIndex) {
-      el.scrollIntoView({
-        block: 'nearest',
-        behavior: 'smooth'
+      matches.forEach((track) => {
+        const div = document.createElement('div');
+        div.className = 'search-result';
+        div.style.marginBottom = '5px';
+        div.style.cursor = 'pointer';
+        div.innerHTML = `<strong>${track.Artist}</strong> - ${track.Title}`;
+        div.onclick = () => {
+          playTrack(track);
+          input.value = '';
+          resultsBox.innerHTML = '';
+          resultsBox.style.display = 'none';
+        };
+        resultsBox.appendChild(div);
       });
     }
 
-    
+    resultsBox.style.display = 'block';
   });
+
+  input.addEventListener('keydown', function (e) {
+    const results = Array.from(resultsBox.querySelectorAll('.search-result'));
+    if (!results.length) return;
+
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      selectedIndex = (selectedIndex + 1) % results.length;
+      updateHighlight(results, selectedIndex);
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      selectedIndex = (selectedIndex - 1 + results.length) % results.length;
+      updateHighlight(results, selectedIndex);
+    } else if (e.key === 'Enter' && selectedIndex >= 0) {
+      e.preventDefault();
+      results[selectedIndex].click();
+    }
+  });
+
+  function updateHighlight(results, index) {
+    results.forEach((el, i) => {
+      el.style.backgroundColor = i === index ? '#003300' : 'transparent';
+      if (i === index) {
+        el.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      }
+    });
+  }
 }
+
+if (desktopSearchInput && desktopSearchResults) {
+  setupSearch(desktopSearchInput, desktopSearchResults);
+}
+
+if (mobileSearchInput && mobileSearchResults) {
+  setupSearch(mobileSearchInput, mobileSearchResults);
+}
+
