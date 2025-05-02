@@ -3,8 +3,8 @@ import json
 
 # ===== Paths =====
 csv_file = 'Library - Music - All.csv'
-json_file = 'tracks.json'
-output_file = 'tracks_updated.json'
+json_file = 'tracks_dates.json'
+output_file = 'tracks_summaries.json'
 
 # ===== Load CSV =====
 df = pd.read_csv(csv_file)

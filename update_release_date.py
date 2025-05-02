@@ -4,7 +4,7 @@ import json
 # Paths
 csv_file = 'Library - Music - All.csv'
 json_file = 'tracks.json'
-output_json = 'tracks_updated.json'
+output_json = 'tracks_dates.json'
 
 # Load release dates from CSV
 df = pd.read_csv(csv_file)

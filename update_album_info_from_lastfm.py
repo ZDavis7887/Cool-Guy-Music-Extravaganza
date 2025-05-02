@@ -4,7 +4,7 @@ import time
 
 # ========== CONFIG ==========
 API_KEY = '67151f1c5943c2b35b9750ab48ac296f'
-json_file = 'tracks.json'
+json_file = 'tracks_dates.json'
 SAVE_EVERY_N_TRACKS = 50
 # =============================
 
