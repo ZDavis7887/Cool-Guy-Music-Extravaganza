@@ -1,331 +1,429 @@
 [
-{
-  "Artist": "amiinA",
-  "Title": "Jubilee (Serph Remix)",
-  "Album": "Atmosphere -Serph Progressive Remixes-",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=GZ0-wmBs77s&pp=ygUaYW1paW5BIEp1YmlsZWUgU2VycGggUmVtaXg%3D"
-},
-{
-  "Artist": "amiinA",
-  "Title": "magic (Serph Remix)",
-  "Album": "Atmosphere -Serph Progressive Remixes-",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=zx7cmWSuePM&pp=ygUYYW1paW5BIG1hZ2ljIFNlcnBoIFJlbWl4"
-},
-{
-  "Artist": "amiinA",
-  "Title": "eve (Serph Remix)",
-  "Album": "Atmosphere -Serph Progressive Remixes-",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=j9TVw4kS-Z4&pp=ygUWYW1paW5BIGV2ZSBTZXJwaCBSZW1peA%3D%3D"
-},
-{
-  "Artist": "amiinA",
-  "Title": "Unicorn (Serph Remix)",
-  "Album": "Atmosphere -Serph Progressive Remixes-",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=hOHu8_nORGU&pp=ygUaYW1paW5BIFVuaWNvcm4gU2VycGggUmVtaXg%3D"
-},
-{
-  "Artist": "amiinA",
-  "Title": "Drop (Serph Remix)",
-  "Album": "Atmosphere -Serph Progressive Remixes-",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=lzaoiYhBSOE&pp=ygUXYW1paW5BIERyb3AgU2VycGggUmVtaXg%3D"
-},
-{
-  "Artist": "amiinA",
-  "Title": "Rising (Serph Remix)",
-  "Album": "Atmosphere -Serph Progressive Remixes-",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=ER1swKrgsjM&pp=ygUZYW1paW5BIFJpc2luZyBTZXJwaCBSZW1peNIHCQmGCQGHKiGM7w%3D%3D"
-},
-{
-  "Artist": "amiinA",
-  "Title": "cosmos (Serph Remix)",
-  "Album": "Atmosphere -Serph Progressive Remixes-",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=aN_PDKtTNkE&pp=ygUZYW1paW5BIGNvc21vcyBTZXJwaCBSZW1peA%3D%3D"
-},
-{
-  "Artist": "amiinA",
-  "Title": "Atlas (Serph Remix)",
-  "Album": "Atmosphere -Serph Progressive Remixes-",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=3GInLOzdspU&pp=ygUYYW1paW5BIEF0bGFzIFNlcnBoIFJlbWl4"
-},
-{
-  "Artist": "amiinA",
-  "Title": "Canvas (Serph Remix)",
-  "Album": "Atmosphere -Serph Progressive Remixes-",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=3O9Pcxnmuec&pp=ygUZYW1paW5BIENhbnZhcyBTZXJwaCBSZW1peNIHCQmGCQGHKiGM7w%3D%3D"
-},
-{
-  "Artist": "amiinA",
-  "Title": "Avalon (Serph Remix)",
-  "Album": "Atmosphere -Serph Progressive Remixes-",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=NvMjzysKaaw&pp=ygUZYW1paW5BIEF2YWxvbiBTZXJwaCBSZW1peA%3D%3D"
-},
-{
-  "Artist": "Andrés Calamaro",
-  "Title": "Alta suciedad",
-  "Album": "Alta suciedad",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=knvgOdKPaMQ&pp=ygUeQW5kcsOpcyBDYWxhbWFybyBBbHRhIHN1Y2llZGFk"
-},
-{
-  "Artist": "Andrés Calamaro",
-  "Title": "Todo lo demás",
-  "Album": "Alta suciedad",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=tYnUUoNXCfc&pp=ygUfQW5kcsOpcyBDYWxhbWFybyBUb2RvIGxvIGRlbcOhc9IHCQmGCQGHKiGM7w%3D%3D"
-},
-{
-  "Artist": "Andrés Calamaro",
-  "Title": "Donde manda marinero",
-  "Album": "Alta suciedad",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=IMCijG-U16w&pp=ygUlQW5kcsOpcyBDYWxhbWFybyBEb25kZSBtYW5kYSBtYXJpbmVybw%3D%3D"
-},
-{
-  "Artist": "Andrés Calamaro",
-  "Title": "Loco",
-  "Album": "Alta suciedad",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=87r3yPGgMhg&pp=ygUVQW5kcsOpcyBDYWxhbWFybyBMb2Nv"
-},
-{
-  "Artist": "Andrés Calamaro",
-  "Title": "Flaca",
-  "Album": "Alta suciedad",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=UCF9oHXhDMU&pp=ygUWQW5kcsOpcyBDYWxhbWFybyBGbGFjYQ%3D%3D"
-},
-{
-  "Artist": "Andrés Calamaro",
-  "Title": "¿Quién asó la manteca?",
-  "Album": "Alta suciedad",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=30RepZAKmTE&pp=ygUnQW5kcsOpcyBDYWxhbWFybyBRdWnDqW4gYXPDsyBsYSBtYW50ZWNh0gcJCYYJAYcqIYzv"
-},
-{
-  "Artist": "Andrés Calamaro",
-  "Title": "Media Verónica",
-  "Album": "Alta suciedad",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=GKMuNJ-DuyE&pp=ygUgQW5kcsOpcyBDYWxhbWFybyBNZWRpYSBWZXLDs25pY2E%3D"
-},
-{
-  "Artist": "Andrés Calamaro",
-  "Title": "El tercio de los sueños",
-  "Album": "Alta suciedad",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=NCYqvdbLl_s&pp=ygUpQW5kcsOpcyBDYWxhbWFybyBFbCB0ZXJjaW8gZGUgbG9zIHN1ZcOxb3M%3D"
-},
-{
-  "Artist": "Andrés Calamaro",
-  "Title": "Comida china",
-  "Album": "Alta suciedad",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=kyCTk-R8aIQ&pp=ygUdQW5kcsOpcyBDYWxhbWFybyBDb21pZGEgY2hpbmE%3D"
-},
-{
-  "Artist": "Andrés Calamaro",
-  "Title": "Elvis está vivo",
-  "Album": "Alta suciedad",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=fzBHG3DBpWs&pp=ygUhQW5kcsOpcyBDYWxhbWFybyBFbHZpcyBlc3TDoSB2aXZv"
-},
-{
-  "Artist": "Andrés Calamaro",
-  "Title": "Me arde",
-  "Album": "Alta suciedad",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=HowNsL2Ew-8&pp=ygUYQW5kcsOpcyBDYWxhbWFybyBNZSBhcmRl"
-},
-{
-  "Artist": "Andrés Calamaro",
-  "Title": "Crimenes perfectos",
-  "Album": "Alta suciedad",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=P01hVBLP0_g&pp=ygUjQW5kcsOpcyBDYWxhbWFybyBDcmltZW5lcyBwZXJmZWN0b3M%3D"
-},
-{
-  "Artist": "Andrés Calamaro",
-  "Title": "Nunca es igual",
-  "Album": "Alta suciedad",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=hZpUyxsHw-g&pp=ygUfQW5kcsOpcyBDYWxhbWFybyBOdW5jYSBlcyBpZ3VhbA%3D%3D"
-},
-{
-  "Artist": "Andrés Calamaro",
-  "Title": "El novio del olvido",
-  "Album": "Alta suciedad",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=4km_VKsaYhw&pp=ygUkQW5kcsOpcyBDYWxhbWFybyBFbCBub3ZpbyBkZWwgb2x2aWRv"
-},
-{
-  "Artist": "Andrés Calamaro",
-  "Title": "Catalina, Bahia",
-  "Album": "Alta suciedad",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=_RPfgzVrrko&pp=ygUfQW5kcsOpcyBDYWxhbWFybyBDYXRhbGluYSBCYWhpYdIHCQmGCQGHKiGM7w%3D%3D"
-},
-{
-  "Artist": "kendall :3",
-  "Title": "oil",
-  "Album": "oil",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=HtW833XcXlU&pp=ygUNa2VuZGFsbCAzIG9pbA%3D%3D"
-},
-{
-  "Artist": "kendall :3",
-  "Title": "swallow",
-  "Album": "oil",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=lfoIxOLP2Us&pp=ygURa2VuZGFsbCAzIHN3YWxsb3c%3D"
-},
-{
-  "Artist": "kendall :3",
-  "Title": "sweat",
-  "Album": "oil",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=7Fjt_zkkQLo&pp=ygUPa2VuZGFsbCAzIHN3ZWF0"
-},
-{
-  "Artist": "kendall :3",
-  "Title": "lighthouse",
-  "Album": "oil",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=kRtduazR220&pp=ygUUa2VuZGFsbCAzIGxpZ2h0aG91c2XSBwkJhgkBhyohjO8%3D"
-},
-{
-  "Artist": "kendall :3",
-  "Title": "cherry pie",
-  "Album": "oil",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=lscY-G2Glos&pp=ygUUa2VuZGFsbCAzIGNoZXJyeSBwaWXSBwkJhgkBhyohjO8%3D"
-},
-{
-  "Artist": "kendall :3",
-  "Title": "froth",
-  "Album": "oil",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=U757vfQhEGE&pp=ygUPa2VuZGFsbCAzIGZyb3Ro"
-},
-{
-  "Artist": "kendall :3",
-  "Title": "fumes",
-  "Album": "oil",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=1Z4RmaSU4_c&pp=ygUPa2VuZGFsbCAzIGZ1bWVz"
-},
-{
-  "Artist": "kendall :3",
-  "Title": "writhe",
-  "Album": "oil",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=hFqyZy0kW6U&pp=ygUQa2VuZGFsbCAzIHdyaXRoZQ%3D%3D"
-},
-{
-  "Artist": "kendall :3",
-  "Title": "sick",
-  "Album": "oil",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=fwPMB3oe2mI&pp=ygUOa2VuZGFsbCAzIHNpY2s%3D"
-},
-{
-  "Artist": "kendall :3",
-  "Title": "stew",
-  "Album": "oil",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=JuubhNh629E&pp=ygUOa2VuZGFsbCAzIHN0ZXc%3D"
-},
-{
-  "Artist": "kendall :3",
-  "Title": "meat",
-  "Album": "oil",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=B6MJoEG7K3Q&pp=ygUOa2VuZGFsbCAzIG1lYXQ%3D"
-},
-{
-  "Artist": "The Plugz",
-  "Title": "el clavo y la cruz",
-  "Album": "Better Luck",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=p12ZgSkxVLs&pp=ygUcVGhlIFBsdWd6IGVsIGNsYXZvIHkgbGEgY3J1eg%3D%3D"
-},
-{
-  "Artist": "VNV Nation",
-  "Title": "Hymn",
-  "Album": "Construct",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=KxvzNlecctU&pp=ygUPVk5WIE5hdGlvbiBIeW1u"
-},
-{
-  "Artist": "VNV Nation",
-  "Title": "The Spaces Between",
-  "Album": "Construct",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=314tUMas5eg&pp=ygUdVk5WIE5hdGlvbiBUaGUgU3BhY2VzIEJldHdlZW7SBwkJhgkBhyohjO8%3D"
-},
-{
-  "Artist": "VNV Nation",
-  "Title": "Station 21",
-  "Album": "Construct",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=gtqvXw7vFO0&pp=ygUVVk5WIE5hdGlvbiBTdGF0aW9uIDIx"
-},
-{
-  "Artist": "VNV Nation",
-  "Title": "By Your Side",
-  "Album": "Construct",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=T1LRsp8qBY0&pp=ygUXVk5WIE5hdGlvbiBCeSBZb3VyIFNpZGXSBwkJhgkBhyohjO8%3D"
-},
-{
-  "Artist": "VNV Nation",
-  "Title": "Nothing More",
-  "Album": "Construct",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=Es7F0h1DKGs&pp=ygUXVk5WIE5hdGlvbiBOb3RoaW5nIE1vcmXSBwkJhgkBhyohjO8%3D"
-},
-{
-  "Artist": "VNV Nation",
-  "Title": "Save Me",
-  "Album": "Construct",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=AcDJAOjX0ZQ&pp=ygUSVk5WIE5hdGlvbiBTYXZlIE1l"
-},
-{
-  "Artist": "VNV Nation",
-  "Title": "Close to Heaven",
-  "Album": "Construct",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=eGn7g7bugK0&pp=ygUaVk5WIE5hdGlvbiBDbG9zZSB0byBIZWF2ZW4%3D"
-},
-{
-  "Artist": "VNV Nation",
-  "Title": "Silence Speaks",
-  "Album": "Construct",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=VQ24b6RG9Ww&pp=ygUZVk5WIE5hdGlvbiBTaWxlbmNlIFNwZWFrcw%3D%3D"
-},
-{
-  "Artist": "VNV Nation",
-  "Title": "On Other Oceans",
-  "Album": "Construct",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=5fXoEyXCrFM&pp=ygUaVk5WIE5hdGlvbiBPbiBPdGhlciBPY2VhbnM%3D"
-},
-{
-  "Artist": "VNV Nation",
-  "Title": "Frontier I + II",
-  "Album": "Construct",
-  "Year": "Unknown",
-  "YouTubeLink": "https://www.youtube.com/watch?v=X_4VXKEaVqQ&pp=ygUYVk5WIE5hdGlvbiBGcm9udGllciBJIElJ0gcJCYYJAYcqIYzv"
-}
+  {
+    "Artist": "Birth Control",
+    "Title": "Nuclear Reactor",
+    "Album": "Bäng!",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=zDycV-YiUW4&pp=ygUdQmlydGggQ29udHJvbCBOdWNsZWFyIFJlYWN0b3I%3D"
+  },
+  {
+    "Artist": "Birth Control",
+    "Title": "Get Ready to Run",
+    "Album": "Bäng!",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=jBaU_f9kiRE&pp=ygUeQmlydGggQ29udHJvbCBHZXQgUmVhZHkgdG8gUnVu"
+  },
+  {
+    "Artist": "Birth Control",
+    "Title": "Take Alarm",
+    "Album": "Bäng!",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=IYrxusUTfjo&pp=ygUYQmlydGggQ29udHJvbCBUYWtlIEFsYXJt"
+  },
+  {
+    "Artist": "Birth Control",
+    "Title": "Greedy Eyes",
+    "Album": "Bäng!",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=wGpBb5MDOIA&pp=ygUZQmlydGggQ29udHJvbCBHcmVlZHkgRXllcw%3D%3D"
+  },
+  {
+    "Artist": "Birth Control",
+    "Title": "The Day of Doom Is Coming",
+    "Album": "Bäng!",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=9HeSDYnk9vw&pp=ygUnQmlydGggQ29udHJvbCBUaGUgRGF5IG9mIERvb20gSXMgQ29taW5n"
+  },
+  {
+    "Artist": "Birth Control",
+    "Title": "Doom Boom",
+    "Album": "Bäng!",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=2b_VHMVCDJM&pp=ygUXQmlydGggQ29udHJvbCBEb29tIEJvb20%3D"
+  },
+  {
+    "Artist": "Birth Control",
+    "Title": "The King of an Island",
+    "Album": "Bäng!",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=v-2irnRAUC4&pp=ygUjQmlydGggQ29udHJvbCBUaGUgS2luZyBvZiBhbiBJc2xhbmQ%3D"
+  },
+  {
+    "Artist": "Birth Control",
+    "Title": "Nuclear Reactor (single version)",
+    "Album": "Bäng!",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=WU1vMhvSL2I&pp=ygUsQmlydGggQ29udHJvbCBOdWNsZWFyIFJlYWN0b3Igc2luZ2xlIHZlcnNpb24%3D"
+  },
+  {
+    "Artist": "Birth Control",
+    "Title": "Get Ready to Run (single version)",
+    "Album": "Bäng!",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=KeYGLm0LV0I&pp=ygUtQmlydGggQ29udHJvbCBHZXQgUmVhZHkgdG8gUnVuIHNpbmdsZSB2ZXJzaW9u"
+  },
+  {
+    "Artist": "Birth Control",
+    "Title": "Nuclear Reactor (12″ mix)",
+    "Album": "Bäng!",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=NqxW5nWseRk&pp=ygUkQmlydGggQ29udHJvbCBOdWNsZWFyIFJlYWN0b3IgMTIgbWl4"
+  },
+  {
+    "Artist": "Dope D.O.D.",
+    "Title": "Branded",
+    "Album": "Branded (Pandora's Box Edition)",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=rOXwZfX2I6c&pp=ygUQRG9wZSBET0QgQnJhbmRlZA%3D%3D"
+  },
+  {
+    "Artist": "Dope D.O.D.",
+    "Title": "What Happened",
+    "Album": "Branded (Pandora's Box Edition)",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=Z-zL_paDVTc&pp=ygUWRG9wZSBET0QgV2hhdCBIYXBwZW5lZA%3D%3D"
+  },
+  {
+    "Artist": "Dope D.O.D.",
+    "Title": "The Island",
+    "Album": "Branded (Pandora's Box Edition)",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=Z-zL_paDVTc&pp=ygUTRG9wZSBET0QgVGhlIElzbGFuZA%3D%3D"
+  },
+  {
+    "Artist": "Dope D.O.D.",
+    "Title": "Real Gods (feat. Simon Roofless)",
+    "Album": "Branded (Pandora's Box Edition)",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=PZniEftTJqk&pp=ygUmRG9wZSBET0QgUmVhbCBHb2RzIGZlYXQgU2ltb24gUm9vZmxlc3M%3D"
+  },
+  {
+    "Artist": "Dope D.O.D.",
+    "Title": "Combust",
+    "Album": "Branded (Pandora's Box Edition)",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=m3R8urD2Guo&pp=ygUQRG9wZSBET0QgQ29tYnVzdNIHCQmNCQGHKiGM7w%3D%3D"
+  },
+  {
+    "Artist": "Dope D.O.D.",
+    "Title": "Ghost and the Darkness",
+    "Album": "Branded (Pandora's Box Edition)",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=PZniEftTJqk&pp=ygUfRG9wZSBET0QgR2hvc3QgYW5kIHRoZSBEYXJrbmVzcw%3D%3D"
+  },
+  {
+    "Artist": "Dope D.O.D.",
+    "Title": "Redrum",
+    "Album": "Branded (Pandora's Box Edition)",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=PZniEftTJqk&pp=ygUPRG9wZSBET0QgUmVkcnVt"
+  },
+  {
+    "Artist": "Dope D.O.D.",
+    "Title": "Psychosis (feat. Sean Price)",
+    "Album": "Branded (Pandora's Box Edition)",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=KVS4FrLsybs&pp=ygUiRG9wZSBET0QgUHN5Y2hvc2lzIGZlYXQgU2VhbiBQcmljZQ%3D%3D"
+  },
+  {
+    "Artist": "Dope D.O.D.",
+    "Title": "Slowmotion",
+    "Album": "Branded (Pandora's Box Edition)",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=azabG1jlcck&pp=ygUTRG9wZSBET0QgU2xvd21vdGlvbg%3D%3D"
+  },
+  {
+    "Artist": "Dope D.O.D.",
+    "Title": "Cosmosis Jones",
+    "Album": "Branded (Pandora's Box Edition)",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=__IpJhDByLM&pp=ygUXRG9wZSBET0QgQ29zbW9zaXMgSm9uZXM%3D"
+  },
+  {
+    "Artist": "Dope D.O.D.",
+    "Title": "Pandora's Box",
+    "Album": "Branded (Pandora's Box Edition)",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=1JpJwTDypBM&pp=ygUVRG9wZSBET0QgUGFuZG9yYXMgQm94"
+  },
+  {
+    "Artist": "Dope D.O.D.",
+    "Title": "Witness the Crispness",
+    "Album": "Branded (Pandora's Box Edition)",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=xXlfEHITuDk&pp=ygUeRG9wZSBET0QgV2l0bmVzcyB0aGUgQ3Jpc3BuZXNz0gcJCY0JAYcqIYzv"
+  },
+  {
+    "Artist": "Dope D.O.D.",
+    "Title": "Gatekeepers",
+    "Album": "Branded (Pandora's Box Edition)",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=rOXwZfX2I6c&pp=ygUURG9wZSBET0QgR2F0ZWtlZXBlcnM%3D"
+  },
+  {
+    "Artist": "Dope D.O.D.",
+    "Title": "Candy Flipping",
+    "Album": "Branded (Pandora's Box Edition)",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=jfsvSzfLbX0&pp=ygUXRG9wZSBET0QgQ2FuZHkgRmxpcHBpbmc%3D"
+  },
+  {
+    "Artist": "Dope D.O.D.",
+    "Title": "Blaow!!!",
+    "Album": "Branded (Pandora's Box Edition)",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=PfVb0lxnYc8&pp=ygUORG9wZSBET0QgQmxhb3fSBwkJjQkBhyohjO8%3D"
+  },
+  {
+    "Artist": "Dope D.O.D.",
+    "Title": "Mothership",
+    "Album": "Branded (Pandora's Box Edition)",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=Wmx8MeTHhKk&pp=ygUTRG9wZSBET0QgTW90aGVyc2hpcNIHCQmNCQGHKiGM7w%3D%3D"
+  },
+  {
+    "Artist": "Dope D.O.D.",
+    "Title": "Dark Age",
+    "Album": "Branded (Pandora's Box Edition)",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=zDWqDpIl8gs&pp=ygURRG9wZSBET0QgRGFyayBBZ2U%3D"
+  },
+  {
+    "Artist": "Hooveriii",
+    "Title": "Melody",
+    "Album": "Manhunter",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=4AG4cBJm2sM&pp=ygUQSG9vdmVyaWlpIE1lbG9keQ%3D%3D"
+  },
+  {
+    "Artist": "Hooveriii",
+    "Title": "Tin Lips",
+    "Album": "Manhunter",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=NE3GN3HsVVE&pp=ygUSSG9vdmVyaWlpIFRpbiBMaXBz"
+  },
+  {
+    "Artist": "Hooveriii",
+    "Title": "In the Rain",
+    "Album": "Manhunter",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=rnqKJrgcCtU&pp=ygUVSG9vdmVyaWlpIEluIHRoZSBSYWlu"
+  },
+  {
+    "Artist": "Hooveriii",
+    "Title": "Westside Pavilion of Dreams",
+    "Album": "Manhunter",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=Z5x0MWBy4Ho&pp=ygUlSG9vdmVyaWlpIFdlc3RzaWRlIFBhdmlsaW9uIG9mIERyZWFtcw%3D%3D"
+  },
+  {
+    "Artist": "Hooveriii",
+    "Title": "Heaven at the Gates",
+    "Album": "Manhunter",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=rnqKJrgcCtU&pp=ygUdSG9vdmVyaWlpIEhlYXZlbiBhdCB0aGUgR2F0ZXM%3D"
+  },
+  {
+    "Artist": "Hooveriii",
+    "Title": "Cul‐De‐Sac",
+    "Album": "Manhunter",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=rnqKJrgcCtU&pp=ygUUSG9vdmVyaWlpIEN1bC1EZS1TYWM%3D"
+  },
+  {
+    "Artist": "Hooveriii",
+    "Title": "The Fly",
+    "Album": "Manhunter",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=rnqKJrgcCtU&pp=ygURSG9vdmVyaWlpIFRoZSBGbHk%3D"
+  },
+  {
+    "Artist": "Hooveriii",
+    "Title": "Night Walks in Montreaux",
+    "Album": "Manhunter",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=eJFVXjdDEUo&pp=ygUiSG9vdmVyaWlpIE5pZ2h0IFdhbGtzIGluIE1vbnRyZWF1eA%3D%3D"
+  },
+  {
+    "Artist": "Hooveriii",
+    "Title": "Isolation",
+    "Album": "Manhunter",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=4AG4cBJm2sM&pp=ygUTSG9vdmVyaWlpIElzb2xhdGlvbg%3D%3D"
+  },
+  {
+    "Artist": "Hooveriii",
+    "Title": "Manhunter",
+    "Album": "Manhunter",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=4AG4cBJm2sM&pp=ygUTSG9vdmVyaWlpIE1hbmh1bnRlcg%3D%3D"
+  },
+  {
+    "Artist": "Hooveriii",
+    "Title": "Tarantula Eye",
+    "Album": "Manhunter",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=rnqKJrgcCtU&pp=ygUXSG9vdmVyaWlpIFRhcmFudHVsYSBFeWU%3D"
+  },
+  {
+    "Artist": "Hooveriii",
+    "Title": "Question",
+    "Album": "Manhunter",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=vV7Y8gbPVwE&pp=ygUSSG9vdmVyaWlpIFF1ZXN0aW9u"
+  },
+  {
+    "Artist": "Hooveriii",
+    "Title": "Me King",
+    "Album": "Manhunter",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=OLMaso5CIbQ&pp=ygURSG9vdmVyaWlpIE1lIEtpbmc%3D"
+  },
+  {
+    "Artist": "Hooveriii",
+    "Title": "Awful Planet",
+    "Album": "Manhunter",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=rnqKJrgcCtU&pp=ygUWSG9vdmVyaWlpIEF3ZnVsIFBsYW5ldA%3D%3D"
+  },
+  {
+    "Artist": "Hooveriii",
+    "Title": "Stage",
+    "Album": "Manhunter",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=rnqKJrgcCtU&pp=ygUPSG9vdmVyaWlpIFN0YWdl"
+  },
+  {
+    "Artist": "M(h)aol",
+    "Title": "Pursuit",
+    "Album": "Something Soft",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=Hnp_Y-jES8o&pp=ygUNTWhhb2wgUHVyc3VpdNIHCQmNCQGHKiGM7w%3D%3D"
+  },
+  {
+    "Artist": "M(h)aol",
+    "Title": "I Miss My Dog",
+    "Album": "Something Soft",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=q6L02fpWROg&pp=ygUTTWhhb2wgSSBNaXNzIE15IERvZ9IHCQmNCQGHKiGM7w%3D%3D"
+  },
+  {
+    "Artist": "M(h)aol",
+    "Title": "You Are Temporary, The Internet Is Forever",
+    "Album": "Something Soft",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=qVc_T6uucxQ&pp=ygUvTWhhb2wgWW91IEFyZSBUZW1wb3JhcnkgVGhlIEludGVybmV0IElzIEZvcmV2ZXI%3D"
+  },
+  {
+    "Artist": "M(h)aol",
+    "Title": "DM:AM",
+    "Album": "Something Soft",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=8AiJoMlBJUw&pp=ygUKTWhhb2wgRE1BTQ%3D%3D"
+  },
+  {
+    "Artist": "M(h)aol",
+    "Title": "E8/N16",
+    "Album": "Something Soft",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=8AiJoMlBJUw&pp=ygULTWhhb2wgRThOMTY%3D"
+  },
+  {
+    "Artist": "M(h)aol",
+    "Title": "Vin Diesel",
+    "Album": "Something Soft",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=tCUegHeKl2g&pp=ygUQTWhhb2wgVmluIERpZXNlbA%3D%3D"
+  },
+  {
+    "Artist": "M(h)aol",
+    "Title": "Clementine",
+    "Album": "Something Soft",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=8AiJoMlBJUw&pp=ygUQTWhhb2wgQ2xlbWVudGluZQ%3D%3D"
+  },
+  {
+    "Artist": "M(h)aol",
+    "Title": "Snare",
+    "Album": "Something Soft",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=Hnp_Y-jES8o&pp=ygULTWhhb2wgU25hcmU%3D"
+  },
+  {
+    "Artist": "M(h)aol",
+    "Title": "IBS",
+    "Album": "Something Soft",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=FYmHJp0Vwo0&pp=ygUJTWhhb2wgSUJT"
+  },
+  {
+    "Artist": "M(h)aol",
+    "Title": "1-800-Call-Me-Back",
+    "Album": "Something Soft",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=8AiJoMlBJUw&pp=ygUYTWhhb2wgMS04MDAtQ2FsbC1NZS1CYWNr"
+  },
+  {
+    "Artist": "M(h)aol",
+    "Title": "Coda",
+    "Album": "Something Soft",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=8AiJoMlBJUw&pp=ygUKTWhhb2wgQ29kYQ%3D%3D"
+  },
+  {
+    "Artist": "Preoccupations",
+    "Title": "Bastards",
+    "Album": "Ill at Ease",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=7NuwX0RZ6Hw&pp=ygUXUHJlb2NjdXBhdGlvbnMgQmFzdGFyZHPSBwkJjQkBhyohjO8%3D"
+  },
+  {
+    "Artist": "Preoccupations",
+    "Title": "Ill at Ease",
+    "Album": "Ill at Ease",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=z9k8zMvJGZw&pp=ygUaUHJlb2NjdXBhdGlvbnMgSWxsIGF0IEVhc2U%3D"
+  },
+  {
+    "Artist": "Preoccupations",
+    "Title": "Retrograde",
+    "Album": "Ill at Ease",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=z9k8zMvJGZw&pp=ygUZUHJlb2NjdXBhdGlvbnMgUmV0cm9ncmFkZQ%3D%3D"
+  },
+  {
+    "Artist": "Preoccupations",
+    "Title": "Andromeda",
+    "Album": "Ill at Ease",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=npLTTvKpxPU&pp=ygUYUHJlb2NjdXBhdGlvbnMgQW5kcm9tZWRh"
+  },
+  {
+    "Artist": "Preoccupations",
+    "Title": "Panic",
+    "Album": "Ill at Ease",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=csMbqrFT1dM&pp=ygUUUHJlb2NjdXBhdGlvbnMgUGFuaWM%3D"
+  },
+  {
+    "Artist": "Preoccupations",
+    "Title": "Sken",
+    "Album": "Ill at Ease",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=z9k8zMvJGZw&pp=ygUTUHJlb2NjdXBhdGlvbnMgU2tlbg%3D%3D"
+  },
+  {
+    "Artist": "Preoccupations",
+    "Title": "Krem 2",
+    "Album": "Ill at Ease",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=z9k8zMvJGZw&pp=ygUVUHJlb2NjdXBhdGlvbnMgS3JlbSAy"
+  },
+  {
+    "Artist": "Wolf Alice",
+    "Title": "Bloom Baby Bloom",
+    "Album": "Bloom Baby Bloom",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=lBGcloF8LIY&pp=ygUbV29sZiBBbGljZSBCbG9vbSBCYWJ5IEJsb29t"
+  }
 ]
