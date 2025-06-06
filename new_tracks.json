@@ -1,205 +1,610 @@
-[
-  {
-    "Artist": "Big Wreck",
-    "Title": "Fields",
-    "Album": "7.1",
+[ {
+    "Artist": "Arcade Fire",
+    "Title": "The Suburbs (Continued)",
+    "Album": "The Suburbs",
     "Year": "Unknown",
-    "YouTubeLink": "https://www.youtube.com/watch?v=0ogs4Srq-sU&pp=ygUQQmlnIFdyZWNrIEZpZWxkcw%3D%3D"
+    "YouTubeLink": "https://www.youtube.com/watch?v=5Euj9f3gdyM&pp=ygUhQXJjYWRlIEZpcmUgVGhlIFN1YnVyYnMgQ29udGludWVk"
   },
   {
-    "Artist": "A Flock of Seagulls",
-    "Title": "Some Dreams",
-    "Album": "Some Dreams",
+    "Artist": "Car Seat Headrest",
+    "Title": "Reality",
+    "Album": "Scholars: Early Hack",
     "Year": "Unknown",
-    "YouTubeLink": "https://www.youtube.com/watch?v=WDlQkl-UMVs&pp=ygUfQSBGbG9jayBvZiBTZWFndWxscyBTb21lIERyZWFtcw%3D%3D"
+    "YouTubeLink": "https://www.youtube.com/watch?v=yCQar2-PQSg&pp=ygUZQ2FyIFNlYXQgSGVhZHJlc3QgUmVhbGl0eQ%3D%3D"
   },
   {
-    "Artist": "A Flock of Seagulls",
-    "Title": "Him",
-    "Album": "Some Dreams",
+    "Artist": "Car Seat Headrest",
+    "Title": "Reality 0t0",
+    "Album": "Scholars: Early Hack",
     "Year": "Unknown",
-    "YouTubeLink": "https://www.youtube.com/watch?v=-lzUMC0ul9w&pp=ygUXQSBGbG9jayBvZiBTZWFndWxscyBIaW0%3D"
+    "YouTubeLink": "https://www.youtube.com/watch?v=yCQar2-PQSg&pp=ygUdQ2FyIFNlYXQgSGVhZHJlc3QgUmVhbGl0eSAwdDA%3D"
   },
   {
-    "Artist": "A Flock of Seagulls",
-    "Title": "Castles in the Sky",
-    "Album": "Some Dreams",
+    "Artist": "Crime & the City Solution",
+    "Title": "Rivers of Blood",
+    "Album": "the killer",
     "Year": "Unknown",
-    "YouTubeLink": "https://www.youtube.com/watch?v=WDlQkl-UMVs&pp=ygUmQSBGbG9jayBvZiBTZWFndWxscyBDYXN0bGVzIGluIHRoZSBTa3k%3D"
+    "YouTubeLink": "https://www.youtube.com/watch?v=hkjf1qf6ta8&pp=ygUnQ3JpbWUgdGhlIENpdHkgU29sdXRpb24gUml2ZXJzIG9mIEJsb29k"
   },
   {
-    "Artist": "A Flock of Seagulls",
-    "Title": "Lovers and Strangers",
-    "Album": "Some Dreams",
+    "Artist": "Crime & the City Solution",
+    "Title": "Hurt You, Hurt Me",
+    "Album": "the killer",
     "Year": "Unknown",
-    "YouTubeLink": "https://www.youtube.com/watch?v=7AU8l-ohfd0&pp=ygUoQSBGbG9jayBvZiBTZWFndWxscyBMb3ZlcnMgYW5kIFN0cmFuZ2Vyc9IHCQmwCQGHKiGM7w%3D%3D"
+    "YouTubeLink": "https://www.youtube.com/watch?v=0enG9kcmsnY&pp=ygUoQ3JpbWUgdGhlIENpdHkgU29sdXRpb24gSHVydCBZb3UgSHVydCBNZdIHCQmyCQGHKiGM7w%3D%3D"
   },
   {
-    "Artist": "A Flock of Seagulls",
-    "Title": "You’re a Fool",
-    "Album": "Some Dreams",
+    "Artist": "Crime & the City Solution",
+    "Title": "River of God",
+    "Album": "the killer",
     "Year": "Unknown",
-    "YouTubeLink": "https://www.youtube.com/watch?v=IPO9-9WtTes&pp=ygUgQSBGbG9jayBvZiBTZWFndWxscyBZb3VyZSBhIEZvb2w%3D"
+    "YouTubeLink": "https://www.youtube.com/watch?v=5TeX_vZ2bkc&pp=ygUkQ3JpbWUgdGhlIENpdHkgU29sdXRpb24gUml2ZXIgb2YgR29k"
   },
   {
-    "Artist": "A Flock of Seagulls",
-    "Title": "All to You",
-    "Album": "Some Dreams",
+    "Artist": "Crime & the City Solution",
+    "Title": "Brave Hearted Woman",
+    "Album": "the killer",
     "Year": "Unknown",
-    "YouTubeLink": "https://www.youtube.com/watch?v=7BxoU7wT930&pp=ygUeQSBGbG9jayBvZiBTZWFndWxscyBBbGwgdG8gWW91"
+    "YouTubeLink": "https://www.youtube.com/watch?v=HLF9h995yX8&pp=ygUrQ3JpbWUgdGhlIENpdHkgU29sdXRpb24gQnJhdmUgSGVhcnRlZCBXb21hbg%3D%3D"
   },
   {
-    "Artist": "A Flock of Seagulls",
-    "Title": "Valley of the Broken Dreams",
-    "Album": "Some Dreams",
+    "Artist": "Crime & the City Solution",
+    "Title": "Killer",
+    "Album": "the killer",
     "Year": "Unknown",
-    "YouTubeLink": "https://www.youtube.com/watch?v=WDlQkl-UMVs&pp=ygUvQSBGbG9jayBvZiBTZWFndWxscyBWYWxsZXkgb2YgdGhlIEJyb2tlbiBEcmVhbXM%3D"
+    "YouTubeLink": "https://www.youtube.com/watch?v=urKLJkT7fEI&pp=ygUeQ3JpbWUgdGhlIENpdHkgU29sdXRpb24gS2lsbGVy"
   },
   {
-    "Artist": "A Flock of Seagulls",
-    "Title": "We Want It Back Again",
-    "Album": "Some Dreams",
+    "Artist": "Crime & the City Solution",
+    "Title": "Witness",
+    "Album": "the killer",
     "Year": "Unknown",
-    "YouTubeLink": "https://www.youtube.com/watch?v=-lzUMC0ul9w&pp=ygUpQSBGbG9jayBvZiBTZWFndWxscyBXZSBXYW50IEl0IEJhY2sgQWdhaW4%3D"
+    "YouTubeLink": "https://www.youtube.com/watch?v=-Bi8g75WOxY&pp=ygUfQ3JpbWUgdGhlIENpdHkgU29sdXRpb24gV2l0bmVzcw%3D%3D"
   },
   {
-    "Artist": "A Flock of Seagulls",
-    "Title": "Got to Get to You",
-    "Album": "Some Dreams",
+    "Artist": "Crime & the City Solution",
+    "Title": "Peace in my Time",
+    "Album": "the killer",
     "Year": "Unknown",
-    "YouTubeLink": "https://www.youtube.com/watch?v=7BxoU7wT930&pp=ygUlQSBGbG9jayBvZiBTZWFndWxscyBHb3QgdG8gR2V0IHRvIFlvdQ%3D%3D"
+    "YouTubeLink": "https://www.youtube.com/watch?v=iEnbNp6voZk&pp=ygUoQ3JpbWUgdGhlIENpdHkgU29sdXRpb24gUGVhY2UgaW4gbXkgVGltZQ%3D%3D"
   },
   {
-    "Artist": "A Flock of Seagulls",
-    "Title": "Perfect",
-    "Album": "Some Dreams",
+    "Artist": "Darkane",
+    "Title": "Violence From Within",
+    "Album": "Expanding Senses",
     "Year": "Unknown",
-    "YouTubeLink": "https://www.youtube.com/watch?v=7BxoU7wT930&pp=ygUbQSBGbG9jayBvZiBTZWFndWxscyBQZXJmZWN0"
+    "YouTubeLink": "https://www.youtube.com/watch?v=f1XTsrPTIPM&pp=ygUcRGFya2FuZSBWaW9sZW5jZSBGcm9tIFdpdGhpbg%3D%3D"
   },
   {
-    "Artist": "Fluke",
-    "Title": "Fluke - I WANNA BE",
-    "Album": "I Wanna Be",
+    "Artist": "Four Stroke Baron",
+    "Title": "Cyborg Pt. 3 (Because I’m God)",
+    "Album": "Data Diamond",
     "Year": "Unknown",
-    "YouTubeLink": "https://www.youtube.com/watch?v=9NPRBghbiLo&pp=ygUYRmx1a2UgRmx1a2UgLSBJIFdBTk5BIEJF"
+    "YouTubeLink": "https://www.youtube.com/watch?v=DOTMCgUoiIQ&pp=ygUsRm91ciBTdHJva2UgQmFyb24gQ3lib3JnIFB0IDMgQmVjYXVzZSBJbSBHb2Q%3D"
   },
   {
-    "Artist": "Fun Lovin’ Criminals",
-    "Title": "The Fun Lovin’ Criminal",
-    "Album": "Come Find Yourself",
+    "Artist": "Four Stroke Baron",
+    "Title": "Open the World",
+    "Album": "Data Diamond",
     "Year": "Unknown",
-    "YouTubeLink": "https://www.youtube.com/watch?v=7cuBNhmL0l0&pp=ygUqRnVuIExvdmluIENyaW1pbmFscyBUaGUgRnVuIExvdmluIENyaW1pbmFs"
+    "YouTubeLink": "https://www.youtube.com/watch?v=DOTMCgUoiIQ&pp=ygUgRm91ciBTdHJva2UgQmFyb24gT3BlbiB0aGUgV29ybGQ%3D"
   },
   {
-    "Artist": "Fun Lovin’ Criminals",
-    "Title": "Passive/Aggressive",
-    "Album": "Come Find Yourself",
+    "Artist": "Four Stroke Baron",
+    "Title": "People in My Image",
+    "Album": "Data Diamond",
     "Year": "Unknown",
-    "YouTubeLink": "https://www.youtube.com/watch?v=HEMjF2n3-SQ&pp=ygUlRnVuIExvdmluIENyaW1pbmFscyBQYXNzaXZlQWdncmVzc2l2ZQ%3D%3D"
+    "YouTubeLink": "https://www.youtube.com/watch?v=DOTMCgUoiIQ&pp=ygUkRm91ciBTdHJva2UgQmFyb24gUGVvcGxlIGluIE15IEltYWdl"
   },
   {
-    "Artist": "Fun Lovin’ Criminals",
-    "Title": "The Grave and the Constant",
-    "Album": "Come Find Yourself",
+    "Artist": "Four Stroke Baron",
+    "Title": "1000 Threads",
+    "Album": "Data Diamond",
     "Year": "Unknown",
-    "YouTubeLink": "https://www.youtube.com/watch?v=E7pPwBMAG10&pp=ygUuRnVuIExvdmluIENyaW1pbmFscyBUaGUgR3JhdmUgYW5kIHRoZSBDb25zdGFudA%3D%3D"
+    "YouTubeLink": "https://www.youtube.com/watch?v=DOTMCgUoiIQ&pp=ygUeRm91ciBTdHJva2UgQmFyb24gMTAwMCBUaHJlYWRz"
   },
   {
-    "Artist": "Fun Lovin’ Criminals",
-    "Title": "Scooby Snacks",
-    "Album": "Come Find Yourself",
+    "Artist": "Frankie and The Witch Fingers",
+    "Title": "Dead Silence",
+    "Album": "Trash Classic",
     "Year": "Unknown",
-    "YouTubeLink": "https://www.youtube.com/watch?v=HEMjF2n3-SQ&pp=ygUhRnVuIExvdmluIENyaW1pbmFscyBTY29vYnkgU25hY2tz"
+    "YouTubeLink": "https://www.youtube.com/watch?v=TbYLBnZc8OA&pp=ygUqRnJhbmtpZSBhbmQgVGhlIFdpdGNoIEZpbmdlcnMgRGVhZCBTaWxlbmNl"
   },
   {
-    "Artist": "Fun Lovin’ Criminals",
-    "Title": "Smoke ’Em",
-    "Album": "Come Find Yourself",
+    "Artist": "Frankie and The Witch Fingers",
+    "Title": "Economy",
+    "Album": "Trash Classic",
     "Year": "Unknown",
-    "YouTubeLink": "https://www.youtube.com/watch?v=HEMjF2n3-SQ&pp=ygUcRnVuIExvdmluIENyaW1pbmFscyBTbW9rZSBFbQ%3D%3D"
+    "YouTubeLink": "https://www.youtube.com/watch?v=QoC983sdLUg&pp=ygUlRnJhbmtpZSBhbmQgVGhlIFdpdGNoIEZpbmdlcnMgRWNvbm9tedIHCQmyCQGHKiGM7w%3D%3D"
   },
   {
-    "Artist": "Fun Lovin’ Criminals",
-    "Title": "Bombin’ the L",
-    "Album": "Come Find Yourself",
+    "Artist": "Frankie and The Witch Fingers",
+    "Title": "Total Reset",
+    "Album": "Trash Classic",
     "Year": "Unknown",
-    "YouTubeLink": "https://www.youtube.com/watch?v=HEMjF2n3-SQ&pp=ygUgRnVuIExvdmluIENyaW1pbmFscyBCb21iaW4gdGhlIEw%3D"
+    "YouTubeLink": "https://www.youtube.com/watch?v=c4G7TXXTFmk&pp=ygUpRnJhbmtpZSBhbmQgVGhlIFdpdGNoIEZpbmdlcnMgVG90YWwgUmVzZXTSBwkJsgkBhyohjO8%3D"
   },
   {
-    "Artist": "Fun Lovin’ Criminals",
-    "Title": "I Can’t Get With That",
-    "Album": "Come Find Yourself",
+    "Artist": "Frankie and The Witch Fingers",
+    "Title": "Gutter Priestess",
+    "Album": "Trash Classic",
     "Year": "Unknown",
-    "YouTubeLink": "https://www.youtube.com/watch?v=HEMjF2n3-SQ&pp=ygUoRnVuIExvdmluIENyaW1pbmFscyBJIENhbnQgR2V0IFdpdGggVGhhdA%3D%3D"
+    "YouTubeLink": "https://www.youtube.com/watch?v=HhpjtgNyX0A&pp=ygUuRnJhbmtpZSBhbmQgVGhlIFdpdGNoIEZpbmdlcnMgR3V0dGVyIFByaWVzdGVzc9IHCQmyCQGHKiGM7w%3D%3D"
   },
   {
-    "Artist": "Fun Lovin’ Criminals",
-    "Title": "King of New York",
-    "Album": "Come Find Yourself",
+    "Artist": "Holy Fuck",
+    "Title": "Free Gloss (edit)",
+    "Album": "Free Gloss",
     "Year": "Unknown",
-    "YouTubeLink": "https://www.youtube.com/watch?v=emn6GzOKtaw&pp=ygUkRnVuIExvdmluIENyaW1pbmFscyBLaW5nIG9mIE5ldyBZb3Jr"
+    "YouTubeLink": "https://www.youtube.com/watch?v=LwXrBSNS19k&pp=ygUZSG9seSBGdWNrIEZyZWUgR2xvc3MgZWRpdA%3D%3D"
   },
   {
-    "Artist": "Fun Lovin’ Criminals",
-    "Title": "We Have All the Time in the World",
-    "Album": "Come Find Yourself",
+    "Artist": "Janet Jackson",
+    "Title": "And On and On",
+    "Album": "janet.",
     "Year": "Unknown",
-    "YouTubeLink": "https://www.youtube.com/watch?v=9HhiX_5O9iY&pp=ygU1RnVuIExvdmluIENyaW1pbmFscyBXZSBIYXZlIEFsbCB0aGUgVGltZSBpbiB0aGUgV29ybGTSBwkJsAkBhyohjO8%3D"
+    "YouTubeLink": "https://www.youtube.com/watch?v=uznTHSEgx4U&pp=ygUbSmFuZXQgSmFja3NvbiBBbmQgT24gYW5kIE9u"
   },
   {
-    "Artist": "Fun Lovin’ Criminals",
-    "Title": "Bear Hug",
-    "Album": "Come Find Yourself",
+    "Artist": "Janet Jackson",
+    "Title": "70’s Love Groove",
+    "Album": "janet.",
     "Year": "Unknown",
-    "YouTubeLink": "https://www.youtube.com/watch?v=HEMjF2n3-SQ&pp=ygUcRnVuIExvdmluIENyaW1pbmFscyBCZWFyIEh1Zw%3D%3D"
+    "YouTubeLink": "https://www.youtube.com/watch?v=49MKftys_-o&pp=ygUdSmFuZXQgSmFja3NvbiA3MHMgTG92ZSBHcm9vdmU%3D"
   },
   {
-    "Artist": "Fun Lovin’ Criminals",
-    "Title": "Come Find Yourself",
-    "Album": "Come Find Yourself",
+    "Artist": "Janet Jackson",
+    "Title": "You Want This (remix)",
+    "Album": "janet.",
     "Year": "Unknown",
-    "YouTubeLink": "https://www.youtube.com/watch?v=Xhglk4q6fWA&pp=ygUmRnVuIExvdmluIENyaW1pbmFscyBDb21lIEZpbmQgWW91cnNlbGY%3D"
+    "YouTubeLink": "https://www.youtube.com/watch?v=QdCWeYnhywI&pp=ygUhSmFuZXQgSmFja3NvbiBZb3UgV2FudCBUaGlzIHJlbWl4"
   },
   {
-    "Artist": "Fun Lovin’ Criminals",
-    "Title": "Crime and Punishment",
-    "Album": "Come Find Yourself",
+    "Artist": "Janet Jackson",
+    "Title": "Where Are You Now (Nellee Hooper mix)",
+    "Album": "janet.",
     "Year": "Unknown",
-    "YouTubeLink": "https://www.youtube.com/watch?v=HEMjF2n3-SQ&pp=ygUoRnVuIExvdmluIENyaW1pbmFscyBDcmltZSBhbmQgUHVuaXNobWVudNIHCQmwCQGHKiGM7w%3D%3D"
+    "YouTubeLink": "https://www.youtube.com/watch?v=DkPcqXBKq2s&pp=ygUxSmFuZXQgSmFja3NvbiBXaGVyZSBBcmUgWW91IE5vdyBOZWxsZWUgSG9vcGVyIG1peNIHCQmyCQGHKiGM7w%3D%3D"
   },
   {
-    "Artist": "Fun Lovin’ Criminals",
-    "Title": "Methadonia",
-    "Album": "Come Find Yourself",
+    "Artist": "Janet Jackson",
+    "Title": "Because of Love (Muggs 7″ with Bass intro)",
+    "Album": "janet.",
     "Year": "Unknown",
-    "YouTubeLink": "https://www.youtube.com/watch?v=HEMjF2n3-SQ&pp=ygUeRnVuIExvdmluIENyaW1pbmFscyBNZXRoYWRvbmlh"
+    "YouTubeLink": "https://www.youtube.com/watch?v=55ZM3sSS8IU&pp=ygU1SmFuZXQgSmFja3NvbiBCZWNhdXNlIG9mIExvdmUgTXVnZ3MgNyB3aXRoIEJhc3MgaW50cm8%3D"
   },
   {
-    "Artist": "Fun Lovin’ Criminals",
-    "Title": "I Can’t Get With That (Schmoove version)",
-    "Album": "Come Find Yourself",
+    "Artist": "Janet Jackson",
+    "Title": "That’s the Way Love Goes (CJ R&B 7″ mix)",
+    "Album": "janet.",
     "Year": "Unknown",
-    "YouTubeLink": "https://www.youtube.com/watch?v=St3bZWUzO_U&pp=ygU5RnVuIExvdmluIENyaW1pbmFscyBJIENhbnQgR2V0IFdpdGggVGhhdCBTY2htb292ZSB2ZXJzaW9u"
+    "YouTubeLink": "https://www.youtube.com/watch?v=4J7Dp2Jpod8&pp=ygUxSmFuZXQgSmFja3NvbiBUaGF0cyB0aGUgV2F5IExvdmUgR29lcyBDSiBSQiA3IG1peNIHCQmyCQGHKiGM7w%3D%3D"
   },
   {
-    "Artist": "Fun Lovin’ Criminals",
-    "Title": "Coney Island Girl",
-    "Album": "Come Find Yourself",
+    "Artist": "Las Pastillas del Abuelo",
+    "Title": "El negro",
+    "Album": "El Negro",
     "Year": "Unknown",
-    "YouTubeLink": "https://www.youtube.com/watch?v=HEMjF2n3-SQ&pp=ygUlRnVuIExvdmluIENyaW1pbmFscyBDb25leSBJc2xhbmQgR2lybA%3D%3D"
+    "YouTubeLink": "https://www.youtube.com/watch?v=Zgy0rodzcWo&pp=ygUhTGFzIFBhc3RpbGxhcyBkZWwgQWJ1ZWxvIEVsIG5lZ3Jv"
   },
   {
-    "Artist": "Ty Segall",
-    "Title": "Ty Segall \"Possession\" (Official Song Video)",
-    "Album": "Possession",
+    "Artist": "Los Tipitos",
+    "Title": "Mujer amante",
+    "Album": "Rock Nacional",
     "Year": "Unknown",
-    "YouTubeLink": "https://www.youtube.com/watch?v=UbDqOCki0Sk&pp=ygUyVHkgU2VnYWxsIFR5IFNlZ2FsbCBQb3NzZXNzaW9uIE9mZmljaWFsIFNvbmcgVmlkZW8%3D"
+    "YouTubeLink": "https://www.youtube.com/watch?v=YO1C2nbJPco&pp=ygUYTG9zIFRpcGl0b3MgTXVqZXIgYW1hbnRl"
+  },
+  {
+    "Artist": "Los Tipitos",
+    "Title": "Siguiendo la luna",
+    "Album": "Rock Nacional",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=fZudl--f7EI&pp=ygUdTG9zIFRpcGl0b3MgU2lndWllbmRvIGxhIGx1bmE%3D"
+  },
+  {
+    "Artist": "Los Tipitos",
+    "Title": "Mil horas",
+    "Album": "Rock Nacional",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=ZOXuA7fhMEI&pp=ygUVTG9zIFRpcGl0b3MgTWlsIGhvcmFz"
+  },
+  {
+    "Artist": "Los Tipitos",
+    "Title": "Loco (Tu forma de ser)",
+    "Album": "Rock Nacional",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=VuRKPmnB5zs&pp=ygUgTG9zIFRpcGl0b3MgTG9jbyBUdSBmb3JtYSBkZSBzZXI%3D"
+  },
+  {
+    "Artist": "Los Tipitos",
+    "Title": "De igual a igual",
+    "Album": "Rock Nacional",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=5TSpzhfyIpA&pp=ygUcTG9zIFRpcGl0b3MgRGUgaWd1YWwgYSBpZ3VhbA%3D%3D"
+  },
+  {
+    "Artist": "Los Tipitos",
+    "Title": "Dime quien me lo robo",
+    "Album": "Rock Nacional",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=VfPxddViUgo&pp=ygUhTG9zIFRpcGl0b3MgRGltZSBxdWllbiBtZSBsbyByb2Jv"
+  },
+  {
+    "Artist": "Los Tipitos",
+    "Title": "Viejo mundo",
+    "Album": "Rock Nacional",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=BnKniggHaiw&pp=ygUXTG9zIFRpcGl0b3MgVmllam8gbXVuZG8%3D"
+  },
+  {
+    "Artist": "Los Tipitos",
+    "Title": "Una sola cosa",
+    "Album": "Rock Nacional",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=BUevzF9LgD4&pp=ygUZTG9zIFRpcGl0b3MgVW5hIHNvbGEgY29zYQ%3D%3D"
+  },
+  {
+    "Artist": "Los Tipitos",
+    "Title": "Cuando pase el temblor",
+    "Album": "Rock Nacional",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=ZNzYr4U7Zs8&pp=ygUiTG9zIFRpcGl0b3MgQ3VhbmRvIHBhc2UgZWwgdGVtYmxvcg%3D%3D"
+  },
+  {
+    "Artist": "Los Tipitos",
+    "Title": "Ella es como un angel",
+    "Album": "Rock Nacional",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=IpdD8BVYv9c&pp=ygUhTG9zIFRpcGl0b3MgRWxsYSBlcyBjb21vIHVuIGFuZ2Vs"
+  },
+  {
+    "Artist": "Los Tipitos",
+    "Title": "Ropa violetta",
+    "Album": "Rock Nacional",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=3eL7hMDjR0M&pp=ygUZTG9zIFRpcGl0b3MgUm9wYSB2aW9sZXR0YQ%3D%3D"
+  },
+  {
+    "Artist": "Los Tipitos",
+    "Title": "Quiero seguir asi",
+    "Album": "Rock Nacional",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=ThjpP6PfeZE&pp=ygUdTG9zIFRpcGl0b3MgUXVpZXJvIHNlZ3VpciBhc2k%3D"
+  },
+  {
+    "Artist": "Medicine",
+    "Title": "Time Baby 2",
+    "Album": "Falls",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=9ajChct6lOs&pp=ygUUTWVkaWNpbmUgVGltZSBCYWJ5IDI%3D"
+  },
+  {
+    "Artist": "Medicine",
+    "Title": "The Pink (Sessions)",
+    "Album": "Falls",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=e9ATkhGF_f0&pp=ygUaTWVkaWNpbmUgVGhlIFBpbmsgU2Vzc2lvbnPSBwkJsgkBhyohjO8%3D"
+  },
+  {
+    "Artist": "Melvins",
+    "Title": "Victory of the Pyramids",
+    "Album": "Thunderball",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=rTCQ9RCXH0E&pp=ygUfTWVsdmlucyBWaWN0b3J5IG9mIHRoZSBQeXJhbWlkcw%3D%3D"
+  },
+  {
+    "Artist": "Missing Persons",
+    "Title": "Here and Now (live)",
+    "Album": "A Night In San Francisco (Live)",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=0HTKmUwqJPg&pp=ygUhTWlzc2luZyBQZXJzb25zIEhlcmUgYW5kIE5vdyBsaXZl0gcJCbIJAYcqIYzv"
+  },
+  {
+    "Artist": "Motorpsycho",
+    "Title": "Lucifer, Bringer of Light",
+    "Album": "Motorpsycho",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=YTY-EFKj5rI&pp=ygUkTW90b3Jwc3ljaG8gTHVjaWZlciBCcmluZ2VyIG9mIExpZ2h00gcJCbIJAYcqIYzv"
+  },
+  {
+    "Artist": "Motorpsycho",
+    "Title": "Laird of Heimly",
+    "Album": "Motorpsycho",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=3I5RUXtX_68&pp=ygUbTW90b3Jwc3ljaG8gTGFpcmQgb2YgSGVpbWx5"
+  },
+  {
+    "Artist": "Motorpsycho",
+    "Title": "Stanley (Tonight’s the Night)",
+    "Album": "Motorpsycho",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=DCw0rit4fd4&pp=ygUmTW90b3Jwc3ljaG8gU3RhbmxleSBUb25pZ2h0cyB0aGUgTmlnaHQ%3D"
+  },
+  {
+    "Artist": "Motorpsycho",
+    "Title": "Bed of Roses",
+    "Album": "Motorpsycho",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=AMLX089_kXE&pp=ygUYTW90b3Jwc3ljaG8gQmVkIG9mIFJvc2Vz0gcJCbIJAYcqIYzv"
+  },
+  {
+    "Artist": "Motorpsycho",
+    "Title": "Dead of Winter",
+    "Album": "Motorpsycho",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=Hg74KKbBJpc&pp=ygUaTW90b3Jwc3ljaG8gRGVhZCBvZiBXaW50ZXI%3D"
+  },
+  {
+    "Artist": "My Morning Jacket",
+    "Title": "Out in the Open",
+    "Album": "is",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=gYb3VH_io80&pp=ygUhTXkgTW9ybmluZyBKYWNrZXQgT3V0IGluIHRoZSBPcGVu"
+  },
+  {
+    "Artist": "My Morning Jacket",
+    "Title": "Beginning From the Ending",
+    "Album": "is",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=G7hhpyMIUNQ&pp=ygUrTXkgTW9ybmluZyBKYWNrZXQgQmVnaW5uaW5nIEZyb20gdGhlIEVuZGluZw%3D%3D"
+  },
+  {
+    "Artist": "My Morning Jacket",
+    "Title": "Die for It",
+    "Album": "is",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=dwucsoNQy8A&pp=ygUcTXkgTW9ybmluZyBKYWNrZXQgRGllIGZvciBJdA%3D%3D"
+  },
+  {
+    "Artist": "The Notorious B.I.G.",
+    "Title": "#!*@ Me (interlude)",
+    "Album": "Ready to Die",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=t_qGKkn6-tE&pp=ygUeVGhlIE5vdG9yaW91cyBCSUcgTWUgaW50ZXJsdWRl"
+  },
+  {
+    "Artist": "Onyx",
+    "Title": "Whoomp! There It Is",
+    "Album": "Bacdafucup",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=ffCEr327W44&pp=ygUXT255eCBXaG9vbXAgVGhlcmUgSXQgSXM%3D"
+  },
+  {
+    "Artist": "Peking Duk",
+    "Title": "High",
+    "Album": "High (feat. Nicole Millar)",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=TNtIA2fgHfg&pp=ygUPUGVraW5nIER1ayBIaWdo"
+  },
+  {
+    "Artist": "Portugal. The Man",
+    "Title": "V.I.S.",
+    "Album": "V.I.S.",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=LZyIEdQQYIQ&pp=ygUUUG9ydHVnYWwgVGhlIE1hbiBWSVM%3D"
+  },
+  {
+    "Artist": "Pottery",
+    "Title": "Texas drums, pt. I & II",
+    "Album": "Texas Drums Pt I & II",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=p1e5qJK0q1g&pp=ygUbUG90dGVyeSBUZXhhcyBkcnVtcyBwdCBJIElJ"
+  },
+  {
+    "Artist": "Pretenders",
+    "Title": "Tatooed Love Boys",
+    "Album": "Pretenders (Expanded & Remastered)",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=yog-meAq1so&pp=ygUcUHJldGVuZGVycyBUYXRvb2VkIExvdmUgQm95c9IHCQmyCQGHKiGM7w%3D%3D"
+  },
+  {
+    "Artist": "Pretenders",
+    "Title": "Cuban Slide",
+    "Album": "Pretenders (Expanded & Remastered)",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=RlOV6ywJt7s&pp=ygUWUHJldGVuZGVycyBDdWJhbiBTbGlkZQ%3D%3D"
+  },
+  {
+    "Artist": "Pretenders",
+    "Title": "Brass in Pocket",
+    "Album": "Pretenders (Expanded & Remastered)",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=0H6re3PCP3E&pp=ygUaUHJldGVuZGVycyBCcmFzcyBpbiBQb2NrZXQ%3D"
+  },
+  {
+    "Artist": "Psychedelic Porn Crumpets",
+    "Title": "Denmark/Van Gogh & Gone",
+    "Album": "High Visceral, Pt. 1",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=DYD5ZznzaAM&pp=ygUuUHN5Y2hlZGVsaWMgUG9ybiBDcnVtcGV0cyBEZW5tYXJrVmFuIEdvZ2ggR29uZQ%3D%3D"
+  },
+  {
+    "Artist": "Superchunk",
+    "Title": "Pass the Hatchet, I Think I’m Goodkind",
+    "Album": "Fire in the Western World / Pass the Hatchet, I Think I'm Goodkind",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=EKFx5PKgS08&pp=ygUvU3VwZXJjaHVuayBQYXNzIHRoZSBIYXRjaGV0IEkgVGhpbmsgSW0gR29vZGtpbmQ%3D"
+  },
+  {
+    "Artist": "Syntax",
+    "Title": "Gasolina tá acabando",
+    "Album": "Destino",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=2LFvcVSRcQE&pp=ygUcU3ludGF4IEdhc29saW5hIHTDoSBhY2FiYW5kbw%3D%3D"
+  },
+  {
+    "Artist": "WEEDIAN",
+    "Title": "Skyfall",
+    "Album": "Helloween",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=z69kn9QGAhE&pp=ygUPV0VFRElBTiBTa3lmYWxs"
+  },
+  {
+    "Artist": "Vehje",
+    "Title": "Pitäs, pitäs",
+    "Album": "Pitäs, pitäs",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=GQtw8TwfdQw&pp=ygUTVmVoamUgUGl0w6RzIHBpdMOkcw%3D%3D"
+  },
+  {
+    "Artist": "Wendy James",
+    "Title": "May I Kiss You? (Just Enough To Get Us Into Trouble)",
+    "Album": "The Shape of History",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=Wb_Vw7xnYjM&pp=ygU9V2VuZHkgSmFtZXMgTWF5IEkgS2lzcyBZb3UgSnVzdCBFbm91Z2ggVG8gR2V0IFVzIEludG8gVHJvdWJsZQ%3D%3D"
+  },
+  {
+    "Artist": "Wendy James",
+    "Title": "Do You Dig It? Do You Love It? Is It Groovy?",
+    "Album": "The Shape of History",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=UG9jvA5lNCk&pp=ygU1V2VuZHkgSmFtZXMgRG8gWW91IERpZyBJdCBEbyBZb3UgTG92ZSBJdCBJcyBJdCBHcm9vdnk%3D"
+  },
+  {
+    "Artist": "Wendy James",
+    "Title": "Don’t Let Daylight Into Magic",
+    "Album": "The Shape of History",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=pMKw1bBzFXI&pp=ygUoV2VuZHkgSmFtZXMgRG9udCBMZXQgRGF5bGlnaHQgSW50byBNYWdpYw%3D%3D"
+  },
+  {
+    "Artist": "Wu‐Tang Clan",
+    "Title": "Sucker Free City",
+    "Album": "Black Samson, the Bastard Swordsman",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=ZBTb_xJBh5c&pp=ygUdV3UtVGFuZyBDbGFuIFN1Y2tlciBGcmVlIENpdHk%3D"
+  },
+  {
+    "Artist": "Wu‐Tang Clan",
+    "Title": "Mandingo",
+    "Album": "Black Samson, the Bastard Swordsman",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=ZBTb_xJBh5c&pp=ygUVV3UtVGFuZyBDbGFuIE1hbmRpbmdv"
+  },
+  {
+    "Artist": "Wu‐Tang Clan",
+    "Title": "Roar of the Lion (The Lion’s Pit)",
+    "Album": "Black Samson, the Bastard Swordsman",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=wEqej5fohAA&pp=ygUrV3UtVGFuZyBDbGFuIFJvYXIgb2YgdGhlIExpb24gVGhlIExpb25zIFBpdA%3D%3D"
+  },
+  {
+    "Artist": "Wu‐Tang Clan",
+    "Title": "Claudine",
+    "Album": "Black Samson, the Bastard Swordsman",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=PevDftElMQY&pp=ygUVV3UtVGFuZyBDbGFuIENsYXVkaW5l"
+  },
+  {
+    "Artist": "Wu‐Tang Clan",
+    "Title": "Shaolin Vs. Lama",
+    "Album": "Black Samson, the Bastard Swordsman",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=jgrH42ESwW4&pp=ygUcV3UtVGFuZyBDbGFuIFNoYW9saW4gVnMgTGFtYQ%3D%3D"
+  },
+  {
+    "Artist": "Wu‐Tang Clan",
+    "Title": "Executioners From Shaolin",
+    "Album": "Black Samson, the Bastard Swordsman",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=PBwAxmrE194&pp=ygUmV3UtVGFuZyBDbGFuIEV4ZWN1dGlvbmVycyBGcm9tIFNoYW9saW4%3D"
+  },
+  {
+    "Artist": "Wu‐Tang Clan",
+    "Title": "Cleopatra Jones",
+    "Album": "Black Samson, the Bastard Swordsman",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=cPRKsKwEdUQ&pp=ygUcV3UtVGFuZyBDbGFuIENsZW9wYXRyYSBKb25lcw%3D%3D"
+  },
+  {
+    "Artist": "Wu‐Tang Clan",
+    "Title": "Warriors Two, Cooley High",
+    "Album": "Black Samson, the Bastard Swordsman",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=Byg2GgpR1X0&pp=ygUlV3UtVGFuZyBDbGFuIFdhcnJpb3JzIFR3byBDb29sZXkgSGlnaA%3D%3D"
+  },
+  {
+    "Artist": "Wu‐Tang Clan",
+    "Title": "Let’s Do It Again",
+    "Album": "Black Samson, the Bastard Swordsman",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=S2S0zu3M0rY&pp=ygUdV3UtVGFuZyBDbGFuIExldHMgRG8gSXQgQWdhaW4%3D"
+  },
+  {
+    "Artist": "Wu‐Tang Clan",
+    "Title": "Dolemite",
+    "Album": "Black Samson, the Bastard Swordsman",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=ZBTb_xJBh5c&pp=ygUVV3UtVGFuZyBDbGFuIERvbGVtaXRl"
+  },
+  {
+    "Artist": "Wu‐Tang Clan",
+    "Title": "Trouble Man",
+    "Album": "Black Samson, the Bastard Swordsman",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=PEnwXYJcSZc&pp=ygUYV3UtVGFuZyBDbGFuIFRyb3VibGUgTWFu"
+  },
+  {
+    "Artist": "Wu‐Tang Clan",
+    "Title": "Charleston Blue, Legend of a Fighter",
+    "Album": "Black Samson, the Bastard Swordsman",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=PBwAxmrE194&pp=ygUwV3UtVGFuZyBDbGFuIENoYXJsZXN0b24gQmx1ZSBMZWdlbmQgb2YgYSBGaWdodGVy"
   },
   {
     "Artist": "X JAPAN",
-    "Title": "紅",
+    "Title": "Kurenai",
     "Album": "BLUE BLOOD",
     "Year": "Unknown",
-    "YouTubeLink": "https://www.youtube.com/watch?v=ZRtdQ81jPUQ&pp=ygULWCBKQVBBTiDntIU%3D"
+    "YouTubeLink": "https://www.youtube.com/watch?v=8ArAnXLbFck&pp=ygUPWCBKQVBBTiBLdXJlbmFp"
+  },
+  {
+    "Artist": "Yo Mama's Big Fat Booty Band",
+    "Title": "Wake Yo'self",
+    "Album": "Funk Life",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=cGMqhA7iCm0&pp=ygUnWW8gTWFtYXMgQmlnIEZhdCBCb290eSBCYW5kIFdha2UgWW9zZWxm"
+  },
+  {
+    "Artist": "Zeicrydeus",
+    "Title": "Dragonships on the Juurn (Open Wide the Gate of the Zeicryde)",
+    "Album": "La Grande Heresie",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=RjRp_eaI4lI&pp=ygVGWmVpY3J5ZGV1cyBEcmFnb25zaGlwcyBvbiB0aGUgSnV1cm4gT3BlbiBXaWRlIHRoZSBHYXRlIG9mIHRoZSBaZWljcnlkZQ%3D%3D"
+  },
+  {
+    "Artist": "Zeicrydeus",
+    "Title": "Ten Thousand Spears Atop the Bleeding Mountains",
+    "Album": "La Grande Heresie",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=PoyveSHe6aM&pp=ygU6WmVpY3J5ZGV1cyBUZW4gVGhvdXNhbmQgU3BlYXJzIEF0b3AgdGhlIEJsZWVkaW5nIE1vdW50YWlucw%3D%3D"
+  },
+  {
+    "Artist": "Zeicrydeus",
+    "Title": "Profane Spells & Naked Swords in the Emerald Meadows of Nhaath",
+    "Album": "La Grande Heresie",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=uU9dInGaQMg&pp=ygVHWmVpY3J5ZGV1cyBQcm9mYW5lIFNwZWxscyBOYWtlZCBTd29yZHMgaW4gdGhlIEVtZXJhbGQgTWVhZG93cyBvZiBOaGFhdGg%3D"
+  },
+  {
+    "Artist": "Zeicrydeus",
+    "Title": "Sous l’ombre éternelle des vestiges d’Heghemnon",
+    "Album": "La Grande Heresie",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=rN3fG1TwhJM&pp=ygU5WmVpY3J5ZGV1cyBTb3VzIGxvbWJyZSDDqXRlcm5lbGxlIGRlcyB2ZXN0aWdlcyBkSGVnaGVtbm9u"
+  },
+  {
+    "Artist": "Zeicrydeus",
+    "Title": "Godsteel (Blood of the Third Son)",
+    "Album": "La Grande Heresie",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=e97bRpQ2nUk&pp=ygUqWmVpY3J5ZGV1cyBHb2RzdGVlbCBCbG9vZCBvZiB0aGUgVGhpcmQgU29u"
+  },
+  {
+    "Artist": "Zeicrydeus",
+    "Title": "The Era of Satan Rising",
+    "Album": "La Grande Heresie",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=tAsNWHyQ-jI&t=2195s&pp=ygUiWmVpY3J5ZGV1cyBUaGUgRXJhIG9mIFNhdGFuIFJpc2luZw%3D%3D"
   }
 ]
