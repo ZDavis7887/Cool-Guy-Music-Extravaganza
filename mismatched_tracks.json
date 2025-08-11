@@ -1,72 +1,83 @@
 [
+
   {
-    "Expected": "Angra - Don’t Despair",
-    "ActualYouTubeTitle": "Angra - Time (Official)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=r8-mF4l-07o&list=RDr8-mF4l-07o&start_radio=1&pp=ygUSQW5ncmEgRG9udCBEZXNwYWlyoAcB"
+    "Expected": "Amber - Off The String",
+    "ActualYouTubeTitle": "Amber DeLaCruz - String (Official Music Video)",
+    "YouTubeLink": "https://www.youtube.com/watch?v=TASgDU5UA8o&list=RDTASgDU5UA8o&start_radio=1&pp=ygUUQW1iZXIgT2ZmIFRoZSBTdHJpbmegBwE%3D"
   },
   {
-    "Expected": "Castle Rat - Dagger Dragger",
-    "ActualYouTubeTitle": "Castle Rat - “Fresh Fur” (Official Music Video)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=xp-8USQQc1Q&list=RDxp-8USQQc1Q&start_radio=1&pp=ygUZQ2FzdGxlIFJhdCBEYWdnZXIgRHJhZ2dlcqAHAQ%3D%3D"
+    "Expected": "Ayreon - Day Seven: Hope",
+    "ActualYouTubeTitle": "AYREON - Day eleven: Love (OFFICIAL VIDEO)",
+    "YouTubeLink": "https://www.youtube.com/watch?v=VRyX-lEGbfQ&list=RDVRyX-lEGbfQ&start_radio=1&pp=ygUVQXlyZW9uIERheSBTZXZlbiBIb3BloAcB0gcJCa0JAYcqIYzv"
   },
   {
-    "Expected": "Castle Rat - Feed the Dream",
-    "ActualYouTubeTitle": "Castle Rat - “Fresh Fur” (Official Music Video)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=xp-8USQQc1Q&list=RDxp-8USQQc1Q&start_radio=1&pp=ygUZQ2FzdGxlIFJhdCBGZWVkIHRoZSBEcmVhbaAHAQ%3D%3D"
+    "Expected": "Ayreon - The Garden of Emotions",
+    "ActualYouTubeTitle": "AYREON - Day eleven: Love (OFFICIAL VIDEO)",
+    "YouTubeLink": "https://www.youtube.com/watch?v=VRyX-lEGbfQ&list=RDVRyX-lEGbfQ&start_radio=1&pp=ygUdQXlyZW9uIFRoZSBHYXJkZW4gb2YgRW1vdGlvbnOgBwE%3D"
   },
   {
-    "Expected": "Castle Rat - Couch Rats",
-    "ActualYouTubeTitle": "Castle Rat - “WIZARD” (Official Music Video)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=iWKmiTwjjHA&list=RDiWKmiTwjjHA&start_radio=1&pp=ygUVQ2FzdGxlIFJhdCBDb3VjaCBSYXRzoAcB"
+    "Expected": "Ayreon - Cosmic Fusion",
+    "ActualYouTubeTitle": "Ayreon – Daniel’s Descent into Transitus Medley (Official Video)",
+    "YouTubeLink": "https://www.youtube.com/watch?v=ozmTXh2CBWw&list=RDozmTXh2CBWw&start_radio=1&pp=ygUUQXlyZW9uIENvc21pYyBGdXNpb26gBwE%3D"
   },
   {
-    "Expected": "Castle Rat - Red Sands",
-    "ActualYouTubeTitle": "Castle Rat - “Fresh Fur” (Official Music Video)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=xp-8USQQc1Q&list=RDxp-8USQQc1Q&start_radio=1&pp=ygUUQ2FzdGxlIFJhdCBSZWQgU2FuZHOgBwE%3D"
+    "Expected": "CoLD SToRAGE - The Last Waltz for Me",
+    "ActualYouTubeTitle": "HIM | Official Trailer",
+    "YouTubeLink": "https://www.youtube.com/watch?v=hpEy0iOixb4&pp=ygUiQ29MRCBTVG9SQUdFIFRoZSBMYXN0IFdhbHR6IGZvciBNZQ%3D%3D"
   },
   {
-    "Expected": "Castle Rat - The Mirror",
-    "ActualYouTubeTitle": "Castle Rat - “WIZARD” (Official Music Video)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=iWKmiTwjjHA&list=RDiWKmiTwjjHA&start_radio=1&pp=ygUVQ2FzdGxlIFJhdCBUaGUgTWlycm9yoAcB"
+    "Expected": "Jon Anderson & The Band Geeks - Realization, Part Two",
+    "ActualYouTubeTitle": "Jon Anderson & The Band Geeks \"Shine On\" - Official Music Video",
+    "YouTubeLink": "https://www.youtube.com/watch?v=xn-kFz5ibGA&list=RDxn-kFz5ibGA&start_radio=1&pp=ygUwSm9uIEFuZGVyc29uIFRoZSBCYW5kIEdlZWtzIFJlYWxpemF0aW9uIFBhcnQgVHdvoAcB"
   },
   {
-    "Expected": "Castle Rat - Realm",
-    "ActualYouTubeTitle": "Castle Rat - “WIZARD” (Official Music Video)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=iWKmiTwjjHA&list=RDiWKmiTwjjHA&start_radio=1&pp=ygUQQ2FzdGxlIFJhdCBSZWFsbaAHAdIHCQnNCQGHKiGM7w%3D%3D"
+    "Expected": "Public Service Broadcasting - Go to the Road",
+    "ActualYouTubeTitle": "Public Service Broadcasting - Go!",
+    "YouTubeLink": "https://www.youtube.com/watch?v=BHIo6qwJarI&list=RDBHIo6qwJarI&start_radio=1&pp=ygUqUHVibGljIFNlcnZpY2UgQnJvYWRjYXN0aW5nIEdvIHRvIHRoZSBSb2FkoAcB"
   },
   {
-    "Expected": "Castle Rat - Nightblood",
-    "ActualYouTubeTitle": "Castle Rat - “Fresh Fur” (Official Music Video)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=xp-8USQQc1Q&list=RDxp-8USQQc1Q&start_radio=1&pp=ygUVQ2FzdGxlIFJhdCBOaWdodGJsb29koAcB"
-  },
-  {
-    "Expected": "Castle Rat - We Are The Rats (M.O.T.O. Cover)",
-    "ActualYouTubeTitle": "Castle Rat - “WIZARD” (Official Music Video)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=iWKmiTwjjHA&list=RDiWKmiTwjjHA&start_radio=1&pp=ygUlQ2FzdGxlIFJhdCBXZSBBcmUgVGhlIFJhdHMgTU9UTyBDb3ZlcqAHAQ%3D%3D"
-  },
-  {
-    "Expected": "Castle Rat - WOLF I",
-    "ActualYouTubeTitle": "Castle Rat - “WIZARD” (Official Music Video)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=iWKmiTwjjHA&list=RDiWKmiTwjjHA&start_radio=1&pp=ygURQ2FzdGxlIFJhdCBXT0xGIEmgBwE%3D"
-  },
-  {
-    "Expected": "Public Service Broadcasting - The South Atlantic",
-    "ActualYouTubeTitle": "Starland Vocal Band - Afternoon Delight (1976) (Official Video)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=7JtCA0esyOU&list=RD7JtCA0esyOU&start_radio=1&pp=ygUuUHVibGljIFNlcnZpY2UgQnJvYWRjYXN0aW5nIFRoZSBTb3V0aCBBdGxhbnRpY6AHAQ%3D%3D"
-  },
-  {
-    "Expected": "Public Service Broadcasting - Electra",
+    "Expected": "Public Service Broadcasting - Turn No More",
     "ActualYouTubeTitle": "PUBLIC SERVICE BROADCASTING - THE OTHER SIDE (OFFICIAL MUSIC VIDEO)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=P8LlUrT7MFo&list=RDP8LlUrT7MFo&start_radio=1&pp=ygUjUHVibGljIFNlcnZpY2UgQnJvYWRjYXN0aW5nIEVsZWN0cmGgBwHSBwkJzQkBhyohjO8%3D"
+    "YouTubeLink": "https://www.youtube.com/watch?v=P8LlUrT7MFo&list=RDP8LlUrT7MFo&start_radio=1&pp=ygUoUHVibGljIFNlcnZpY2UgQnJvYWRjYXN0aW5nIFR1cm4gTm8gTW9yZaAHAQ%3D%3D"
   },
   {
-    "Expected": "Public Service Broadcasting - Howland",
-    "ActualYouTubeTitle": "PUBLIC SERVICE BROADCASTING - THE OTHER SIDE (OFFICIAL MUSIC VIDEO)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=P8LlUrT7MFo&list=RDP8LlUrT7MFo&start_radio=1&pp=ygUjUHVibGljIFNlcnZpY2UgQnJvYWRjYXN0aW5nIEhvd2xhbmSgBwE%3D"
+    "Expected": "Stick Figure - Choice Is Yours",
+    "ActualYouTubeTitle": "Stick Figure – \"In This Love\" (Official Music Video)",
+    "YouTubeLink": "https://www.youtube.com/watch?v=b_LsD-ImH74&list=RDb_LsD-ImH74&start_radio=1&pp=ygUcU3RpY2sgRmlndXJlIENob2ljZSBJcyBZb3Vyc6AHAQ%3D%3D"
   },
   {
-    "Expected": "White Lies - In The Middle",
-    "ActualYouTubeTitle": "Alive Inside Official Trailer 1 (2014) - Alzheimer's Documentary HD",
-    "YouTubeLink": "https://www.youtube.com/watch?v=IaB5Egej0TQ&pp=ygUYV2hpdGUgTGllcyBJbiBUaGUgTWlkZGxl"
+    "Expected": "Stick Figure - Mind Block",
+    "ActualYouTubeTitle": "Stick Figure – \"In This Love\" (Official Music Video)",
+    "YouTubeLink": "https://www.youtube.com/watch?v=b_LsD-ImH74&list=RDb_LsD-ImH74&start_radio=1&pp=ygUXU3RpY2sgRmlndXJlIE1pbmQgQmxvY2ugBwE%3D"
+  },
+  {
+    "Expected": "Stick Figure - Sentenced",
+    "ActualYouTubeTitle": "Stick Figure – \"Shadow\" (Official Music Video)",
+    "YouTubeLink": "https://www.youtube.com/watch?v=U9_6XFcRoGM&list=RDU9_6XFcRoGM&start_radio=1&pp=ygUWU3RpY2sgRmlndXJlIFNlbnRlbmNlZKAHAQ%3D%3D"
+  },
+  {
+    "Expected": "Stick Figure - Out the Door",
+    "ActualYouTubeTitle": "Stick Figure – \"Angels Above Me\" (Official Music Video)",
+    "YouTubeLink": "https://www.youtube.com/watch?v=YYMMg7bUUAE&list=RDYYMMg7bUUAE&start_radio=1&pp=ygUZU3RpY2sgRmlndXJlIE91dCB0aGUgRG9vcqAHAQ%3D%3D"
+  },
+  {
+    "Expected": "Stick Figure - Smokin’ Love",
+    "ActualYouTubeTitle": "Stick Figure – \"Weary Eyes\" (Official Music Video)",
+    "YouTubeLink": "https://www.youtube.com/watch?v=C-ngNbhz5ds&list=RDC-ngNbhz5ds&start_radio=1&pp=ygUYU3RpY2sgRmlndXJlIFNtb2tpbiBMb3ZloAcB"
+  },
+  {
+    "Expected": "Stick Figure - One of Those Days",
+    "ActualYouTubeTitle": "Stick Figure – \"In This Love\" (Official Music Video)",
+    "YouTubeLink": "https://www.youtube.com/watch?v=b_LsD-ImH74&list=RDb_LsD-ImH74&start_radio=1&pp=ygUeU3RpY2sgRmlndXJlIE9uZSBvZiBUaG9zZSBEYXlzoAcB"
+  },
+  {
+    "Expected": "Stick Figure - All My Love",
+    "ActualYouTubeTitle": "Stick Figure – \"All for You\" (Official Music Video)",
+    "YouTubeLink": "https://www.youtube.com/watch?v=OHq3-cqCogc&list=RDOHq3-cqCogc&start_radio=1&pp=ygUYU3RpY2sgRmlndXJlIEFsbCBNeSBMb3ZloAcB"
+  },
+  {
+    "Expected": "Stick Figure - Sunshine and Rain",
+    "ActualYouTubeTitle": "Stick Figure – Old Sunrise (Official Music Video)",
+    "YouTubeLink": "https://www.youtube.com/watch?v=lu_fgyikayg&list=RDlu_fgyikayg&start_radio=1&pp=ygUeU3RpY2sgRmlndXJlIFN1bnNoaW5lIGFuZCBSYWluoAcB"
   }
 ]
