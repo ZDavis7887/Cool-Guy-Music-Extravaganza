@@ -1,187 +1,842 @@
  [
-  {
-    "Expected": "the bird and the bee - Lifetimes",
-    "ActualYouTubeTitle": "The Bird And The Bee - Again & Again (Official Music Video)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=TMy6X5cQul8&list=RDTMy6X5cQul8&start_radio=1&pp=ygUedGhlIGJpcmQgYW5kIHRoZSBiZWUgTGlmZXRpbWVzoAcB"
+    {
+    "Artist": "3 Inches of Blood",
+    "Title": "Ride Darkhorse, Ride",
+    "Album": "Battlecry Under a Winter Sun",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=XUd4Cbc49mg&list=RDXUd4Cbc49mg&start_radio=1&pp=ygUlMyBJbmNoZXMgb2YgQmxvb2QgUmlkZSBEYXJraG9yc2UgUmlkZaAHAQ%3D%3D"
   },
   {
-    "Expected": "Graham Hunt - Seein’ the World",
-    "ActualYouTubeTitle": "Graham Hunt - \"Frog in the Shower\" (Official Music Video)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=DcMiK_FLW7Y&list=RDDcMiK_FLW7Y&start_radio=1&pp=ygUbR3JhaGFtIEh1bnQgU2VlaW4gdGhlIFdvcmxkoAcB"
+    "Artist": "3 Inches of Blood",
+    "Title": "Destroy the Orcs",
+    "Album": "Battlecry Under a Winter Sun",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=f1c7saYc0Mo&list=RDf1c7saYc0Mo&start_radio=1&pp=ygUiMyBJbmNoZXMgb2YgQmxvb2QgRGVzdHJveSB0aGUgT3Jjc6AHAQ%3D%3D"
   },
   {
-    "Expected": "Jack White - Blunderbuss",
-    "ActualYouTubeTitle": "Jack White - Love Interruption (Official Video)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=iErNRBTPbEc&list=RDiErNRBTPbEc&start_radio=1&pp=ygUWSmFjayBXaGl0ZSBCbHVuZGVyYnVzc6AHAQ%3D%3D"
+    "Artist": "3 Inches of Blood",
+    "Title": "Balls of Ice",
+    "Album": "Battlecry Under a Winter Sun",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=JO7TZGgBbOw&list=RDJO7TZGgBbOw&start_radio=1&pp=ygUeMyBJbmNoZXMgb2YgQmxvb2QgQmFsbHMgb2YgSWNloAcB"
   },
   {
-    "Expected": "Jack White - Take Me With You When You Go",
-    "ActualYouTubeTitle": "Jack White - Love Interruption (Official Video)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=iErNRBTPbEc&list=RDiErNRBTPbEc&start_radio=1&pp=ygUnSmFjayBXaGl0ZSBUYWtlIE1lIFdpdGggWW91IFdoZW4gWW91IEdvoAcB"
+    "Artist": "Airbag",
+    "Title": "Dysphoria",
+    "Album": "The Century of the Self",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=Zwc_rnCMgpk&list=RDZwc_rnCMgpk&start_radio=1&pp=ygUQQWlyYmFnIER5c3Bob3JpYaAHAQ%3D%3D"
   },
   {
-    "Expected": "King Gizzard & the Lizard Wizard - Wah Wah",
-    "ActualYouTubeTitle": "King Gizzard & The Lizard Wizard - Invisible Face (Official Video)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=ekXb74bUbRM&list=RDekXb74bUbRM&start_radio=1&pp=ygUmS2luZyBHaXp6YXJkIHRoZSBMaXphcmQgV2l6YXJkIFdhaCBXYWigBwE%3D"
+    "Artist": "Airbag",
+    "Title": "Tyrants and Kings",
+    "Album": "The Century of the Self",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=Zwc_rnCMgpk&list=RDZwc_rnCMgpk&start_radio=1&pp=ygUYQWlyYmFnIFR5cmFudHMgYW5kIEtpbmdzoAcB"
   },
   {
-    "Expected": "King Gizzard & the Lizard Wizard - Phantom Island",
-    "ActualYouTubeTitle": "King Gizzard & The Lizard Wizard - Deadstick (Official Video)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=H7t2FL1SRaE&list=RDH7t2FL1SRaE&start_radio=1&pp=ygUtS2luZyBHaXp6YXJkIHRoZSBMaXphcmQgV2l6YXJkIFBoYW50b20gSXNsYW5koAcB"
+    "Artist": "Airbag",
+    "Title": "Awakening",
+    "Album": "The Century of the Self",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=tMg2RiSa7Jw&list=RDtMg2RiSa7Jw&start_radio=1&pp=ygUQQWlyYmFnIEF3YWtlbmluZ6AHAQ%3D%3D"
   },
   {
-    "Expected": "King Gizzard & the Lizard Wizard - Lonely Cosmos",
-    "ActualYouTubeTitle": "King Gizzard & The Lizard Wizard - Nuclear Fusion (Official Audio)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=4MFVhqcRpN4&list=RD4MFVhqcRpN4&start_radio=1&pp=ygUsS2luZyBHaXp6YXJkIHRoZSBMaXphcmQgV2l6YXJkIExvbmVseSBDb3Ntb3OgBwE%3D"
+    "Artist": "Airbag",
+    "Title": "Erase",
+    "Album": "The Century of the Self",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=LqPe75X76Z4&list=RDLqPe75X76Z4&start_radio=1&pp=ygUMQWlyYmFnIEVyYXNloAcB"
   },
   {
-    "Expected": "King Gizzard & the Lizard Wizard - Eternal Return",
-    "ActualYouTubeTitle": "King Gizzard & The Lizard Wizard - Self-Immolate (Official Video)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=cmAlQvDQGoI&list=RDcmAlQvDQGoI&start_radio=1&pp=ygUtS2luZyBHaXp6YXJkIHRoZSBMaXphcmQgV2l6YXJkIEV0ZXJuYWwgUmV0dXJuoAcB0gcJCQMKAYcqIYzv"
+    "Artist": "Airbag",
+    "Title": "Tear it Down",
+    "Album": "The Century of the Self",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=QvPaBM9D9JE&list=RDQvPaBM9D9JE&start_radio=1&pp=ygUTQWlyYmFnIFRlYXIgaXQgRG93bqAHAQ%3D%3D"
   },
   {
-    "Expected": "King Gizzard & the Lizard Wizard - Panpsych",
-    "ActualYouTubeTitle": "King Gizzard & The Lizard Wizard - Deadstick (Official Video)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=H7t2FL1SRaE&list=RDH7t2FL1SRaE&start_radio=1&pp=ygUnS2luZyBHaXp6YXJkIHRoZSBMaXphcmQgV2l6YXJkIFBhbnBzeWNooAcB"
+    "Artist": "Amplifier",
+    "Title": "Gustav’s Arrival",
+    "Album": "Insider",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=R0RkCaD2OnU&list=RDR0RkCaD2OnU&start_radio=1&pp=ygUZQW1wbGlmaWVyIEd1c3RhdnMgQXJyaXZhbKAHAQ%3D%3D"
   },
   {
-    "Expected": "King Gizzard & the Lizard Wizard - Spacesick",
-    "ActualYouTubeTitle": "King Gizzard & The Lizard Wizard - Fishing For Fishies (Official Video)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=beIDKFwXam0&list=RDbeIDKFwXam0&start_radio=1&pp=ygUoS2luZyBHaXp6YXJkIHRoZSBMaXphcmQgV2l6YXJkIFNwYWNlc2lja6AHAQ%3D%3D"
+    "Artist": "Amplifier",
+    "Title": "Insider",
+    "Album": "Insider",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=D6-OHRup75c&list=RDD6-OHRup75c&start_radio=1&pp=ygURQW1wbGlmaWVyIEluc2lkZXKgBwE%3D"
   },
   {
-    "Expected": "King Gizzard & the Lizard Wizard - Aerodynamic",
-    "ActualYouTubeTitle": "King Gizzard & The Lizard Wizard - Grow Wings and Fly (Official Video)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=TWUIsRsvJC8&list=RDTWUIsRsvJC8&start_radio=1&pp=ygUqS2luZyBHaXp6YXJkIHRoZSBMaXphcmQgV2l6YXJkIEFlcm9keW5hbWljoAcB0gcJCQMKAYcqIYzv"
+    "Artist": "Amplifier",
+    "Title": "What Is Music?",
+    "Album": "Insider",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=uuCFRaFWjwY&list=RDuuCFRaFWjwY&start_radio=1&pp=ygUXQW1wbGlmaWVyIFdoYXQgSXMgTXVzaWOgBwE%3D"
   },
   {
-    "Expected": "King Gizzard & the Lizard Wizard - Sea of Doubt",
-    "ActualYouTubeTitle": "King Gizzard & The Lizard Wizard - Le Risque (Official Video)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=Ik-gBAlEbQY&list=RDIk-gBAlEbQY&start_radio=1&pp=ygUrS2luZyBHaXp6YXJkIHRoZSBMaXphcmQgV2l6YXJkIFNlYSBvZiBEb3VidKAHAQ%3D%3D"
+    "Artist": "Anita Velveeta",
+    "Title": "Stealing From Target Is a Twin Cities Pastime",
+    "Album": "Liquid Gold",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=B3IOZyj3zKM&list=RDB3IOZyj3zKM&start_radio=1&pp=ygU8QW5pdGEgVmVsdmVldGEgU3RlYWxpbmcgRnJvbSBUYXJnZXQgSXMgYSBUd2luIENpdGllcyBQYXN0aW1loAcB"
   },
   {
-    "Expected": "King Gizzard & the Lizard Wizard - Silent Spirit",
-    "ActualYouTubeTitle": "King Gizzard & The Lizard Wizard - Fishing For Fishies (Official Video)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=beIDKFwXam0&list=RDbeIDKFwXam0&start_radio=1&pp=ygUsS2luZyBHaXp6YXJkIHRoZSBMaXphcmQgV2l6YXJkIFNpbGVudCBTcGlyaXSgBwE%3D"
+    "Artist": "Anita Velveeta",
+    "Title": "Show and Tell",
+    "Album": "Liquid Gold",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=naQ6rOUYv0k&list=RDnaQ6rOUYv0k&start_radio=1&pp=ygUcQW5pdGEgVmVsdmVldGEgU2hvdyBhbmQgVGVsbKAHAQ%3D%3D"
   },
   {
-    "Expected": "Pond - 30000 Megatons",
-    "ActualYouTubeTitle": "POND - All I Want For Xmas (is a Tascam 388) (Official Music Video)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=K_cxC8ZsP7o&list=RDK_cxC8ZsP7o&start_radio=1&pp=ygUTUG9uZCAzMDAwMCBNZWdhdG9uc6AHAdIHCQkDCgGHKiGM7w%3D%3D"
+    "Artist": "Anita Velveeta",
+    "Title": "Anything to Sell a Ticket",
+    "Album": "Liquid Gold",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=9V9d2WN5kdM&list=RD9V9d2WN5kdM&start_radio=1&pp=ygUoQW5pdGEgVmVsdmVldGEgQW55dGhpbmcgdG8gU2VsbCBhIFRpY2tldKAHAQ%3D%3D"
   },
   {
-    "Expected": "Pond - Edge of the World, Pt. 1",
-    "ActualYouTubeTitle": "POND - Edge Of The World Pt. 3 (Official Audio)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=8DitnstWnCs&list=RD8DitnstWnCs&start_radio=1&pp=ygUbUG9uZCBFZGdlIG9mIHRoZSBXb3JsZCBQdCAxoAcB"
+    "Artist": "Anita Velveeta",
+    "Title": "If It's Cold for You It's Cold for Me",
+    "Album": "Liquid Gold",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=paCYHe_IxfQ&list=RDpaCYHe_IxfQ&start_radio=1&pp=ygUyQW5pdGEgVmVsdmVldGEgSWYgSXRzIENvbGQgZm9yIFlvdSBJdHMgQ29sZCBmb3IgTWWgBwE%3D"
   },
   {
-    "Expected": "Pond - A / B",
-    "ActualYouTubeTitle": "Giant koi fish caught in Alberta pond",
-    "YouTubeLink": "https://www.youtube.com/watch?v=-llcrC37Lsk&pp=ygUIUG9uZCBBIEI%3D"
+    "Artist": "Anita Velveeta",
+    "Title": "Bored of Tinder, Scared of Grindr",
+    "Album": "Liquid Gold",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=sxbeudYfG4E&list=RDsxbeudYfG4E&start_radio=1&pp=ygUvQW5pdGEgVmVsdmVldGEgQm9yZWQgb2YgVGluZGVyIFNjYXJlZCBvZiBHcmluZHKgBwE%3D"
   },
   {
-    "Expected": "Pond - Edge of the World, Pt. 2",
-    "ActualYouTubeTitle": "POND - Edge Of The World Pt. 3 (Official Audio)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=8DitnstWnCs&list=RD8DitnstWnCs&start_radio=1&pp=ygUbUG9uZCBFZGdlIG9mIHRoZSBXb3JsZCBQdCAyoAcB"
+    "Artist": "Anita Velveeta",
+    "Title": "Regicide Renaissance",
+    "Album": "Liquid Gold",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=hOEOYZ2nPtc&list=RDhOEOYZ2nPtc&start_radio=1&pp=ygUjQW5pdGEgVmVsdmVldGEgUmVnaWNpZGUgUmVuYWlzc2FuY2WgBwE%3D"
   },
   {
-    "Expected": "Various Artists - R*O*C*K*S",
-    "ActualYouTubeTitle": "Queen - We Will Rock You (Official Video)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=-tJYN-eG1zk&list=RD-tJYN-eG1zk&start_radio=1&pp=ygUVVmFyaW91cyBBcnRpc3RzIFJPQ0tToAcB"
+    "Artist": "Anita Velveeta",
+    "Title": "Bloodsports",
+    "Album": "Liquid Gold",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=dJduGcaF7gQ&list=RDdJduGcaF7gQ&start_radio=1&pp=ygUaQW5pdGEgVmVsdmVldGEgQmxvb2RzcG9ydHOgBwE%3D"
   },
   {
-    "Expected": "Various Artists - Go!!!",
-    "ActualYouTubeTitle": "Various Artists - Go A (Mixed by Lee Baker)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=Eu_qCx6hfTw&list=RDEu_qCx6hfTw&start_radio=1&pp=ygUSVmFyaW91cyBBcnRpc3RzIEdvoAcB"
+    "Artist": "Anita Velveeta",
+    "Title": "Coven (1997)",
+    "Album": "Liquid Gold",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=u6f8gcPGNjM&list=RDu6f8gcPGNjM&start_radio=1&pp=ygUZQW5pdGEgVmVsdmVldGEgQ292ZW4gMTk5N6AHAQ%3D%3D"
   },
   {
-    "Expected": "Various Artists - Ryuusei",
-    "ActualYouTubeTitle": "Sword Art Online Alternative  Gun Gale Online Opening    Ryuusei   Eir Aoi Full",
-    "YouTubeLink": "https://www.youtube.com/watch?v=zX4yy7wdrTQ&list=RDzX4yy7wdrTQ&start_radio=1&pp=ygUXVmFyaW91cyBBcnRpc3RzIFJ5dXVzZWmgBwE%3D"
+    "Artist": "Anita Velveeta",
+    "Title": "N/A Beer",
+    "Album": "Liquid Gold",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=B4y13LFh3hs&list=RDB4y13LFh3hs&start_radio=1&pp=ygUWQW5pdGEgVmVsdmVldGEgTkEgQmVlcqAHAQ%3D%3D"
   },
   {
-    "Expected": "Various Artists - Home Sweet Home",
-    "ActualYouTubeTitle": "Mötley Crüe - Home Sweet Home (Official Music Video)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=Gmrh42foUsg&list=RDGmrh42foUsg&start_radio=1&pp=ygUfVmFyaW91cyBBcnRpc3RzIEhvbWUgU3dlZXQgSG9tZaAHAQ%3D%3D"
+    "Artist": "Anna von Hausswolff",
+    "Title": "Facing Atlas",
+    "Album": "Iconoclasts",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=y164qV4_Vxc&list=RDy164qV4_Vxc&start_radio=1&pp=ygUgQW5uYSB2b24gSGF1c3N3b2xmZiBGYWNpbmcgQXRsYXOgBwHSBwkJCwoBhyohjO8%3D"
   },
   {
-    "Expected": "Various Artists - Ding! Dong! Dang!",
-    "ActualYouTubeTitle": "Ding Dong - Old Skool New Skool (Official Music Video) | Fiesta 2K24",
-    "YouTubeLink": "https://www.youtube.com/watch?v=_50OafpcQiU&list=RD_50OafpcQiU&start_radio=1&pp=ygUeVmFyaW91cyBBcnRpc3RzIERpbmcgRG9uZyBEYW5noAcB"
+    "Artist": "Anna von Hausswolff",
+    "Title": "The Iconoclast",
+    "Album": "Iconoclasts",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=Zaqr3As-K_I&list=RDZaqr3As-K_I&start_radio=1&pp=ygUiQW5uYSB2b24gSGF1c3N3b2xmZiBUaGUgSWNvbm9jbGFzdKAHAdIHCQkLCgGHKiGM7w%3D%3D"
   },
   {
-    "Expected": "Various Artists - Yellow Moon",
-    "ActualYouTubeTitle": "The Neville Brothers - Yellow Moon - 6/19/1991 - Tipitinas (Official)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=lDzraECGfUY&list=RDlDzraECGfUY&start_radio=1&pp=ygUbVmFyaW91cyBBcnRpc3RzIFllbGxvdyBNb29uoAcB"
+    "Artist": "Anna von Hausswolff",
+    "Title": "The Whole Woman",
+    "Album": "Iconoclasts",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=1lmOvpIh7Ws&list=RD1lmOvpIh7Ws&start_radio=1&pp=ygUjQW5uYSB2b24gSGF1c3N3b2xmZiBUaGUgV2hvbGUgV29tYW6gBwE%3D"
   },
   {
-    "Expected": "White Lies - All the Best",
-    "ActualYouTubeTitle": "White Lies - Is My Love Enough? (Official Unofficial Video)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=YW0i6reYe8s&list=RDYW0i6reYe8s&start_radio=1&pp=ygUXV2hpdGUgTGllcyBBbGwgdGhlIEJlc3SgBwE%3D"
+    "Artist": "Anna von Hausswolff",
+    "Title": "The Mouth",
+    "Album": "Iconoclasts",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=Nre0hcDz5TI&list=RDNre0hcDz5TI&start_radio=1&pp=ygUdQW5uYSB2b24gSGF1c3N3b2xmZiBUaGUgTW91dGigBwE%3D"
   },
   {
-    "Expected": "White Lies - Everything Is OK",
-    "ActualYouTubeTitle": "White Lies - Don't Want to Feel It All (Official Video)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=OPeQ-Tmb30M&list=RDOPeQ-Tmb30M&start_radio=1&pp=ygUbV2hpdGUgTGllcyBFdmVyeXRoaW5nIElzIE9LoAcB0gcJCQMKAYcqIYzv"
+    "Artist": "Anna von Hausswolff",
+    "Title": "Stardust",
+    "Album": "Iconoclasts",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=Bp2VfPAhnOY&list=RDBp2VfPAhnOY&start_radio=1&pp=ygUcQW5uYSB2b24gSGF1c3N3b2xmZiBTdGFyZHVzdKAHAQ%3D%3D"
   },
   {
-    "Expected": "White Lies - Going Nowhere",
-    "ActualYouTubeTitle": "ODESZA - White Lies (feat. Jenni Potts) - Official Audio",
-    "YouTubeLink": "https://www.youtube.com/watch?v=ypX5RiWRPIQ&list=RDypX5RiWRPIQ&start_radio=1&pp=ygUYV2hpdGUgTGllcyBHb2luZyBOb3doZXJloAcB"
+    "Artist": "Anna von Hausswolff",
+    "Title": "Aging Young Women",
+    "Album": "Iconoclasts",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=U58wU0GO9ls&list=RDU58wU0GO9ls&start_radio=1&pp=ygUlQW5uYSB2b24gSGF1c3N3b2xmZiBBZ2luZyBZb3VuZyBXb21lbqAHAQ%3D%3D"
   },
   {
-    "Expected": "White Lies - Night Light",
-    "ActualYouTubeTitle": "White Lies - Juice (Official Visualiser)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=5mZx4YvAtIc&list=RD5mZx4YvAtIc&start_radio=1&pp=ygUWV2hpdGUgTGllcyBOaWdodCBMaWdodKAHAQ%3D%3D"
+    "Artist": "Anna von Hausswolff",
+    "Title": "Consensual Neglect",
+    "Album": "Iconoclasts",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=cZJaKyNftm8&list=RDcZJaKyNftm8&start_radio=1&pp=ygUmQW5uYSB2b24gSGF1c3N3b2xmZiBDb25zZW5zdWFsIE5lZ2xlY3SgBwE%3D"
   },
   {
-    "Expected": "White Lies - I Just Wanna Win One Time",
-    "ActualYouTubeTitle": "5 Seconds of Summer - Thin White Lies (Official Audio)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=lTEzy5WnoYk&list=RDlTEzy5WnoYk&start_radio=1&pp=ygUkV2hpdGUgTGllcyBJIEp1c3QgV2FubmEgV2luIE9uZSBUaW1loAcB"
+    "Artist": "Anna von Hausswolff",
+    "Title": "Struggle with the Beast",
+    "Album": "Iconoclasts",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=JCJONUVTPbU&list=RDJCJONUVTPbU&start_radio=1&pp=ygUrQW5uYSB2b24gSGF1c3N3b2xmZiBTdHJ1Z2dsZSB3aXRoIHRoZSBCZWFzdKAHAQ%3D%3D"
   },
   {
-    "Expected": "Yo Mama's Big Fat Booty Band - True Battle",
-    "ActualYouTubeTitle": "Yo Mama's Big Fat Booty Band - \"24/7\" - Official Video",
-    "YouTubeLink": "https://www.youtube.com/watch?v=cGMqhA7iCm0&list=RDcGMqhA7iCm0&start_radio=1&pp=ygUnWW8gTWFtYXMgQmlnIEZhdCBCb290eSBCYW5kIFRydWUgQmF0dGxloAcB"
+    "Artist": "Anna von Hausswolff",
+    "Title": "An Ocean of Time",
+    "Album": "Iconoclasts",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=5tFWBw0-g1M&list=RD5tFWBw0-g1M&start_radio=1&pp=ygUkQW5uYSB2b24gSGF1c3N3b2xmZiBBbiBPY2VhbiBvZiBUaW1loAcB"
   },
   {
-    "Expected": "Yo Mama's Big Fat Booty Band - Neat Little Package",
-    "ActualYouTubeTitle": "Yo Mama's Big Fat Booty Band - \"24/7\" - Official Video",
-    "YouTubeLink": "https://www.youtube.com/watch?v=cGMqhA7iCm0&list=RDcGMqhA7iCm0&start_radio=1&pp=ygUvWW8gTWFtYXMgQmlnIEZhdCBCb290eSBCYW5kIE5lYXQgTGl0dGxlIFBhY2thZ2WgBwE%3D"
+    "Artist": "Anna von Hausswolff",
+    "Title": "Unconditional Love",
+    "Album": "Iconoclasts",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=TXxEUsly3TQ&list=RDTXxEUsly3TQ&start_radio=1&pp=ygUmQW5uYSB2b24gSGF1c3N3b2xmZiBVbmNvbmRpdGlvbmFsIExvdmWgBwE%3D"
   },
   {
-    "Expected": "Yo Mama's Big Fat Booty Band - Sunday Afternoon",
-    "ActualYouTubeTitle": "Yo Mama's Big Fat Booty Band - \"24/7\" - Official Video",
-    "YouTubeLink": "https://www.youtube.com/watch?v=cGMqhA7iCm0&list=RDcGMqhA7iCm0&start_radio=1&pp=ygUsWW8gTWFtYXMgQmlnIEZhdCBCb290eSBCYW5kIFN1bmRheSBBZnRlcm5vb26gBwE%3D"
+    "Artist": "Anna von Hausswolff",
+    "Title": "Rising Legends",
+    "Album": "Iconoclasts",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=c8cEMbNdoDE&list=RDc8cEMbNdoDE&start_radio=1&pp=ygUiQW5uYSB2b24gSGF1c3N3b2xmZiBSaXNpbmcgTGVnZW5kc6AHAdIHCQkLCgGHKiGM7w%3D%3D"
   },
   {
-    "Expected": "Yo Mama's Big Fat Booty Band - Horn Star",
-    "ActualYouTubeTitle": "Yo Mama's Big Fat Booty Band \"LOVIN\" OFFICIAL VIDEO",
-    "YouTubeLink": "https://www.youtube.com/watch?v=fV9AUmUINDU&list=RDfV9AUmUINDU&start_radio=1&pp=ygUlWW8gTWFtYXMgQmlnIEZhdCBCb290eSBCYW5kIEhvcm4gU3RhcqAHAQ%3D%3D"
+    "Artist": "Armand Hammer",
+    "Title": "Laraaji",
+    "Album": "Mercy",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=rTfhaqQS-K0&list=RDrTfhaqQS-K0&start_radio=1&pp=ygUVQXJtYW5kIEhhbW1lciBMYXJhYWppoAcB"
   },
   {
-    "Expected": "Yo Mama's Big Fat Booty Band - Cancion Del Fuego",
-    "ActualYouTubeTitle": "Yo Mama's Big Fat Booty Band - \"24/7\" - Official Video",
-    "YouTubeLink": "https://www.youtube.com/watch?v=cGMqhA7iCm0&list=RDcGMqhA7iCm0&start_radio=1&pp=ygUtWW8gTWFtYXMgQmlnIEZhdCBCb290eSBCYW5kIENhbmNpb24gRGVsIEZ1ZWdvoAcB"
+    "Artist": "Armand Hammer",
+    "Title": "Peshawar",
+    "Album": "Mercy",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=rn7Kx92UAnc&list=RDrn7Kx92UAnc&start_radio=1&pp=ygUWQXJtYW5kIEhhbW1lciBQZXNoYXdhcqAHAQ%3D%3D"
   },
   {
-    "Expected": "Yo Mama's Big Fat Booty Band - With True Feeling",
-    "ActualYouTubeTitle": "Yo Mama's Big Fat Booty Band \"LOVIN\" OFFICIAL VIDEO",
-    "YouTubeLink": "https://www.youtube.com/watch?v=fV9AUmUINDU&list=RDfV9AUmUINDU&start_radio=1&pp=ygUtWW8gTWFtYXMgQmlnIEZhdCBCb290eSBCYW5kIFdpdGggVHJ1ZSBGZWVsaW5noAcB"
+    "Artist": "Armand Hammer",
+    "Title": "Calypso Gene",
+    "Album": "Mercy",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=96nycCYe2mA&list=RD96nycCYe2mA&start_radio=1&pp=ygUaQXJtYW5kIEhhbW1lciBDYWx5cHNvIEdlbmWgBwE%3D"
   },
   {
-    "Expected": "Yo Mama's Big Fat Booty Band - Lucky",
-    "ActualYouTubeTitle": "Yo Mama's Big Fat Booty Band - \"24/7\" - Official Video",
-    "YouTubeLink": "https://www.youtube.com/watch?v=cGMqhA7iCm0&list=RDcGMqhA7iCm0&start_radio=1&pp=ygUhWW8gTWFtYXMgQmlnIEZhdCBCb290eSBCYW5kIEx1Y2t5oAcB"
+    "Artist": "Armand Hammer",
+    "Title": "u know my body",
+    "Album": "Mercy",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=rn7Kx92UAnc&list=RDrn7Kx92UAnc&start_radio=1&pp=ygUcQXJtYW5kIEhhbW1lciB1IGtub3cgbXkgYm9keaAHAQ%3D%3D"
   },
   {
-    "Expected": "Yo Mama's Big Fat Booty Band - Hot Pizazz",
-    "ActualYouTubeTitle": "Yo Mama's Big Fat Booty Band \"LOVIN\" OFFICIAL VIDEO",
-    "YouTubeLink": "https://www.youtube.com/watch?v=fV9AUmUINDU&list=RDfV9AUmUINDU&start_radio=1&pp=ygUmWW8gTWFtYXMgQmlnIEZhdCBCb290eSBCYW5kIEhvdCBQaXphenqgBwE%3D"
+    "Artist": "Armand Hammer",
+    "Title": "Longjohns",
+    "Album": "Mercy",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=96nycCYe2mA&list=RD96nycCYe2mA&start_radio=1&pp=ygUXQXJtYW5kIEhhbW1lciBMb25nam9obnOgBwE%3D"
   },
   {
-    "Expected": "Yo Mama's Big Fat Booty Band - Shadows & Sunshine",
-    "ActualYouTubeTitle": "Yo Mama's Big Fat Booty Band \"LOVIN\" OFFICIAL VIDEO",
-    "YouTubeLink": "https://www.youtube.com/watch?v=fV9AUmUINDU&list=RDfV9AUmUINDU&start_radio=1&pp=ygUsWW8gTWFtYXMgQmlnIEZhdCBCb290eSBCYW5kIFNoYWRvd3MgU3Vuc2hpbmWgBwHSBwkJAwoBhyohjO8%3D"
+    "Artist": "Armand Hammer",
+    "Title": "California Games",
+    "Album": "Mercy",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=rn7Kx92UAnc&list=RDrn7Kx92UAnc&start_radio=1&pp=ygUeQXJtYW5kIEhhbW1lciBDYWxpZm9ybmlhIEdhbWVzoAcB"
+  },
+  {
+    "Artist": "Armand Hammer",
+    "Title": "Super Nintendo",
+    "Album": "Mercy",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=rn7Kx92UAnc&list=RDrn7Kx92UAnc&start_radio=1&pp=ygUcQXJtYW5kIEhhbW1lciBTdXBlciBOaW50ZW5kb6AHAQ%3D%3D"
+  },
+  {
+    "Artist": "Backxwash",
+    "Title": "WAKE UP",
+    "Album": "WAKE UP",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=ay22L0-8xxc&list=RDay22L0-8xxc&start_radio=1&pp=ygURQmFja3h3YXNoIFdBS0UgVVCgBwE%3D"
+  },
+  {
+    "Artist": "Billy Rudin",
+    "Title": "In the Silence of My Soul",
+    "Album": "There Is Silence Between the Words",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=nxijQD08WTI&list=RDnxijQD08WTI&start_radio=1&pp=ygUlQmlsbHkgUnVkaW4gSW4gdGhlIFNpbGVuY2Ugb2YgTXkgU291bKAHAQ%3D%3D"
+  },
+  {
+    "Artist": "Billy Rudin",
+    "Title": "Getting Alone",
+    "Album": "There Is Silence Between the Words",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=IOKCq35Yjic&list=RDIOKCq35Yjic&start_radio=1&pp=ygUZQmlsbHkgUnVkaW4gR2V0dGluZyBBbG9uZaAHAQ%3D%3D"
+  },
+  {
+    "Artist": "Cacophony",
+    "Title": "Go Off!",
+    "Album": "Go Off!",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=01VjfkusKqM&list=RD01VjfkusKqM&start_radio=1&pp=ygUQQ2Fjb3Bob255IEdvIE9mZqAHAQ%3D%3D"
+  },
+  {
+    "Artist": "Cacophony",
+    "Title": "Black Cat",
+    "Album": "Go Off!",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=jL5kg_MRRc4&list=RDjL5kg_MRRc4&start_radio=1&pp=ygUTQ2Fjb3Bob255IEJsYWNrIENhdKAHAQ%3D%3D"
+  },
+  {
+    "Artist": "Cacophony",
+    "Title": "Sword of the Warrior",
+    "Album": "Go Off!",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=mModKksfd7U&list=RDmModKksfd7U&start_radio=1&pp=ygUeQ2Fjb3Bob255IFN3b3JkIG9mIHRoZSBXYXJyaW9yoAcB0gcJCQsKAYcqIYzv"
+  },
+  {
+    "Artist": "Cacophony",
+    "Title": "Floating World",
+    "Album": "Go Off!",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=wpoowI7JsRo&list=RDwpoowI7JsRo&start_radio=1&pp=ygUYQ2Fjb3Bob255IEZsb2F0aW5nIFdvcmxkoAcB"
+  },
+  {
+    "Artist": "Cacophony",
+    "Title": "Images",
+    "Album": "Go Off!",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=PoPUqfBFGd8&list=RDPoPUqfBFGd8&start_radio=1&pp=ygUQQ2Fjb3Bob255IEltYWdlc6AHAQ%3D%3D"
+  },
+  {
+    "Artist": "Cacophony",
+    "Title": "Concerto",
+    "Album": "Speed Metal Symphony",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=Y8-4Y3rahwk&list=RDY8-4Y3rahwk&start_radio=1&pp=ygUSQ2Fjb3Bob255IENvbmNlcnRvoAcB"
+  },
+  {
+    "Artist": "Cacophony",
+    "Title": "Speed Metal Symphony",
+    "Album": "Speed Metal Symphony",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=BXeTA8TqsS0&list=RDBXeTA8TqsS0&start_radio=1&pp=ygUeQ2Fjb3Bob255IFNwZWVkIE1ldGFsIFN5bXBob255oAcB"
+  },
+  {
+    "Artist": "Gorky Park",
+    "Title": "Bang",
+    "Album": "Gorky Park",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=49Zei0GsYVk&list=RD49Zei0GsYVk&start_radio=1&pp=ygUPR29ya3kgUGFyayBCYW5noAcB"
+  },
+  {
+    "Artist": "Home Front",
+    "Title": "Watch It Die",
+    "Album": "Watch It Die",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=cqgXrGrIguU&list=RDcqgXrGrIguU&start_radio=1&pp=ygUXSG9tZSBGcm9udCBXYXRjaCBJdCBEaWWgBwE%3D"
+  },
+  {
+    "Artist": "Home Front",
+    "Title": "New Madness",
+    "Album": "Watch It Die",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=yJf3ZShNtX4&list=RDyJf3ZShNtX4&start_radio=1&pp=ygUWSG9tZSBGcm9udCBOZXcgTWFkbmVzc6AHAQ%3D%3D"
+  },
+  {
+    "Artist": "Home Front",
+    "Title": "Light Sleeper",
+    "Album": "Watch It Die",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=cqgXrGrIguU&list=RDcqgXrGrIguU&start_radio=1&pp=ygUYSG9tZSBGcm9udCBMaWdodCBTbGVlcGVyoAcB"
+  },
+  {
+    "Artist": "Home Front",
+    "Title": "Between the Waves",
+    "Album": "Watch It Die",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=cqgXrGrIguU&list=RDcqgXrGrIguU&start_radio=1&pp=ygUcSG9tZSBGcm9udCBCZXR3ZWVuIHRoZSBXYXZlc6AHAQ%3D%3D"
+  },
+  {
+    "Artist": "Home Front",
+    "Title": "Eulogy",
+    "Album": "Watch It Die",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=cdYpIzmv2Mc&list=RDcdYpIzmv2Mc&start_radio=1&pp=ygURSG9tZSBGcm9udCBFdWxvZ3mgBwE%3D"
+  },
+  {
+    "Artist": "Home Front",
+    "Title": "The Vanishing",
+    "Album": "Watch It Die",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=cqgXrGrIguU&list=RDcqgXrGrIguU&start_radio=1&pp=ygUYSG9tZSBGcm9udCBUaGUgVmFuaXNoaW5noAcB"
+  },
+  {
+    "Artist": "Home Front",
+    "Title": "For the Children (Fuck All)",
+    "Album": "Watch It Die",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=hqXy_ZZAxrg&list=RDhqXy_ZZAxrg&start_radio=1&pp=ygUkSG9tZSBGcm9udCBGb3IgdGhlIENoaWxkcmVuIEZ1Y2sgQWxsoAcB"
+  },
+  {
+    "Artist": "Home Front",
+    "Title": "Kiss the Sky",
+    "Album": "Watch It Die",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=f5jCKFAb2gc&list=RDf5jCKFAb2gc&start_radio=1&pp=ygUXSG9tZSBGcm9udCBLaXNzIHRoZSBTa3mgBwE%3D"
+  },
+  {
+    "Artist": "Home Front",
+    "Title": "Always This Way",
+    "Album": "Watch It Die",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=AnXB3Vcj7_A&list=RDAnXB3Vcj7_A&start_radio=1&pp=ygUaSG9tZSBGcm9udCBBbHdheXMgVGhpcyBXYXmgBwE%3D"
+  },
+  {
+    "Artist": "Home Front",
+    "Title": "D.W.A.",
+    "Album": "Watch It Die",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=CtyKEAyfHPU&list=RDCtyKEAyfHPU&start_radio=1&pp=ygUOSG9tZSBGcm9udCBEV0GgBwE%3D"
+  },
+  {
+    "Artist": "Home Front",
+    "Title": "Young Offender",
+    "Album": "Watch It Die",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=cZ9UKj3ElmE&list=RDcZ9UKj3ElmE&start_radio=1&pp=ygUZSG9tZSBGcm9udCBZb3VuZyBPZmZlbmRlcqAHAQ%3D%3D"
+  },
+  {
+    "Artist": "Home Front",
+    "Title": "Empire",
+    "Album": "Watch It Die",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=0BtIiBI8rGc&list=RD0BtIiBI8rGc&start_radio=1&pp=ygURSG9tZSBGcm9udCBFbXBpcmWgBwE%3D"
+  },
+  {
+    "Artist": "Iron Maiden",
+    "Title": "Alexander the Great",
+    "Album": "Somewhere in Time",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=AsOFYvKohO4&list=RDAsOFYvKohO4&start_radio=1&pp=ygUfSXJvbiBNYWlkZW4gQWxleGFuZGVyIHRoZSBHcmVhdKAHAQ%3D%3D"
+  },
+  {
+    "Artist": "Joyner",
+    "Title": "CAT VS CAT & JOYNER - Another Day In Paradise (From the Hulu Original Show Paradise)",
+    "Album": "Another Day in Paradise",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=76o8TrzksNA&list=RD76o8TrzksNA&start_radio=1&pp=ygVXSm95bmVyIENBVCBWUyBDQVQgSk9ZTkVSIC0gQW5vdGhlciBEYXkgSW4gUGFyYWRpc2UgRnJvbSB0aGUgSHVsdSBPcmlnaW5hbCBTaG93IFBhcmFkaXNloAcB"
+  },
+  {
+    "Artist": "The Lazy Eyes",
+    "Title": "Intro",
+    "Album": "SongBook",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=Tke2R4J_hRo&list=RDTke2R4J_hRo&start_radio=1&pp=ygUTVGhlIExhenkgRXllcyBJbnRyb6AHAQ%3D%3D"
+  },
+  {
+    "Artist": "The Lazy Eyes",
+    "Title": "The Island",
+    "Album": "SongBook",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=qLcI8eIDLTQ&list=RDqLcI8eIDLTQ&start_radio=1&pp=ygUYVGhlIExhenkgRXllcyBUaGUgSXNsYW5koAcB"
+  },
+  {
+    "Artist": "The Lazy Eyes",
+    "Title": "Hippo",
+    "Album": "SongBook",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=G_vRJMNceOE&list=RDG_vRJMNceOE&start_radio=1&pp=ygUTVGhlIExhenkgRXllcyBIaXBwb6AHAdIHCQkLCgGHKiGM7w%3D%3D"
+  },
+  {
+    "Artist": "The Lazy Eyes",
+    "Title": "Fuzz Jam",
+    "Album": "SongBook",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=GFyNk8w1opw&list=RDGFyNk8w1opw&start_radio=1&pp=ygUWVGhlIExhenkgRXllcyBGdXp6IEphbaAHAQ%3D%3D"
+  },
+  {
+    "Artist": "The Lazy Eyes",
+    "Title": "Nobody Taught Me",
+    "Album": "SongBook",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=eTpc3QvG6vU&list=RDeTpc3QvG6vU&start_radio=1&pp=ygUeVGhlIExhenkgRXllcyBOb2JvZHkgVGF1Z2h0IE1loAcB"
+  },
+  {
+    "Artist": "The Lazy Eyes",
+    "Title": "Trance",
+    "Album": "SongBook",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=2SwGFt1_3LM&list=RD2SwGFt1_3LM&start_radio=1&pp=ygUUVGhlIExhenkgRXllcyBUcmFuY2WgBwHSBwkJCwoBhyohjO8%3D"
+  },
+  {
+    "Artist": "The Lazy Eyes",
+    "Title": "Where's My Brain???",
+    "Album": "SongBook",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=a8Mw6RjWGeI&list=RDa8Mw6RjWGeI&start_radio=1&pp=ygUdVGhlIExhenkgRXllcyBXaGVyZXMgTXkgQnJhaW6gBwE%3D"
+  },
+  {
+    "Artist": "The Lazy Eyes",
+    "Title": "Imaginary Girl",
+    "Album": "SongBook",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=ZRZElLb4sUA&list=RDZRZElLb4sUA&start_radio=1&pp=ygUcVGhlIExhenkgRXllcyBJbWFnaW5hcnkgR2lybKAHAQ%3D%3D"
+  },
+  {
+    "Artist": "The Lazy Eyes",
+    "Title": "Cheesy Love Song",
+    "Album": "SongBook",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=RgiCW-ZU1Eo&list=RDRgiCW-ZU1Eo&start_radio=1&pp=ygUeVGhlIExhenkgRXllcyBDaGVlc3kgTG92ZSBTb25noAcB"
+  },
+  {
+    "Artist": "mcbaise",
+    "Title": "Never",
+    "Album": "Wrongderful",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=iAyGqzOJcWM&list=RDiAyGqzOJcWM&start_radio=1&pp=ygUNbWNiYWlzZSBOZXZlcqAHAdIHCQkLCgGHKiGM7w%3D%3D"
+  },
+  {
+    "Artist": "mcbaise",
+    "Title": "Cold Cuts",
+    "Album": "Wrongderful",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=vZWbryTgv8k&list=RDvZWbryTgv8k&start_radio=1&pp=ygURbWNiYWlzZSBDb2xkIEN1dHOgBwE%3D"
+  },
+  {
+    "Artist": "mcbaise",
+    "Title": "Alice",
+    "Album": "Wrongderful",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=r9iYyqr6ibs&list=RDr9iYyqr6ibs&start_radio=1&pp=ygUNbWNiYWlzZSBBbGljZaAHAdIHCQkLCgGHKiGM7w%3D%3D"
+  },
+  {
+    "Artist": "mcbaise",
+    "Title": "Hooray",
+    "Album": "Wrongderful",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=MSDNkIG3wVA&list=RDMSDNkIG3wVA&start_radio=1&pp=ygUObWNiYWlzZSBIb29yYXmgBwE%3D"
+  },
+  {
+    "Artist": "mcbaise",
+    "Title": "Moon",
+    "Album": "Wrongderful",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=ImaOaFm6PMA&list=RDImaOaFm6PMA&start_radio=1&pp=ygUMbWNiYWlzZSBNb29uoAcB"
+  },
+  {
+    "Artist": "mcbaise",
+    "Title": "TTM",
+    "Album": "Wrongderful",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=6lVQfZalJdY&list=RD6lVQfZalJdY&start_radio=1&pp=ygULbWNiYWlzZSBUVE2gBwE%3D"
+  },
+  {
+    "Artist": "mcbaise",
+    "Title": "Notes tordues",
+    "Album": "Wrongderful",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=Hd2-8L_X9WM&list=RDHd2-8L_X9WM&start_radio=1&pp=ygUVbWNiYWlzZSBOb3RlcyB0b3JkdWVzoAcB"
+  },
+  {
+    "Artist": "mcbaise",
+    "Title": "One of these days",
+    "Album": "Wrongderful",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=dPRFlyrEvi4&list=RDdPRFlyrEvi4&start_radio=1&pp=ygUZbWNiYWlzZSBPbmUgb2YgdGhlc2UgZGF5c6AHAQ%3D%3D"
+  },
+  {
+    "Artist": "mcbaise",
+    "Title": "Stoney",
+    "Album": "Wrongderful",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=Owkha4T4_BI&list=RDOwkha4T4_BI&start_radio=1&pp=ygUObWNiYWlzZSBTdG9uZXmgBwE%3D"
+  },
+  {
+    "Artist": "The Mountain Goats",
+    "Title": "Overture",
+    "Album": "Through This Fire Across From Peter Balkan",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=dbsYm1hMUE0&list=RDdbsYm1hMUE0&start_radio=1&pp=ygUbVGhlIE1vdW50YWluIEdvYXRzIE92ZXJ0dXJloAcB"
+  },
+  {
+    "Artist": "The Mountain Goats",
+    "Title": "Dawn of Revelation",
+    "Album": "Through This Fire Across From Peter Balkan",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=5IBaoEzKSAA&list=RD5IBaoEzKSAA&start_radio=1&pp=ygUlVGhlIE1vdW50YWluIEdvYXRzIERhd24gb2YgUmV2ZWxhdGlvbqAHAQ%3D%3D"
+  },
+  {
+    "Artist": "The Mountain Goats",
+    "Title": "Armies of the Lord",
+    "Album": "Through This Fire Across From Peter Balkan",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=sqMWZd5qmUc&list=RDsqMWZd5qmUc&start_radio=1&pp=ygUlVGhlIE1vdW50YWluIEdvYXRzIEFybWllcyBvZiB0aGUgTG9yZKAHAQ%3D%3D"
+  },
+  {
+    "Artist": "The Mountain Goats",
+    "Title": "Your Glow",
+    "Album": "Through This Fire Across From Peter Balkan",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=GuOJuZDJWrM&list=RDGuOJuZDJWrM&start_radio=1&pp=ygUcVGhlIE1vdW50YWluIEdvYXRzIFlvdXIgR2xvd6AHAQ%3D%3D"
+  },
+  {
+    "Artist": "The Mountain Goats",
+    "Title": "The Lady From Shanghai 2",
+    "Album": "Through This Fire Across From Peter Balkan",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=Mg3H3OMcm4w&list=RDMg3H3OMcm4w&start_radio=1&pp=ygUrVGhlIE1vdW50YWluIEdvYXRzIFRoZSBMYWR5IEZyb20gU2hhbmdoYWkgMqAHAQ%3D%3D"
+  },
+  {
+    "Artist": "The Mountain Goats",
+    "Title": "Broken to Begin With",
+    "Album": "Through This Fire Across From Peter Balkan",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=dBpqyr_Iv-0&list=RDdBpqyr_Iv-0&start_radio=1&pp=ygUnVGhlIE1vdW50YWluIEdvYXRzIEJyb2tlbiB0byBCZWdpbiBXaXRooAcB"
+  },
+  {
+    "Artist": "Queen",
+    "Title": "Bohemian Rhapsody",
+    "Album": "A Night at the Opera",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ&list=RDfJ9rUzIMcZQ&start_radio=1&pp=ygUXUXVlZW4gQm9oZW1pYW4gUmhhcHNvZHmgBwE%3D"
+  },
+  {
+    "Artist": "ROSALÍA",
+    "Title": "Sexo, violencia y llantas",
+    "Album": "LUX",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=m6z1sW_qtyg&list=RDm6z1sW_qtyg&start_radio=1&pp=ygUhUk9TQUzDjUEgU2V4byB2aW9sZW5jaWEgeSBsbGFudGFzoAcB"
+  },
+  {
+    "Artist": "ROSALÍA",
+    "Title": "Reliquia",
+    "Album": "LUX",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=xPaSuWrBAQI&list=RDxPaSuWrBAQI&start_radio=1&pp=ygURUk9TQUzDjUEgUmVsaXF1aWGgBwE%3D"
+  },
+  {
+    "Artist": "ROSALÍA",
+    "Title": "Divinize",
+    "Album": "LUX",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=OxDmGz60hws&list=RDOxDmGz60hws&start_radio=1&pp=ygURUk9TQUzDjUEgRGl2aW5pemWgBwE%3D"
+  },
+  {
+    "Artist": "ROSALÍA",
+    "Title": "Berghain",
+    "Album": "LUX",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=htQBS2Ikz6c&list=RDhtQBS2Ikz6c&start_radio=1&pp=ygURUk9TQUzDjUEgQmVyZ2hhaW6gBwE%3D"
+  },
+  {
+    "Artist": "ROSALÍA",
+    "Title": "Jeanne",
+    "Album": "LUX",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=Wj9qHzz9BJY&list=RDWj9qHzz9BJY&start_radio=1&pp=ygUPUk9TQUzDjUEgSmVhbm5loAcB"
+  },
+  {
+    "Artist": "ROSALÍA",
+    "Title": "Magnolias",
+    "Album": "LUX",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=KYVf37pRXCw&list=RDKYVf37pRXCw&start_radio=1&pp=ygUSUk9TQUzDjUEgTWFnbm9saWFzoAcB"
+  },
+  {
+    "Artist": "Running Wild",
+    "Title": "Prowling Werewolf",
+    "Album": "20 Years in History",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=oGVfPsqkU_8&list=RDoGVfPsqkU_8&start_radio=1&pp=ygUeUnVubmluZyBXaWxkIFByb3dsaW5nIFdlcmV3b2xmoAcB"
+  },
+  {
+    "Artist": "Running Wild",
+    "Title": "Blazon Stone",
+    "Album": "Blazon Stone",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=TLul1tj6Hv0&list=RDTLul1tj6Hv0&start_radio=1&pp=ygUZUnVubmluZyBXaWxkIEJsYXpvbiBTdG9uZaAHAdIHCQkLCgGHKiGM7w%3D%3D"
+  },
+  {
+    "Artist": "Running Wild",
+    "Title": "Branded & Exiled ’03",
+    "Album": "Branded and Exiled",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=11nrcMaKZmk&list=RD11nrcMaKZmk&start_radio=1&pp=ygUeUnVubmluZyBXaWxkIEJyYW5kZWQgRXhpbGVkIDAzoAcB"
+  },
+  {
+    "Artist": "Running Wild",
+    "Title": "Mordor ’03",
+    "Album": "Branded and Exiled",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=cns3RUD4DhE&list=RDcns3RUD4DhE&start_radio=1&pp=ygUWUnVubmluZyBXaWxkIE1vcmRvciAwM6AHAQ%3D%3D"
+  },
+  {
+    "Artist": "Running Wild",
+    "Title": "Welcome to Hell",
+    "Album": "The Brotherhood",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=QCDWBlzoBio&list=RDQCDWBlzoBio&start_radio=1&pp=ygUcUnVubmluZyBXaWxkIFdlbGNvbWUgdG8gSGVsbKAHAQ%3D%3D"
+  },
+  {
+    "Artist": "Running Wild",
+    "Title": "Genghis Khan",
+    "Album": "Gates to Purgatory",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=pD1gDSao1eA&list=RDpD1gDSao1eA&start_radio=1&pp=ygUZUnVubmluZyBXaWxkIEdlbmdoaXMgS2hhbqAHAQ%3D%3D"
+  },
+  {
+    "Artist": "Running Wild",
+    "Title": "Prisoners Of Our Time",
+    "Album": "Gates to Purgatory",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=Cf86IdMufRE&list=RDCf86IdMufRE&start_radio=1&pp=ygUiUnVubmluZyBXaWxkIFByaXNvbmVycyBPZiBPdXIgVGltZaAHAQ%3D%3D"
+  },
+  {
+    "Artist": "Running Wild",
+    "Title": "Port Royal",
+    "Album": "Port Royal",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=lXTnKVNMHV8&list=RDlXTnKVNMHV8&start_radio=1&pp=ygUXUnVubmluZyBXaWxkIFBvcnQgUm95YWygBwE%3D"
+  },
+  {
+    "Artist": "Running Wild",
+    "Title": "Conquistadores",
+    "Album": "Port Royal",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=lXTnKVNMHV8&list=RDlXTnKVNMHV8&start_radio=1&pp=ygUbUnVubmluZyBXaWxkIENvbnF1aXN0YWRvcmVzoAcB"
+  },
+  {
+    "Artist": "Running Wild",
+    "Title": "Firebreather",
+    "Album": "The Rivalry",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=djGWOxyYP30&list=RDdjGWOxyYP30&start_radio=1&pp=ygUZUnVubmluZyBXaWxkIEZpcmVicmVhdGhlcqAHAQ%3D%3D"
+  },
+  {
+    "Artist": "Running Wild",
+    "Title": "Ballad of William Kidd",
+    "Album": "The Rivalry",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=W6-O7I4IYkQ&list=RDW6-O7I4IYkQ&start_radio=1&pp=ygUjUnVubmluZyBXaWxkIEJhbGxhZCBvZiBXaWxsaWFtIEtpZGSgBwE%3D"
+  },
+  {
+    "Artist": "Running Wild",
+    "Title": "Under Jolly Roger",
+    "Album": "Under Jolly Roger",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=Bq1doTaTyEA&list=RDBq1doTaTyEA&start_radio=1&pp=ygUeUnVubmluZyBXaWxkIFVuZGVyIEpvbGx5IFJvZ2VyoAcB"
+  },
+  {
+    "Artist": "Spoon",
+    "Title": "Small Stakes",
+    "Album": "Kill the Moonlight",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=x8nF8L5Fgzc&list=RDx8nF8L5Fgzc&start_radio=1&pp=ygUSU3Bvb24gU21hbGwgU3Rha2VzoAcB"
+  },
+  {
+    "Artist": "Spoon",
+    "Title": "Don’t Let It Get You Down",
+    "Album": "Kill the Moonlight",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=u8BJt4fz60Y&list=RDu8BJt4fz60Y&start_radio=1&pp=ygUeU3Bvb24gRG9udCBMZXQgSXQgR2V0IFlvdSBEb3duoAcB"
+  },
+  {
+    "Artist": "Spoon",
+    "Title": "Vittorio E.",
+    "Album": "Kill the Moonlight",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=EErqnUds0Qg&list=RDEErqnUds0Qg&start_radio=1&pp=ygUQU3Bvb24gVml0dG9yaW8gRaAHAQ%3D%3D"
+  },
+  {
+    "Artist": "Thin Lizzy",
+    "Title": "She Knows",
+    "Album": "Nightlife",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=zkeWyvNsWdA&list=RDzkeWyvNsWdA&start_radio=1&pp=ygUUVGhpbiBMaXp6eSBTaGUgS25vd3OgBwHSBwkJCwoBhyohjO8%3D"
+  },
+  {
+    "Artist": "Thin Lizzy",
+    "Title": "Night Life",
+    "Album": "Nightlife",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=VlNF4CP4NDA&list=RDVlNF4CP4NDA&start_radio=1&pp=ygUVVGhpbiBMaXp6eSBOaWdodCBMaWZloAcB"
+  },
+  {
+    "Artist": "Thin Lizzy",
+    "Title": "It’s Only Money",
+    "Album": "Nightlife",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=Q7-hC_cfeUI&list=RDQ7-hC_cfeUI&start_radio=1&pp=ygUZVGhpbiBMaXp6eSBJdHMgT25seSBNb25leaAHAQ%3D%3D"
+  },
+  {
+    "Artist": "Thin Lizzy",
+    "Title": "Still in Love With You",
+    "Album": "Nightlife",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=wIE5wwvicew&list=RDwIE5wwvicew&start_radio=1&pp=ygUhVGhpbiBMaXp6eSBTdGlsbCBpbiBMb3ZlIFdpdGggWW91oAcB"
+  },
+  {
+    "Artist": "Thin Lizzy",
+    "Title": "Frankie Carroll",
+    "Album": "Nightlife",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=xMrTrpBleqA&list=RDxMrTrpBleqA&start_radio=1&pp=ygUaVGhpbiBMaXp6eSBGcmFua2llIENhcnJvbGygBwE%3D"
+  },
+  {
+    "Artist": "Thin Lizzy",
+    "Title": "Showdown",
+    "Album": "Nightlife",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=4Ei5Q9Zikuk&list=RD4Ei5Q9Zikuk&start_radio=1&pp=ygUTVGhpbiBMaXp6eSBTaG93ZG93bqAHAQ%3D%3D"
+  },
+  {
+    "Artist": "Thin Lizzy",
+    "Title": "Banshee",
+    "Album": "Nightlife",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=Og_kNugxTTw&list=RDOg_kNugxTTw&start_radio=1&pp=ygUSVGhpbiBMaXp6eSBCYW5zaGVloAcB"
+  },
+  {
+    "Artist": "Thin Lizzy",
+    "Title": "Philomena",
+    "Album": "Nightlife",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=bAa-txE4sTg&list=RDbAa-txE4sTg&start_radio=1&pp=ygUUVGhpbiBMaXp6eSBQaGlsb21lbmGgBwE%3D"
+  },
+  {
+    "Artist": "Thin Lizzy",
+    "Title": "Sha-La-La",
+    "Album": "Nightlife",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=4tPkrTUFnK8&list=RD4tPkrTUFnK8&start_radio=1&pp=ygUUVGhpbiBMaXp6eSBTaGEtTGEtTGGgBwE%3D"
+  },
+  {
+    "Artist": "Thin Lizzy",
+    "Title": "Dear Heart",
+    "Album": "Nightlife",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=4TJDSHRt3Ls&list=RD4TJDSHRt3Ls&start_radio=1&pp=ygUVVGhpbiBMaXp6eSBEZWFyIEhlYXJ0oAcB0gcJCQsKAYcqIYzv"
+  },
+  {
+    "Artist": "TVAM",
+    "Title": "The Words",
+    "Album": "The Words",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=thsCEKAkjaw&list=RDthsCEKAkjaw&start_radio=1&pp=ygUOVFZBTSBUaGUgV29yZHOgBwE%3D"
   }
 ]
