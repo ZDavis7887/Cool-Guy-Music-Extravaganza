@@ -11,7 +11,8 @@ with open("new_tracks.json", "r", encoding="utf-8") as f:
 with open("mismatched_tracks.json", "r", encoding="utf-8") as f:
     mismatches = json.load(f)
 
-track_map = {f"{t['Artist']} - {t['Title']}": t for t in tracks}
+# Map "Artist - Title" -> track dict
+track_map = {f"{t.get('Artist','')} - {t.get('Title','')}": t for t in tracks}
 
 # Setup Selenium
 options = Options()
@@ -23,24 +24,32 @@ driver = webdriver.Chrome(options=options)
 
 # Fix tracks
 updated = 0
+
 for m in mismatches:
-    expected = m["Expected"]
+    expected = m.get("Expected", "")
+    if not expected:
+        continue
+
     if expected in track_map:
         search_query = expected.replace(" ", "+")
         print(f"Searching for: {expected}")
+
         try:
             driver.get(f"https://www.youtube.com/results?search_query={search_query}")
             time.sleep(2.5)
-            results = driver.find_elements(By.ID, 'video-title')
+
+            results = driver.find_elements(By.ID, "video-title")
+
             for result in results:
-                href = result.get_attribute('href')
+                href = result.get_attribute("href")
                 if href and "/watch?v=" in href:
                     track_map[expected]["YouTubeLink"] = href
-                    print(f"✅ Found: {href}")
+                    print(f"Found: {href}")
                     updated += 1
                     break
+
         except Exception as e:
-            print(f"❌ Error searching {expected}: {e}")
+            print(f"Error searching {expected}: {e}")
 
 driver.quit()
 
@@ -48,4 +57,4 @@ driver.quit()
 with open("tracks_corrected.json", "w", encoding="utf-8") as f:
     json.dump(list(track_map.values()), f, indent=2, ensure_ascii=False)
 
-print(f"\n🎉 Updated {updated} tracks.")
+print(f"\nUpdated {updated} tracks.")

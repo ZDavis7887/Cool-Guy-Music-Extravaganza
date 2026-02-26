@@ -1,4 +1,4 @@
-const API_KEY = "67151f1c5943c2b35b9750ab48ac296f";
+const API_KEY =  67151f1c5943c2b35b9750ab48ac296f ;
 let tracklist = [];
 let player;
 let currentTrackIndex = -1;
@@ -26,7 +26,7 @@ function generatePlaybackQueue() {
 
 function loadYouTubeAPI() {
   const tag = document.createElement('script');
-  tag.src = "https://www.youtube.com/iframe_api";
+  tag.src =  https://www.youtube.com/iframe_api ;
   const firstScriptTag = document.getElementsByTagName('script')[0];
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 }
@@ -50,9 +50,9 @@ function typeRPG(text, container, start = 0, speed = 12) {
 }
 
 async function playTrack(track, index = null) {
-  if (!track.YouTubeLink || track.YouTubeLink === "Not Found") {
-    console.error("❌ No valid YouTube link for track:", track);
-    document.getElementById('player').innerHTML = "No video found!";
+  if (!track.YouTubeLink || track.YouTubeLink ===  Not Found ) {
+    console.error( ❌ No valid YouTube link for track: , track);
+    document.getElementById('player').innerHTML =  No video found! ;
     return;
   }
 
@@ -92,8 +92,8 @@ async function playTrack(track, index = null) {
     const shortSummary = fullSummary.length > 300 ? fullSummary.slice(0, 300) + '...' : fullSummary;
 
     summaryEl.style.minHeight = '6em';
-    summaryEl.innerText = "";
-    summaryEl.style.color = "#00ff00";
+    summaryEl.innerText =   ;
+    summaryEl.style.color =  #00ff00 ;
 
     typeRPG(shortSummary, summaryEl);
 
@@ -117,8 +117,8 @@ async function playTrack(track, index = null) {
 
     renderUpcomingTracks();
   } else {
-    console.error("❌ Could not extract video ID from:", track);
-    document.getElementById('player').innerHTML = "No video found!";
+    console.error( ❌ Could not extract video ID from: , track);
+    document.getElementById('player').innerHTML =  No video found! ;
   }
 }
 

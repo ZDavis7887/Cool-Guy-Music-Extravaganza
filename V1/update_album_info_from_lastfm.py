@@ -9,7 +9,7 @@ SAVE_EVERY_N_TRACKS = 50
 # =============================
 
 def fetch_album_info(artist, album):
-    url = f"http://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key={API_KEY}&artist={artist}&album={album}&format=json"
+    url = f http://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key={API_KEY}&artist={artist}&album={album}&format=json 
     try:
         response = requests.get(url, timeout=10)
         if response.status_code == 200:
@@ -20,7 +20,7 @@ def fetch_album_info(artist, album):
                 album_art = next((img['#text'] for img in image_list[::-1] if img['#text']), None)
                 return album_art
     except Exception as e:
-        print(f"Error fetching album info: {e}")
+        print(f Error fetching album info: {e} )
     return None
 
 def update_tracks():
@@ -38,7 +38,7 @@ def update_tracks():
         artist = track['Artist']
         album = track['Album']
         if album and album != 'Unknown':
-            print(f"🔎 Searching album art for: {artist} - {album}")
+            print(f 🔎 Searching album art for: {artist} - {album} )
             album_art = fetch_album_info(artist, album)
 
             if album_art:
@@ -53,7 +53,7 @@ def update_tracks():
     with open(json_file, 'w', encoding='utf-8') as f:
         json.dump(tracks, f, indent=2, ensure_ascii=False)
 
-    print(f"✅ Done updating {updated_count} tracks with album art!")
+    print(f ✅ Done updating {updated_count} tracks with album art! )
 
 if __name__ == '__main__':
     update_tracks()

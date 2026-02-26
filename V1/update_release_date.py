@@ -39,5 +39,5 @@ for track in existing_tracks:
 with open(output_json, 'w', encoding='utf-8') as f:
     json.dump(updated_tracks, f, indent=2, ensure_ascii=False)
 
-print(f"✅ Updated {updated_count} tracks with release dates.")
-print(f"💾 Saved as: {output_json}")
+print(f ✅ Updated {updated_count} tracks with release dates. )
+print(f 💾 Saved as: {output_json} )

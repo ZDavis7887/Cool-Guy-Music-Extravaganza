@@ -27,7 +27,7 @@ def transform_links():
     with open(OUTPUT_JSON, 'w', encoding='utf-8') as f:
         json.dump(tracks, f, indent=2, ensure_ascii=False)
 
-    print(f"✅ Updated {updated} links to use Piped frontend!")
+    print(f ✅ Updated {updated} links to use Piped frontend! )
 
-if __name__ == "__main__":
+if __name__ ==  __main__ :
     transform_links()

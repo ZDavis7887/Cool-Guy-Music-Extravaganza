@@ -32,4 +32,4 @@ for track in tracks:
 with open(json_file, 'w', encoding='utf-8') as f:
     json.dump(tracks, f, indent=2, ensure_ascii=False)
 
-print(f"✅ Updated {len(tracks)} tracks with Album and Year info!")
+print(f ✅ Updated {len(tracks)} tracks with Album and Year info! )

@@ -31,7 +31,7 @@ def create_browser():
 
 def search_youtube(driver, query):
     try:
-        driver.get(f"https://www.youtube.com/results?search_query={query.replace(' ', '+')}")
+        driver.get(f https://www.youtube.com/results?search_query={query.replace(' ', '+')} )
         time.sleep(4)
 
         links = driver.find_elements(By.CSS_SELECTOR, 'a#video-title')
@@ -40,29 +40,29 @@ def search_youtube(driver, query):
         for link in links:
             href = link.get_attribute('href')
             title = link.get_attribute('title')
-            if href and "watch" in href:
-                video_links.append((href, title.lower() if title else ""))
+            if href and  watch  in href:
+                video_links.append((href, title.lower() if title else   ))
 
         if video_links:
             for href, title in video_links:
-                if "official" in title:
-                    print(f"✅ Found Official Music Video for {query}: {href}")
+                if  official  in title:
+                    print(f ✅ Found Official Music Video for {query}: {href} )
                     return href
 
-            print(f"✅ Found YouTube link for {query}: {video_links[0][0]}")
+            print(f ✅ Found YouTube link for {query}: {video_links[0][0]} )
             return video_links[0][0]
 
-        print(f"❌ No YouTube link found for {query}")
+        print(f ❌ No YouTube link found for {query} )
         return None
 
     except Exception as e:
-        print(f"Error searching for {query}: {e}")
+        print(f Error searching for {query}: {e} )
         return None
 
 def save_to_json(data, json_path):
     with open(json_path, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
-    print(f"💾 Saved {len(data)} tracks to {json_path}")
+    print(f 💾 Saved {len(data)} tracks to {json_path} )
 
 def is_link_alive(url):
     try:
@@ -75,7 +75,7 @@ def fetch_tracks_with_youtube(csv_path):
     df = pd.read_csv(csv_path)
 
     if 'albums.tracks.grandparentTitle' not in df.columns or 'albums.tracks.title' not in df.columns:
-        print("❌ CSV missing expected columns.")
+        print( ❌ CSV missing expected columns. )
         return []
 
     clean_df = df[['albums.tracks.grandparentTitle', 'albums.tracks.title', 'albums.tracks.parentTitle', 'albums.tracks.year']]
@@ -83,7 +83,7 @@ def fetch_tracks_with_youtube(csv_path):
 
     clean_df = clean_df.dropna(subset=['Artist', 'Title'])
 
-    print(f"✅ Loaded {len(clean_df)} tracks from CSV.")
+    print(f ✅ Loaded {len(clean_df)} tracks from CSV. )
 
     if os.path.exists(json_file):
         with open(json_file, 'r', encoding='utf-8') as f:
@@ -99,14 +99,14 @@ def fetch_tracks_with_youtube(csv_path):
 
     driver = create_browser()
 
-    for index, row in tqdm(list(clean_df.iterrows()), total=len(clean_df), desc="Searching YouTube"):
+    for index, row in tqdm(list(clean_df.iterrows()), total=len(clean_df), desc= Searching YouTube ):
         artist = clean_title(row['Artist'])
         title = clean_title(row['Title'])
 
         if (row['Artist'], row['Title']) in existing_set:
             continue  # Skip already processed tracks
 
-        search_query = f"{artist} {title}"
+        search_query = f {artist} {title} 
         youtube_link = search_youtube(driver, search_query)
 
         track_data = {
@@ -114,7 +114,7 @@ def fetch_tracks_with_youtube(csv_path):
             'Title': row['Title'],
             'Album': row['Album'] if pd.notna(row['Album']) else 'Unknown',
             'Year': int(row['Year']) if not pd.isna(row['Year']) else 'Unknown',
-            'YouTubeLink': youtube_link or "Not Found"
+            'YouTubeLink': youtube_link or  Not Found 
         }
         track_list.append(track_data)
 
@@ -135,29 +135,29 @@ def fetch_tracks_with_youtube(csv_path):
 
 def refresh_dead_links():
     if not os.path.exists(json_file):
-        print("❌ No tracks.json found to refresh.")
+        print( ❌ No tracks.json found to refresh. )
         return
 
     with open(json_file, 'r', encoding='utf-8') as f:
         tracks = json.load(f)
 
-    print(f"🔎 Checking {len(tracks)} tracks for dead links...")
+    print(f 🔎 Checking {len(tracks)} tracks for dead links... )
 
     driver = create_browser()
     updated_tracks = []
 
-    for track in tqdm(tracks, desc="Checking links"):
+    for track in tqdm(tracks, desc= Checking links ):
         url = track.get('YouTubeLink')
 
-        if url and url != "Not Found" and is_link_alive(url):
+        if url and url !=  Not Found  and is_link_alive(url):
             updated_tracks.append(track)
         else:
             artist = clean_title(track['Artist'])
             title = clean_title(track['Title'])
-            search_query = f"{artist} {title}"
-            print(f"🔄 Refreshing link for {track['Artist']} - {track['Title']}")
+            search_query = f {artist} {title} 
+            print(f 🔄 Refreshing link for {track['Artist']} - {track['Title']} )
             new_link = search_youtube(driver, search_query)
-            track['YouTubeLink'] = new_link or "Not Found"
+            track['YouTubeLink'] = new_link or  Not Found 
             updated_tracks.append(track)
 
         time.sleep(random.uniform(1, 2))
@@ -167,7 +167,7 @@ def refresh_dead_links():
 
 # ========== MAIN ==========
 if __name__ == '__main__':
-    mode = input("Type 'fetch' to fetch new tracks, or 'refresh' to check and refresh dead links: ").strip().lower()
+    mode = input( Type 'fetch' to fetch new tracks, or 'refresh' to check and refresh dead links:  ).strip().lower()
     if mode == 'fetch':
         tracks = fetch_tracks_with_youtube(csv_file)
         if tracks:
@@ -175,8 +175,8 @@ if __name__ == '__main__':
             if os.path.exists(checkpoint_file):
                 os.remove(checkpoint_file)
         else:
-            print("❌ No tracks to save. Check your CSV or search function.")
+            print( ❌ No tracks to save. Check your CSV or search function. )
     elif mode == 'refresh':
         refresh_dead_links()
     else:
-        print("❌ Unknown mode.")
+        print( ❌ Unknown mode. )
