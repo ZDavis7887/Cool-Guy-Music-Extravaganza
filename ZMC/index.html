@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Toon Stream</title>
+  <style>
+    body {
+      background: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 30px;
+    }
+    #meta {
+      margin-top: 12px;
+      font-size: 14px;
+      opacity: 0.8;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      word-break: break-word;
+    }
+    a { color: #7bd; }
+  </style>
+</head>
+<body>
+
+  <h2>Toon Stream</h2>
+
+  <div id="player"></div>
+  <div id="meta">Loading…</div>
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script>
+    let player = null;
+    let apiReady = false;
+    let loading = false;
+
+    async function fetchNext() {
+      const res = await fetch("/next");
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Failed to fetch /next");
+      return data; // { url, videoId }
+    }
+
+    function updateMeta(data) {
+      document.getElementById("meta").innerHTML = `
+        <div><b>Now playing:</b></div>
+        <div><a href="${data.url}" target="_blank" rel="noreferrer">${data.url}</a></div>
+      `;
+    }
+
+    async function playNext() {
+      if (!apiReady || loading) return;
+      loading = true;
+
+      try {
+        const data = await fetchNext();
+        if (!data.videoId) {
+          throw new Error("Missing videoId from backend");
+        }
+
+        updateMeta(data);
+
+        if (!player) {
+          player = new YT.Player("player", {
+            height: "450",
+            width: "800",
+            videoId: data.videoId,
+            playerVars: {
+              autoplay: 1,
+              mute: 1,          // allows autoplay with no click
+              rel: 0,
+              playsinline: 1
+            },
+            events: {
+              onReady: (e) => e.target.playVideo(),
+              onStateChange: (e) => {
+                if (e.data === 0) { // ended
+                  playNext();
+                }
+              },
+              onError: (e) => {
+                document.getElementById("meta").innerText =
+                  `YouTube error (${e.data}). Skipping…`;
+                setTimeout(playNext, 600);
+              }
+            }
+          });
+        } else {
+          player.loadVideoById(data.videoId);
+        }
+      } catch (err) {
+        document.getElementById("meta").innerText =
+          `Error: ${err.message} (retrying…)`;
+        setTimeout(playNext, 1200);
+      } finally {
+        loading = false;
+      }
+    }
+
+    function onYouTubeIframeAPIReady() {
+      apiReady = true;
+      playNext();
+    }
+    window.onYouTubeIframeAPIReady = onYouTubeIframeAPIReady;
+  </script>
+
+</body>
+</html>

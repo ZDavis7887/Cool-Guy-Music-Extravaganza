@@ -1,0 +1,55 @@
+<div id="overlay" onclick="startTV()">
+    <h1 style="border: 2px solid white; padding: 20px;">CLICK TO TUNE IN</h1>
+</div>
+
+<div id="player-container"><div id="player"></div></div>
+
+<script>
+    let player;
+    
+    // Define this first so the 'onclick' can find it immediately
+    function startTV() {
+        if (player && typeof player.playVideo === 'function') {
+            document.getElementById('overlay').style.display = 'none';
+            player.unMute();
+            player.playVideo();
+        } else {
+            console.log("Player not ready yet. Wait 1 second.");
+        }
+    }
+
+    function onYouTubeIframeAPIReady() {
+        const totalCycle = videoIds.length * 1200;
+        const nowSeconds = Math.floor(Date.now() / 1000);
+        const cyclePos = nowSeconds % totalCycle;
+        const videoIndex = Math.floor(cyclePos / 1200);
+
+        player = new YT.Player('player', {
+            videoId: videoIds[videoIndex],
+            playerVars: { 
+                'autoplay': 1, 'controls': 0, 'modestbranding': 1, 
+                'start': (cyclePos % 1200), 'mute': 1,
+                'origin': window.location.origin 
+            },
+            events: { 
+                'onStateChange': (e) => { if(e.data == 0) playNext(); },
+                'onError': () => playNext() 
+            }
+        });
+    }
+
+    function playNext() {
+        const nextIdx = Math.floor(Math.random() * videoIds.length);
+        player.loadVideoById(videoIds[nextIdx]);
+    }
+
+    // Load the YouTube API
+    const tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    document.head.appendChild(tag);
+</script>
+
+<script>
+    // Keep this at the bottom so it doesn't block the functions above
+    const videoIds = ["oD-nA_9euXU", "v_kH7I3AfYc", "mzFMJgWklz4", /* ... ALL 7,000 IDs ... */];
+</script>
