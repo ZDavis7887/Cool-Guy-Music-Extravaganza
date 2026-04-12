@@ -28,16 +28,11 @@ def clean_title(title: str) -> str:
 
 def create_browser():
     options = uc.ChromeOptions()
-    options.headless = True
-
-    # Point to Chrome Beta explicitly (adjust if yours is different)
-    options.binary_location = r"C:\Program Files\Google\Chrome Beta\Application\chrome.exe"
-    # If you're on 32-bit install, it might be:
-    # options.binary_location = r"C:\Program Files (x86)\Google\Chrome Beta\Application\chrome.exe"
-
+    # If you have other options like 'user_data_dir', keep them!
     driver = uc.Chrome(
         options=options,
-        version_main=146,   # match your Beta major version
+        version_main=147,  # <--- Change this to your actual Chrome version
+        use_subprocess=True
     )
     return driver
 
