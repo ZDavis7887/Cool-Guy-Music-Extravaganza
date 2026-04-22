@@ -9,7 +9,7 @@ let currentSummaryIndex = 0;
 let summarySegmentIndex = 0;
 
 async function loadTracks() {
-  const response = await fetch('tracks.json');
+  const response = await fetch('upgraded_tracks.json');
   tracklist = await response.json();
   generatePlaybackQueue();
   loadYouTubeAPI();
