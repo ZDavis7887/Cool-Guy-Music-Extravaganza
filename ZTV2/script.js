@@ -6,7 +6,7 @@ let playbackQueue = [];
 let typing = null;
 let currentSummaryIndex = 0;
 
-// --- 1. GLOBAL SYNC LOGIC ---
+// 1. GLOBAL SYNC LOGIC
 function seededRandom(seed) {
     return function() {
         seed = (seed * 1664525 + 1013904223) % 4294967296;
@@ -17,7 +17,6 @@ function seededRandom(seed) {
 function generatePlaybackQueue() {
     const array = [...tracklist];
     const today = new Date();
-    // Seeded by date so everyone on Earth sees the same order today
     const seedValue = today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate();
     const random = seededRandom(seedValue);
 
@@ -29,7 +28,7 @@ function generatePlaybackQueue() {
 }
 
 function getLiveTrack() {
-    const AVG_DURATION = 210; // Fixed 3.5m "slot" for global sync
+    const AVG_DURATION = 210; 
     const totalQueueSeconds = playbackQueue.length * AVG_DURATION;
     const now = new Date();
     const startOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate());
@@ -46,7 +45,7 @@ function getLiveTrack() {
     };
 }
 
-// --- 2. LOADING & API ---
+// 2. LOADING & API
 async function loadTracks() {
     try {
         const response = await fetch('upgraded_tracks.json');
@@ -55,7 +54,7 @@ async function loadTracks() {
         loadYouTubeAPI();
         setupSearchAll();
     } catch (e) {
-        console.error("Critical Error: Could not load upgraded_tracks.json", e);
+        console.error("Critical Error loading JSON:", e);
     }
 }
 
@@ -72,7 +71,7 @@ window.onYouTubeIframeAPIReady = async function() {
     await playTrack(live.track, live.index, live.startAt);
 };
 
-// --- 3. CORE PLAYBACK (UI & ARTWORK) ---
+// 3. CORE PLAYBACK (UI & ARTWORK)
 async function playTrack(track, index = null, startTime = 0) {
     if (!track.YouTubeLink || track.YouTubeLink === "Not Found") {
         window.nextSong();
@@ -103,24 +102,20 @@ async function playTrack(track, index = null, startTime = 0) {
             });
         }
 
-        // UPDATE UI
-        const nowPlayingEl = document.getElementById('now-playing');
-        nowPlayingEl.innerText = `Now Playing: ${track.Artist} - ${track.Title}`;
+        document.getElementById('now-playing').innerText = `Now Playing: ${track.Artist} - ${track.Title}`;
         
-        // Artwork Fix: Explicitly using AlbumArtLink
+        // Artwork Fix
         const artEl = document.getElementById('album-art');
         if (artEl) {
             artEl.src = track.AlbumArtLink || 'default_album.png';
         }
 
-        // Metadata
         const albumEl = document.getElementById('album-name');
         if (albumEl) albumEl.innerText = track.Album || 'Unknown Album';
         
         const yearEl = document.getElementById('album-year');
         if (yearEl) yearEl.innerText = track.ReleaseDate || 'Unknown Date';
 
-        // Summary RPG Logic
         const summaryEl = document.getElementById('artist-summary');
         const summaryToggle = document.getElementById('summary-toggle');
         const fullSummary = track.Summary || 'No artist info available.';
@@ -152,7 +147,7 @@ async function playTrack(track, index = null, startTime = 0) {
     }
 }
 
-// --- 4. UTILITIES ---
+// 4. UTILITIES
 function extractVideoId(url) {
     const regex = /[?&]v=([^&#]*)/;
     const match = url.match(regex);
@@ -202,7 +197,7 @@ function renderUpcomingTracks() {
     });
 }
 
-// --- 5. SEARCH ENGINE ---
+// 5. SEARCH ENGINE
 function setupSearchAll() {
     const desktopSearch = { input: document.getElementById('search-bar'), results: document.getElementById('search-results') };
     const mobileSearch = { input: document.getElementById('search-bar-mobile'), results: document.getElementById('search-results-mobile') };
@@ -236,7 +231,7 @@ function setupSearchAll() {
     });
 }
 
-// --- 6. EXPOSURE & CONTROLS ---
+// 6. GLOBAL CONTROLS
 window.nextSong = async function() {
     currentTrackIndex++;
     if (currentTrackIndex >= playbackQueue.length) {
@@ -260,5 +255,5 @@ window.toggleVideo = () => {
     if(p) p.style.display = p.style.display === 'none' ? 'block' : 'none';
 };
 
-// Start the show
+// INITIALIZE THE STATION
 loadTracks();
