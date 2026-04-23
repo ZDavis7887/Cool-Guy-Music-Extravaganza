@@ -1,135 +1,4 @@
-const API_KEY = "67151f1c5943c2b35b9750ab48ac296f";
-let tracklist = [];
-let player;
-let currentTrackIndex = -1;
-let playbackQueue = [];
-let typing = null;
-let currentSummaryIndex = 0;
-
-function seededRandom(seed) {
-    return function() {
-        seed = (seed * 1664525 + 1013904223) % 4294967296;
-        return seed / 4294967296;
-    };
-}
-
-async function loadTracks() {
-    try {
-        const response = await fetch('upgraded_tracks.json');
-        tracklist = await response.json();
-        generatePlaybackQueue();
-        loadYouTubeAPI();
-    } catch (e) {
-        console.error("Failed to load tracklist:", e);
-    }
-}
-
-function generatePlaybackQueue() {
-    const array = [...tracklist];
-    const today = new Date();
-    const seedValue = today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate();
-    const random = seededRandom(seedValue);
-
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-    playbackQueue = array;
-}
-
-function getLiveTrack() {
-    const AVG_DURATION = 210; 
-    const totalQueueSeconds = playbackQueue.length * AVG_DURATION;
-    const now = new Date();
-    const startOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-    const secondsSinceMidnight = (now - startOfDay) / 1000;
-    
-    const currentCycleTime = secondsSinceMidnight % totalQueueSeconds;
-    const trackIndex = Math.floor(currentCycleTime / AVG_DURATION);
-    const seekTo = Math.floor(currentCycleTime % AVG_DURATION);
-
-    return { 
-        track: playbackQueue[trackIndex], 
-        index: trackIndex,
-        startAt: seekTo 
-    };
-}
-
-function loadYouTubeAPI() {
-    const tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/iframe_api";
-    const firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-}
-
-// THIS MUST BE ON THE WINDOW OBJECT FOR YOUTUBE TO SEE IT
-window.onYouTubeIframeAPIReady = async function() {
-    const live = getLiveTrack();
-    currentTrackIndex = live.index;
-    await playTrack(live.track, live.index, live.startAt);
-}
-
-async function playTrack(track, index = null, startTime = 0) {
-    if (!track.YouTubeLink || track.YouTubeLink === "Not Found") {
-        nextSong();
-        return;
-    }
-
-    if (index !== null) currentTrackIndex = index;
-    const videoId = extractVideoId(track.YouTubeLink);
-
-    if (videoId) {
-        if (player) {
-            player.loadVideoById({
-                videoId: videoId,
-                startSeconds: startTime
-            });
-        } else {
-            player = new YT.Player('player', {
-                height: '315',
-                width: '560',
-                videoId: videoId,
-                playerVars: { 
-                    'autoplay': 1, 
-                    'mute': 1, // START MUTED TO BYPASS BROWSER BLOCKS
-                    'origin': 'https://zdavis7887.github.io', // <--- Add this line
-                    'start': startTime,
-                    'controls': 1,
-                    'modestbranding': 1
-                },
-                events: {
-                    'onStateChange': onPlayerStateChange,
-                    'onReady': (e) => { e.target.playVideo(); }
-                }
-            });
-        }
-
-        document.getElementById('now-playing').innerText = `Now Playing: ${track.Artist} - ${track.Title}`;
-        const summaryEl = document.getElementById('artist-summary');
-        typeRPG(track.Summary || 'No info.', summaryEl);
-        renderUpcomingTracks();
-    }
-}
-
-// BINDING TO WINDOW FOR YOUR HTML BUTTONS
-window.nextSong = async function() {
-    currentTrackIndex++;
-    if (currentTrackIndex >= playbackQueue.length) {
-        generatePlaybackQueue();
-        currentTrackIndex = 0;
-    }
-    await playTrack(playbackQueue[currentTrackIndex], currentTrackIndex, 0);
-};
-
-window.shuffleSong = window.nextSong;
-
-window.unmutePlayer = function() {
-    if (player) {
-        player.unMute();
-        document.getElementById('mute-overlay').style.display = 'none';
-    }
-};
-
+// 4. UTILITIES & SEARCH (Continued)
 function extractVideoId(url) {
     const regex = /[?&]v=([^&#]*)/;
     const match = url.match(regex);
@@ -159,33 +28,84 @@ function typeRPG(text, container, start = 0, speed = 12) {
 function renderUpcomingTracks() {
     const container = document.getElementById('upcoming-tracks');
     if (!container) return;
-
     container.innerHTML = '<h3>Upcoming Broadcasts</h3>';
     
-    // We take a slice of 10 tracks starting from the next one
+    // Shows the next 10 tracks in the synced queue
     const nextTracks = playbackQueue.slice(currentTrackIndex + 1, currentTrackIndex + 11);
-    
     nextTracks.forEach((track, i) => {
         const div = document.createElement('div');
         div.className = 'track-item';
-        div.style.marginBottom = '8px'; // Added a little breathing room
-        
-        // Creating the link so you can still click ahead in the 'broadcast'
         const link = document.createElement('a');
         link.href = '#';
         link.className = 'upcoming-track-link';
-        link.style.color = '#00ff00';
-        link.style.textDecoration = 'none';
+        link.style.color = "#00ff00";
         link.innerText = `${track.Artist} - ${track.Title}`;
-        
-        link.onclick = function (e) {
+        link.onclick = (e) => {
             e.preventDefault();
-            // Jump to this track at the start (0 seconds)
-            window.playTrack(track, currentTrackIndex + 1 + i, 0);
+            playTrack(track, currentTrackIndex + 1 + i, 0);
         };
-        
         div.appendChild(link);
         container.appendChild(div);
     });
 }
+
+// 5. SEARCH LOGIC (Unified for Mobile/Desktop)
+function setupSearchAll() {
+    const desktopSearch = { input: document.getElementById('search-bar'), results: document.getElementById('search-results') };
+    const mobileSearch = { input: document.getElementById('search-bar-mobile'), results: document.getElementById('search-results-mobile') };
+
+    [desktopSearch, mobileSearch].forEach(search => {
+        if (!search.input || !search.results) return;
+
+        search.input.addEventListener('input', () => {
+            const query = search.input.value.toLowerCase().trim();
+            search.results.innerHTML = '';
+            if (!query) { search.results.style.display = 'none'; return; }
+
+            const matches = tracklist.filter(t => 
+                t.Artist.toLowerCase().includes(query) || t.Title.toLowerCase().includes(query)
+            ).slice(0, 10);
+
+            matches.forEach(track => {
+                const div = document.createElement('div');
+                div.className = 'search-result';
+                div.style.cursor = 'pointer';
+                div.innerHTML = `<strong>${track.Artist}</strong> - ${track.Title}`;
+                div.onclick = () => {
+                    playTrack(track, null, 0);
+                    search.input.value = '';
+                    search.results.style.display = 'none';
+                };
+                search.results.appendChild(div);
+            });
+            search.results.style.display = 'block';
+        });
+    });
+}
+
+// 6. GLOBAL WINDOW EXPOSURE
+window.nextSong = async function() {
+    currentTrackIndex++;
+    if (currentTrackIndex >= playbackQueue.length) {
+        generatePlaybackQueue();
+        currentTrackIndex = 0;
+    }
+    await playTrack(playbackQueue[currentTrackIndex], currentTrackIndex, 0);
+};
+
+window.unmutePlayer = function() {
+    if (player) {
+        player.unMute();
+        const overlay = document.getElementById('mute-overlay');
+        if (overlay) overlay.style.display = 'none';
+    }
+};
+
+window.shuffleSong = window.nextSong;
+window.toggleVideo = () => {
+    const p = document.getElementById('player');
+    p.style.display = p.style.display === 'none' ? 'block' : 'none';
+};
+
+// INITIALIZE
 loadTracks();
