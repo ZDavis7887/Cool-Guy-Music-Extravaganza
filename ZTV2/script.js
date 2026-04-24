@@ -81,7 +81,7 @@ function getLiveFeature(hour, secondsIntoHour) {
 // 2. LOADING & API
 async function loadTracks() {
     try {
-        const musicResponse = await fetch('upgraded_tracks.json');
+        const musicResponse = await fetch('tracks.json');
         tracklist = await musicResponse.json();
         
         try {
