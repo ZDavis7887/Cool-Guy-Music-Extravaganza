@@ -7,7 +7,7 @@ let isFeatureMode = false;
 
 async function loadTracks() {
     try {
-        const res = await fetch('upgraded_tracks.json');
+        const res = await fetch('tracks.json');
         tracklist = await res.json();
         try {
             const featRes = await fetch('features.json');
