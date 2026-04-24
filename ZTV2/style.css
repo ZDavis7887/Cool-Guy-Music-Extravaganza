@@ -101,33 +101,26 @@
 
 /* Fix Search Bar Width and Alignment */
 /* Keeps search bar from stretching full width */
-#search-bar {
+/* Fix the search bar width */
+#search-bar, #search-bar-mobile {
     width: 100%;
-    max-width: 300px; /* Adjust this to your liking */
+    max-width: 280px; /* Adjust this to make it smaller/bigger */
     box-sizing: border-box;
 }
 
-/* Fixes the results appearance and cursor */
-.search-result {
+/* Fix the mouse pointer for search results */
+#search-results div, #search-results-mobile div {
     cursor: pointer !important;
-    padding: 8px;
-    background: #111;
-    border-bottom: 1px solid #333;
 }
 
-.search-result:hover {
-    background: #222;
-}
-
-/* Ensure the summary toggle looks like a button */
+/* Ensure the button looks like a button */
 #summary-toggle {
-    margin-top: 5px;
-    background: none;
+    background: #333;
+    color: #eee;
     border: 1px solid #555;
-    color: #aaa;
+    padding: 4px 8px;
+    margin-top: 10px;
     cursor: pointer;
-    font-size: 0.8em;
-    padding: 2px 5px;
 }
 /* Description & Read More Styling */
 #artist-summary {
