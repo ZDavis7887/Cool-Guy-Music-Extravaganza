@@ -2,98 +2,33 @@ const API_KEY = "67151f1c5943c2b35b9750ab48ac296f";
 let tracklist = [];
 let featurelist = []; 
 let player;
-let currentTrackIndex = -1;
+let currentTrackIndex = 0;
 let playbackQueue = [];
 let typing = null;
 
-// 1. GLOBAL SYNC & SCHEDULING LOGIC
-function seededRandom(seed) {
-    return function() {
-        seed = (seed * 1664525 + 1013904223) % 4294967296;
-        return seed / 4294967296;
-    };
-}
+// NEW: Timer State
+let musicPlaytimeMs = 0;
+const MUSIC_BLOCK_LIMIT = 60 * 60 * 1000; // 60 Minutes
+let isFeatureMode = false;
 
-function generatePlaybackQueue() {
-    const array = [...tracklist];
-    const today = new Date();
-    const seedValue = today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate();
-    const random = seededRandom(seedValue);
-
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-    playbackQueue = array;
-}
-
-// THE NETWORK DIRECTOR: Decides the Block based on the Hour
-function getBroadcastContent() {
-    const now = new Date();
-    const currentHour = now.getHours();
-    const minutes = now.getMinutes();
-    const seconds = now.getSeconds();
-    const secondsIntoHour = (minutes * 60) + seconds;
-
-    // EVEN HOURS = MUSIC VIDEOS | ODD HOURS = FEATURE PRESENTATIONS
-    const isMusicBlock = (currentHour % 2 === 0);
-
-    if (isMusicBlock) {
-        return getLiveMusic(secondsIntoHour, currentHour);
-    } else {
-        return getLiveFeature(currentHour, secondsIntoHour);
-    }
-}
-
-function getLiveMusic(secondsIntoHour, currentHour) {
-    const AVG_DURATION = 210; 
-    const tracksPerHour = 3600 / AVG_DURATION;
-    const trackIndexInHour = Math.floor(secondsIntoHour / AVG_DURATION);
-    const seekTo = Math.floor(secondsIntoHour % AVG_DURATION);
-
-    // Seed logic to ensure UI and Player stay locked together
-    const finalIndex = (currentHour + trackIndexInHour) % playbackQueue.length;
-
-    return { 
-        track: playbackQueue[finalIndex], 
-        index: finalIndex,
-        startAt: seekTo,
-        type: 'MUSIC'
-    };
-}
-
-function getLiveFeature(hour, secondsIntoHour) {
-    if (featurelist.length === 0) return getLiveMusic(secondsIntoHour, hour);
-
-    const now = new Date();
-    const seed = now.getFullYear() + now.getMonth() + now.getDate() + hour;
-    const random = seededRandom(seed);
-    const featureIndex = Math.floor(random() * featurelist.length);
-    
-    return {
-        track: featurelist[featureIndex],
-        index: featureIndex,
-        startAt: secondsIntoHour, 
-        type: 'FEATURE'
-    };
-}
-
-// 2. LOADING & API
+// 1. LOADING & QUEUE
 async function loadTracks() {
     try {
-        const musicResponse = await fetch('tracks.json');
+        const musicResponse = await fetch('upgraded_tracks.json');
         tracklist = await musicResponse.json();
         
         try {
             const featureResponse = await fetch('features.json');
             featurelist = await featureResponse.json();
-        } catch (e) { console.warn("features.json not found yet, skipping feature block."); }
+        } catch (e) { console.warn("features.json missing."); }
 
-        generatePlaybackQueue();
+        // Standard Shuffle for the session
+        playbackQueue = [...tracklist].sort(() => Math.random() - 0.5);
+        
         loadYouTubeAPI();
         setupSearchAll();
     } catch (e) {
-        console.error("Critical Error loading JSON:", e);
+        console.error("Load error:", e);
     }
 }
 
@@ -104,75 +39,111 @@ function loadYouTubeAPI() {
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 }
 
-window.onYouTubeIframeAPIReady = async function() {
-    const broadcast = getBroadcastContent();
-    currentTrackIndex = broadcast.index;
-    await playTrack(broadcast.track, broadcast.index, broadcast.startAt, broadcast.type);
+window.onYouTubeIframeAPIReady = function() {
+    // Start with Music
+    playNextContent();
 };
 
-// 3. CORE PLAYBACK (FIXED REGEX FOR CLEAN IDS)
-async function playTrack(track, index = null, startTime = 0, type = 'MUSIC') {
-    if (!track || !track.YouTubeLink || track.YouTubeLink === "Not Found") {
-        window.nextSong();
+// 2. THE CONTENT SWITCHER
+function playNextContent() {
+    if (isFeatureMode) {
+        // We just finished a feature, go back to music
+        isFeatureMode = false;
+        musicPlaytimeMs = 0; 
+        console.log("ZTV: Feature ended. Starting 60-minute Music Block.");
+        playTrack(playbackQueue[currentTrackIndex], 'MUSIC');
+    } else if (musicPlaytimeMs >= MUSIC_BLOCK_LIMIT) {
+        // Music block is over, play ONE feature
+        isFeatureMode = true;
+        const randomFeature = featurelist[Math.floor(Math.random() * featurelist.length)];
+        console.log("ZTV: 60m Music Limit reached. Playing Feature Intermission.");
+        playTrack(randomFeature, 'FEATURE');
+    } else {
+        // Keep playing music
+        playTrack(playbackQueue[currentTrackIndex], 'MUSIC');
+    }
+}
+
+// 3. CORE PLAYBACK
+async function playTrack(track, type = 'MUSIC') {
+    if (!track || !track.YouTubeLink) {
+        skipToNext();
         return;
     }
 
     const videoId = extractVideoId(track.YouTubeLink);
     if (!videoId) return;
 
-    if (index !== null) currentTrackIndex = index;
-
     if (player) {
-        player.loadVideoById({
-            videoId: videoId,
-            startSeconds: startTime
-        });
+        player.loadVideoById({ videoId: videoId });
     } else {
         player = new YT.Player('player', {
             height: '315', width: '560',
             videoId: videoId,
-            playerVars: { 
-                'autoplay': 1, 'mute': 1, 'start': startTime,
-                'origin': 'https://zdavis7887.github.io',
-                'rel': 0 
-            },
-            events: { 'onStateChange': onPlayerStateChange }
+            playerVars: { 'autoplay': 1, 'origin': 'https://zdavis7887.github.io', 'rel': 0 },
+            events: { 
+                'onStateChange': onPlayerStateChange,
+                'onReady': (e) => e.target.playVideo() 
+            }
         });
     }
 
     // UI Updates
-    const statusPrefix = type === 'FEATURE' ? `[ ${track.Type.toUpperCase()} ]` : 'Now Playing:';
-    document.getElementById('now-playing').innerText = `${statusPrefix} ${track.Artist || track.Source} - ${track.Title}`;
-    
-    const artEl = document.getElementById('album-art');
-    if (artEl) artEl.src = track.AlbumArtLink || 'default_album.png';
-
-    const albumEl = document.getElementById('album-name');
-    if (albumEl) albumEl.innerText = track.Album || (type === 'FEATURE' ? 'ZTV Feature' : 'Unknown Album');
-    
-    const summaryEl = document.getElementById('artist-summary');
-    const fullSummary = track.Summary || 'No additional broadcast data available.';
-    if (summaryEl) {
-        summaryEl.innerText = "";
-        typeRPG(fullSummary.slice(0, 450), summaryEl);
-    }
-
-    renderUpcomingTracks();
+    updateUI(track, type);
+    renderTimerStatus();
 }
 
-// 4. UTILITIES (STRICT VIDEO ID EXTRACTION)
+function updateUI(track, type) {
+    const statusPrefix = type === 'FEATURE' ? `[ FEATURE ]` : 'Now Playing:';
+    document.getElementById('now-playing').innerText = `${statusPrefix} ${track.Artist || track.Source} - ${track.Title}`;
+    
+    if (document.getElementById('album-art')) {
+        document.getElementById('album-art').src = track.AlbumArtLink || 'default_album.png';
+    }
+    
+    const summaryEl = document.getElementById('artist-summary');
+    if (summaryEl) {
+        summaryEl.innerText = "";
+        typeRPG(track.Summary || 'ZTV Broadcast in progress...', summaryEl);
+    }
+}
+
+function onPlayerStateChange(event) {
+    if (event.data === YT.PlayerState.ENDED) {
+        handleMediaEnd();
+    }
+}
+
+function handleMediaEnd() {
+    if (!isFeatureMode) {
+        // Assume avg song is 3.5 mins if metadata fails, else use real duration
+        const duration = player.getDuration() * 1000 || (3.5 * 60 * 1000);
+        musicPlaytimeMs += duration;
+        currentTrackIndex = (currentTrackIndex + 1) % playbackQueue.length;
+    }
+    playNextContent();
+}
+
+function renderTimerStatus() {
+    const container = document.getElementById('upcoming-tracks');
+    if (!container) return;
+    
+    if (isFeatureMode) {
+        container.innerHTML = `<h3>Currently in Feature Intermission</h3><p>Music returns after this video.</p>`;
+    } else {
+        const remainingMins = Math.ceil((MUSIC_BLOCK_LIMIT - musicPlaytimeMs) / (60 * 1000));
+        container.innerHTML = `<h3>Next Feature in: ~${remainingMins} minutes</h3>`;
+    }
+}
+
+// 4. UTILITIES
 function extractVideoId(url) {
     if (!url) return null;
     try {
         const urlObj = new URL(url);
-        // Specifically grab the 'v' parameter and ignore EVERYTHING else (lists, radios, etc)
         const videoId = urlObj.searchParams.get('v');
         if (videoId) return videoId.substring(0, 11);
-        
-        // Handle shortlinks youtu.be/ID
-        if (url.includes('youtu.be/')) {
-            return url.split('youtu.be/')[1].split(/[?&]/)[0].substring(0, 11);
-        }
+        if (url.includes('youtu.be/')) return url.split('youtu.be/')[1].split(/[?&]/)[0].substring(0, 11);
     } catch (e) {
         const match = url.match(/[?&]v=([^&#]*)/);
         return match ? match[1].substring(0, 11) : null;
@@ -180,11 +151,14 @@ function extractVideoId(url) {
     return null;
 }
 
-function onPlayerStateChange(event) {
-    if (event.data === YT.PlayerState.ENDED) {
-        window.nextSong();
+window.nextSong = function() {
+    if (!isFeatureMode) {
+        // Manual skip adds 3.5 mins to the timer so skips still count toward the hour
+        musicPlaytimeMs += (3.5 * 60 * 1000);
+        currentTrackIndex = (currentTrackIndex + 1) % playbackQueue.length;
     }
-}
+    playNextContent();
+};
 
 function typeRPG(text, container, speed = 15) {
     clearInterval(typing);
@@ -197,17 +171,7 @@ function typeRPG(text, container, speed = 15) {
     }, speed);
 }
 
-function renderUpcomingTracks() {
-    const container = document.getElementById('upcoming-tracks');
-    if (!container) return;
-    const now = new Date();
-    const nextHour = (now.getHours() + 1) % 24;
-    const nextBlock = (nextHour % 2 === 0) ? "Music Rotation" : "Feature Presentation";
-    
-    container.innerHTML = `<h3>Next Broadcast Block (${nextHour}:00): ${nextBlock}</h3>`;
-}
-
-// 5. SEARCH & CONTROLS
+// 5. SEARCH (Overrides current track)
 function setupSearchAll() {
     const input = document.getElementById('search-bar');
     const results = document.getElementById('search-results');
@@ -227,7 +191,8 @@ function setupSearchAll() {
             div.className = 'search-result';
             div.innerHTML = `<strong>${track.Artist}</strong> - ${track.Title}`;
             div.onclick = () => {
-                playTrack(track, null, 0, 'MUSIC');
+                isFeatureMode = false; // Search always returns to music mode
+                playTrack(track, 'MUSIC');
                 input.value = '';
                 results.style.display = 'none';
             };
@@ -237,11 +202,6 @@ function setupSearchAll() {
     });
 }
 
-window.nextSong = () => {
-    const next = getBroadcastContent();
-    playTrack(next.track, next.index, 0, next.type);
-};
-
 window.tuneIn = function() {
     if (player) {
         player.unMute();
@@ -249,12 +209,7 @@ window.tuneIn = function() {
         player.playVideo();
     }
     const overlay = document.getElementById('tv-tuner-overlay');
-    if (overlay) {
-        overlay.style.opacity = "0";
-        setTimeout(() => overlay.style.display = "none", 500);
-    }
-    console.log("ZTV: Broadcast Synchronized.");
+    if (overlay) overlay.style.display = "none";
 };
 
-// INITIALIZE
 loadTracks();
