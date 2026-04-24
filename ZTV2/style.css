@@ -1,4 +1,54 @@
 
+ #tv-tuner-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: #000;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.static-bg {
+    position: absolute;
+    width: 100%; height: 100%;
+    background: url('https://media.giphy.com/media/oEI9uWUicG6re/giphy.gif'); /* Standard TV Static */
+    opacity: 0.15;
+    pointer-events: none;
+}
+
+.tuner-content {
+    text-align: center;
+    color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+.tune-button {
+    background: transparent;
+    border: 2px solid #00ff00;
+    color: #00ff00;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-family: inherit;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.tune-button:hover {
+    background: #00ff00;
+    color: #000;
+    box-shadow: 0 0 20px #00ff00;
+}
+
+.blink { animation: blinker 1.5s linear infinite; }
+@keyframes blinker { 50% { opacity: 0; } }
+    #search-container-mobile, #search-bar-mobile, #search-results-mobile {
+        display:none;
+      }
 .upcoming-track-link {
   color: #00ff00;
   text-decoration: none;
@@ -220,9 +270,7 @@
         font-size: 0.9rem; 
         color: #0f0;
     }
-    #search-container-mobile, #search-bar-mobile, #search-results-mobile {
-        display:none;
-      }
+   
   /* Responsive Tweaks */
 /* 📱 ZTV Mobile Responsive (max-width: 768px) */
 @media (max-width: 768px) {

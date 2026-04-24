@@ -254,6 +254,28 @@ window.toggleVideo = () => {
     const p = document.getElementById('player');
     if(p) p.style.display = p.style.display === 'none' ? 'block' : 'none';
 };
+window.tuneIn = function() {
+    // 1. Unmute the YouTube Player
+    if (player) {
+        player.unMute();
+        player.setVolume(80); // Set a solid starting volume
+    }
+    
+    // 2. Play the video (in case it was paused/stalled)
+    player.playVideo();
 
+    // 3. Remove the overlay with a fade-out or "TV turn off" effect
+    const overlay = document.getElementById('tv-tuner-overlay');
+    overlay.style.transition = "opacity 0.5s ease, transform 0.5s ease";
+    overlay.style.opacity = "0";
+    overlay.style.transform = "scale(1.1)"; // Slight zoom effect
+    
+    setTimeout(() => {
+        overlay.style.display = "none";
+    }, 500);
+
+    // 4. Start your RPG text/Curation Engine logic here if it wasn't already running
+    console.log("ZTV: Broadcast Synchronized and Unmuted.");
+};
 // INITIALIZE THE STATION
 loadTracks();
