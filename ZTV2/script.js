@@ -4,7 +4,7 @@ let player, typing, fullTextGlobal = "";
 let currentTrackIndex = 0, musicPlaytimeMs = 0;
 const MUSIC_BLOCK_LIMIT = 60 * 60 * 1000; 
 let isFeatureMode = false;
-let isFirstLoad = true; // Flag for the initial session start
+let isFirstLoad = true; // CRITICAL: This resets only when the page is refreshed
 
 async function loadTracks() {
     try {
@@ -30,11 +30,9 @@ function loadYouTubeAPI() {
 }
 
 window.onYouTubeIframeAPIReady = () => {
-    // INITIAL SESSION START: Randomly decide starting mode
+    // Determine starting mode for the session
     if (featurelist.length > 0 && Math.random() > 0.5) {
         isFeatureMode = true;
-    } else {
-        isFeatureMode = false;
     }
     playNextContent();
 };
@@ -42,80 +40,59 @@ window.onYouTubeIframeAPIReady = () => {
 function playNextContent() {
     let startAt = 0;
 
-    // THE ILLUSION: If it's the very first load, pick a random jump-in point
+    // THE JUMP-IN MECHANISM: Only applies to the VERY first video of the session
     if (isFirstLoad) {
-        // Music starts within first 2 mins, Features within first 20 mins
+        // Randomly pick a spot: Music (0-2 mins), Features (0-20 mins)
         startAt = isFeatureMode ? Math.floor(Math.random() * 1200) : Math.floor(Math.random() * 120);
-        isFirstLoad = false;
+        isFirstLoad = false; // Kill the flag so the next video starts at 0
     }
 
     if (isFeatureMode) {
         const randomFeature = featurelist[Math.floor(Math.random() * featurelist.length)];
         playTrack(randomFeature, 'FEATURE', startAt);
     } else {
-        // Standard Music Block Logic
-        if (musicPlaytimeMs >= MUSIC_BLOCK_LIMIT) {
+        if (musicPlaytimeMs >= MUSIC_BLOCK_LIMIT && featurelist.length > 0) {
             isFeatureMode = true;
-            playNextContent(); // Pivot to feature
+            playNextContent(); 
         } else {
             playTrack(playbackQueue[currentTrackIndex], 'MUSIC', startAt);
         }
     }
 }
 
-// 3. CORE PLAYBACK (Now with "Tune-In" Random Start)
-async function playTrack(track, type = 'MUSIC') {
-    if (!track || !track.YouTubeLink) {
-        window.nextSong();
-        return;
-    }
-
+async function playTrack(track, type, startTime = 0) {
     const videoId = extractVideoId(track.YouTubeLink);
-    if (!videoId) return;
+    if (!videoId) { window.nextSong(); return; }
 
-    // RANDOM START LOGIC
-    // If it's a regular track, jump 5-45 seconds in. 
-    // If it's a feature, jump 1-5 minutes in to feel like you "caught" it.
-    let startAt = 0;
-    if (type === 'MUSIC') {
-        startAt = Math.floor(Math.random() * 45); 
-    } else if (type === 'FEATURE') {
-        startAt = Math.floor(Math.random() * 300); // Up to 5 mins in
-    }
-
-    if (player) {
-        player.loadVideoById({ 
+    if (player && player.loadVideoById) { 
+        player.loadVideoById({
             videoId: videoId,
-            startSeconds: startAt 
-        });
+            startSeconds: startTime
+        }); 
     } else {
         player = new YT.Player('player', {
-            height: '315', width: '560',
             videoId: videoId,
             playerVars: { 
                 'autoplay': 1, 
-                'origin': location.origin, 
-                'rel': 0,
-                'start': startAt // Starts the very first video at a random spot too
+                'origin': location.origin,
+                'start': startTime // Used for the initial setup
             },
             events: { 
-                'onStateChange': (e) => { if(e.data === 0) handleMediaEnd(); },
-                'onReady': (e) => e.target.playVideo() 
+                'onStateChange': (e) => {
+                    if (e.data === 0) handleMediaEnd();
+                }
             }
         });
     }
-
     updateUI(track, type);
-    renderTimerStatus();
 }
 
 function handleMediaEnd() {
     if (isFeatureMode) {
-        // After a Feature ends, switch back to Music and reset the hour timer
         isFeatureMode = false; 
         musicPlaytimeMs = 0; 
     } else {
-        // Accumulate playtime to see when we hit the 60min limit
+        // Track the total time played in the music block
         musicPlaytimeMs += (player.getDuration() * 1000) || 210000;
         currentTrackIndex = (currentTrackIndex + 1) % playbackQueue.length;
     }
@@ -142,7 +119,6 @@ function updateUI(track, type) {
     }
 }
 
-// REST OF UTILITIES (Remains exactly as your provided script)
 function extractVideoId(url) {
     if (!url) return null;
     try {
@@ -197,6 +173,11 @@ window.nextSong = () => {
 window.tuneIn = () => { 
     if(player) { player.unMute(); player.playVideo(); } 
     document.getElementById('tv-tuner-overlay').style.display = "none"; 
+};
+
+window.showFullDescription = () => {
+    document.getElementById('artist-summary').innerText = fullTextGlobal;
+    document.getElementById('summary-toggle').style.display = "none";
 };
 
 loadTracks();
