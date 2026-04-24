@@ -63,27 +63,50 @@ function playNextContent() {
     }
 }
 
-async function playTrack(track, type, startTime = 0) {
-    const videoId = extractVideoId(track.YouTubeLink);
-    if (!videoId) { window.nextSong(); return; }
+// 3. CORE PLAYBACK (Now with "Tune-In" Random Start)
+async function playTrack(track, type = 'MUSIC') {
+    if (!track || !track.YouTubeLink) {
+        window.nextSong();
+        return;
+    }
 
-    if (player) { 
-        player.loadVideoById({
+    const videoId = extractVideoId(track.YouTubeLink);
+    if (!videoId) return;
+
+    // RANDOM START LOGIC
+    // If it's a regular track, jump 5-45 seconds in. 
+    // If it's a feature, jump 1-5 minutes in to feel like you "caught" it.
+    let startAt = 0;
+    if (type === 'MUSIC') {
+        startAt = Math.floor(Math.random() * 45); 
+    } else if (type === 'FEATURE') {
+        startAt = Math.floor(Math.random() * 300); // Up to 5 mins in
+    }
+
+    if (player) {
+        player.loadVideoById({ 
             videoId: videoId,
-            startSeconds: startTime
-        }); 
+            startSeconds: startAt 
+        });
     } else {
         player = new YT.Player('player', {
+            height: '315', width: '560',
             videoId: videoId,
             playerVars: { 
                 'autoplay': 1, 
-                'origin': location.origin,
-                'start': startTime // Used for the very first player creation
+                'origin': location.origin, 
+                'rel': 0,
+                'start': startAt // Starts the very first video at a random spot too
             },
-            events: { 'onStateChange': (e) => e.data === 0 && handleMediaEnd() }
+            events: { 
+                'onStateChange': (e) => { if(e.data === 0) handleMediaEnd(); },
+                'onReady': (e) => e.target.playVideo() 
+            }
         });
     }
+
     updateUI(track, type);
+    renderTimerStatus();
 }
 
 function handleMediaEnd() {
