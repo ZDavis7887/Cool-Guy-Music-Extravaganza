@@ -8,7 +8,7 @@ let isFirstLoad = true; // CRITICAL: This resets only when the page is refreshed
 
 async function loadTracks() {
     try {
-        const res = await fetch('tracks.json');
+        const res = await fetch('upgraded_tracks.json');
         tracklist = await res.json();
         try {
             const featRes = await fetch('features.json');

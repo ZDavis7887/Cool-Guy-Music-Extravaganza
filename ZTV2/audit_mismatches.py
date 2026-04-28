@@ -34,7 +34,7 @@ def is_mismatch(expected_artist, expected_title, actual_title):
 
 
 # === Load your full tracks.json ===
-with open("new_tracks.json", "r", encoding="utf-8") as f:
+with open("upgraded_tracks.json", "r", encoding="utf-8") as f:
     tracks = json.load(f)
 
 mismatches = []
