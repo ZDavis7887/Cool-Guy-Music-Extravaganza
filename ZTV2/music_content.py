@@ -24,7 +24,7 @@ def get_high_authority_feature_NO_API(artist_name):
                 title = entry.get('title', '').lower()
                 
                 # 1. THE MUSIC GATE: Verify the video is actually about music
-                music_keywords = ['album', 'song', 'band', 'music', 'discography', 'live', 'concert', 'tour', 'review']
+                music_keywords = ['album', 'song', 'band', 'music', 'discography', 'review']
                 if not any(word in title for word in music_keywords):
                     continue
 
