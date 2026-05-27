@@ -3,7 +3,7 @@ import json
 
 # Paths
 csv_file = "Library - Music - All.csv"
-json_file = "tracks.json"
+json_file = "upgraded_tracks.json"
 output_json = "tracks_dates.json"
 
 # Load release dates from CSV
