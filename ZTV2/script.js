@@ -48,7 +48,7 @@ function seedShuffle(str) {
 
 function loadYouTubeAPI() {
     const tag = document.createElement('script');
-    tag.src = "https://https://www.youtube.com/iframe_api";
+    tag.src = "https://www.youtube.com/iframe_api";
     document.body.appendChild(tag);
 }
 
