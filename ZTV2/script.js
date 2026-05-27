@@ -1,21 +1,10 @@
 const API_KEY = "67151f1c5943c2b35b9750ab48ac296f";
 let tracklist = [], featurelist = [], playbackQueue = [];
 let player, typing, fullTextGlobal = "";
-let currentTrackIndex = 0;
+let currentTrackIndex = 0, musicPlaytimeMs = 0;
+const MUSIC_BLOCK_LIMIT = 60 * 60 * 1000; 
 let isFeatureMode = false;
-let isFirstLoad = true; // CRITICAL: Resets only when page is refreshed
-
-// --- THE BROADCAST SCHEDULE CONFIGURATION ---
-// Structure your blocks cleanly by hour (0 to 23).
-// true = FEATURE block, false = MUSIC block.
-const BROADCAST_SCHEDULE = {
-    0: false,  1: false,  2: false,  3: false,  // Midnight - 4 AM: Music
-    4: true,   5: false,  6: false,  7: false,  // 4 AM: Documentary Feature
-    8: false,  9: false,  10: false, 11: false, // 8 AM - Noon: Music
-    12: true,  13: false, 14: false, 15: false, // Noon: Midday Documentary Feature
-    16: false, 17: false, 18: false, 19: false, // 4 PM - 8 PM: Prime Music Rotation
-    20: true,  21: true,  22: false, 23: false  // 8 PM - 10 PM: Blockbuster Feature Blocks
-};
+let isFirstLoad = true; // CRITICAL: This resets only when the page is refreshed
 
 async function loadTracks() {
     try {
@@ -26,24 +15,12 @@ async function loadTracks() {
             featurelist = await featRes.json();
         } catch (e) {}
         
-        // Stabilize random generation based on the current date so everyone gets the same rotation daily
-        const seed = new Date().toDateString();
-        playbackQueue = [...tracklist].sort(() => seedShuffle(seed));
-        
+        playbackQueue = [...tracklist].sort(() => Math.random() - 0.5);
         loadYouTubeAPI();
         
         setupSearch(document.getElementById('search-bar'), document.getElementById('search-results'));
         setupSearch(document.getElementById('search-bar-mobile'), document.getElementById('search-results-mobile'));
     } catch (e) { console.error(e); }
-}
-
-// Simple deterministic string hash algorithm to unify visitor playlist arrays
-function seedShuffle(str) {
-    let hash = 0;
-    for (let i = 0; i < str.length; i++) {
-        hash = str.charCodeAt(i) + ((hash << 5) - hash);
-    }
-    return (hash % 100) / 100 - 0.5;
 }
 
 function loadYouTubeAPI() {
@@ -53,42 +30,33 @@ function loadYouTubeAPI() {
 }
 
 window.onYouTubeIframeAPIReady = () => {
-    // Determine target mode dynamically by evaluating the clock immediately on launch
-    const currentHour = new Date().getHours();
-    isFeatureMode = BROADCAST_SCHEDULE[currentHour] || false;
-    
+    // Determine starting mode for the session
+    if (featurelist.length > 0 && Math.random() > 0.5) {
+        isFeatureMode = true;
+    }
     playNextContent();
 };
 
 function playNextContent() {
     let startAt = 0;
 
-    // Check the live schedule to verify what should be playing *right now*
-    const currentHour = new Date().getHours();
-    const scheduledFeatureMode = BROADCAST_SCHEDULE[currentHour] || false;
-
-    // If the clock ticked over into a new programming tier, switch modes
-    if (isFeatureMode !== scheduledFeatureMode) {
-        isFeatureMode = scheduledFeatureMode;
-    }
-
-    // THE JUMP-IN MECHANISM: Emulates tuning into an ongoing live broadcast feed
+    // THE JUMP-IN MECHANISM: Only applies to the VERY first video of the session
     if (isFirstLoad) {
-        // Music joins mid-stream (0-3 mins). Feature documentaries join deeply mid-stream (0-25 mins).
-        startAt = isFeatureMode ? Math.floor(Math.random() * 1500) : Math.floor(Math.random() * 180);
-        isFirstLoad = false; 
+        // Randomly pick a spot: Music (0-2 mins), Features (0-20 mins)
+        startAt = isFeatureMode ? Math.floor(Math.random() * 1200) : Math.floor(Math.random() * 120);
+        isFirstLoad = false; // Kill the flag so the next video starts at 0
     }
 
     if (isFeatureMode) {
-        if (featurelist.length > 0) {
-            const randomFeature = featurelist[Math.floor(Math.random() * featurelist.length)];
-            playTrack(randomFeature, 'FEATURE', startAt);
+        const randomFeature = featurelist[Math.floor(Math.random() * featurelist.length)];
+        playTrack(randomFeature, 'FEATURE', startAt);
+    } else {
+        if (musicPlaytimeMs >= MUSIC_BLOCK_LIMIT && featurelist.length > 0) {
+            isFeatureMode = true;
+            playNextContent(); 
         } else {
-            // Fallback cleanly to music if no features are found
             playTrack(playbackQueue[currentTrackIndex], 'MUSIC', startAt);
         }
-    } else {
-        playTrack(playbackQueue[currentTrackIndex], 'MUSIC', startAt);
     }
 }
 
@@ -107,7 +75,7 @@ async function playTrack(track, type, startTime = 0) {
             playerVars: { 
                 'autoplay': 1, 
                 'origin': location.origin,
-                'start': startTime 
+                'start': startTime // Used for the initial setup
             },
             events: { 
                 'onStateChange': (e) => {
@@ -120,8 +88,12 @@ async function playTrack(track, type, startTime = 0) {
 }
 
 function handleMediaEnd() {
-    // Instead of resetting manual timers, we advance track indices or let features chain
-    if (!isFeatureMode) {
+    if (isFeatureMode) {
+        isFeatureMode = false; 
+        musicPlaytimeMs = 0; 
+    } else {
+        // Track the total time played in the music block
+        musicPlaytimeMs += (player.getDuration() * 1000) || 210000;
         currentTrackIndex = (currentTrackIndex + 1) % playbackQueue.length;
     }
     playNextContent();
@@ -189,7 +161,11 @@ function setupSearch(input, results) {
 
 window.nextSong = () => { 
     if (!isFeatureMode) {
-        currentTrackIndex = (currentTrackIndex + 1) % playbackQueue.length;
+        musicPlaytimeMs += 210000; 
+        currentTrackIndex++; 
+    } else {
+        isFeatureMode = false;
+        musicPlaytimeMs = 0;
     }
     playNextContent(); 
 };
