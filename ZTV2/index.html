@@ -10,20 +10,15 @@
 </head>
 
 <body>
-  <div id="tv-tuner-overlay" onclick="tuneIn()">
+ <!-- REMOVE the onclick from this outer div -->
+<div id="tv-tuner-overlay">
     <div class="static-bg"></div>
     <div class="tuner-content">
         <h1 class="glitch" data-text="ZTV 2.0">ZTV 2.0</h1>
         <p class="blink"> [ SIGNAL DETECTED ] </p>
-        <button class="tune-button">TUNE IN</button>
+        <!-- ADD the onclick directly to the button here -->
+        <button class="tune-button" onclick="tuneIn()">TUNE IN</button>
     </div>
-</div>
-  <div id= search-container >
-  <div style= width:100%; max-width: 600px; >
-    <input id= search-bar  type= text  placeholder= Search... >
-    <div id= search-results >
-    </div>
-  </div>
 </div>
 
   
