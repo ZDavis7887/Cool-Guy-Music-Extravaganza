@@ -1,18 +1,6 @@
 #!/usr/bin/env python3
-"""
-YouTube Deep Dive Harvester - JSON Edition
-- Pulls uploads for a custom music channel seed list
-- Filters long-form deep dives and tags content categories
-- Incremental updates via cache (no duplicates)
-- Outputs structured data directly to features.json
-
-Requires:
-  pip install requests python-dateutil
-
-Usage examples:
-  python utube-expansion.py --api-key YOUR_API_KEY
-  python utube-expansion.py --api-key YOUR_API_KEY --out customized_features.json --min-minutes 20
-"""
+#RUN THE FOLLOWING EVERY 30 DAYS
+#python music_content.py --api-key AIzaSyAy7hztoIzmTm-JLaUa1woMPbxvzJ5gsZE --since-days 30
 
 from __future__ import annotations
 
@@ -36,26 +24,24 @@ YOUTUBE_API_BASE = "https://www.googleapis.com/youtube/v3"
 # Channel seeds
 # ---------------------------
 DEFAULT_CHANNEL_SEEDS = [
-  "UCt7fwAhXDy3oNFTAzF2o8Pw",  # the needle drop / Fantano (Combined unique ID)
-    "UCRZZB0clYcxWv31vlkcaAnA",  # deep cuts
-    "UC67f2Qf7FYuEaFf9Nne1_Zw",  # professor skye
-    "UCg9GZ78A0Uf_n7_SbeHC9og",  # trash theory
-    "UC7mFvYnUq68C6IQ_fVbDbFA",  # Polyphonic
-    "UC9C4YgY_7Ugfv8v86K7X6_g",  # Middle 8
-    "UCv96277Z73z_D6b0T69vIFA",  # The Volv
-    "UC9k-yiEpSjotCg6_b95C08g",  # Mic the Snare
-    "UCG77wTzIidS_bHAnv_m7OEA",  # Volkgeist
-    "UCF9_V_E6Y_wH_V2gC9gYnow",  # Digging the Greats
-    "UC_b8pBofpA6w6R0rX5K1g2Q",  # Rock N Roll True Stories
-    "UC8Oa69_T_IbybWaS_H0K6vQ",  # The Punk Rock MBA
-    "UCp3_79gI98gKEnUvG9C2f_g",  # The Punk Rock History Podcast
-    "UCE6Vqg6R_H_vUWeuFep61Sg",  # The History of Rock Music in Five Songs
-    "UClP8Vf_SAnwXkS6vX_K6kXw",  # The History of Metal
-    "UCG2M46T_X6M7SgS30Yv3Y7A",  # Alfo Media
-    "UCvTgnbCH3_6FpSjT1bExOqA",  # Sound Field Show
-    "UCXp56IidO-e_G_86V54n97W",  # The Line of Best Fit
-    "UC3w77_uD9387wA3_A31k6_A",  # Spectrum Pulse
-    "UC8-Th83bH_th1678x_k6g3g",  # Todd in the Shadows
+ "@fantano",
+  "@deepcuts_",
+  "@professorskye",
+  "@TrashTheory",
+  "@Polyphonic",
+  "@Middle8",
+  "@micthesnare",
+  "@Volkgeist",
+  "@DiggingtheGreats",
+  "@RockNRollTrueStories",
+  "@ThePunkRockMBA",
+  "@punkrockhistory",          # The Punk Rock History Podcast
+  "@historyofrockmusicinfivesongs",
+  "@AlfoMedia",
+  "@SoundFieldShow",
+  "@TheLineofBestFit",
+  "@SpectrumPulse",
+  "@toddintheshadows"
 ]
 
 
@@ -123,7 +109,7 @@ def save_cache(path: str, cache: dict) -> None:
         json.dump(cache, f, indent=2, ensure_ascii=False)
 
 def load_existing_features(path: str) -> List[dict]:
-    """Loads existing items from features.json to support incremental updates."""
+    """Loads existing items from features.json securely."""
     if os.path.exists(path):
         try:
             with open(path, "r", encoding="utf-8") as f:
@@ -134,10 +120,14 @@ def load_existing_features(path: str) -> List[dict]:
             return []
     return []
 
-def write_features_json(path: str, dataset: List[dict]) -> None:
-    """Overwrites features.json cleanly with the structured array dataset."""
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(dataset, f, indent=4, ensure_ascii=False)
+def append_single_feature_to_json(path: str, item: dict) -> None:
+    """Safely appends a single item to the JSON array without rewriting manually."""
+    dataset = load_existing_features(path)
+    # Double check link duplicates before adding
+    if not any(f.get('YouTubeLink') == item['YouTubeLink'] for f in dataset):
+        dataset.append(item)
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(dataset, f, indent=4, ensure_ascii=False)
 
 
 # ---------------------------
@@ -154,6 +144,7 @@ class HarvestConfig:
     after: Optional[str]
     before: Optional[str]
     include_shorts: bool
+    max_pages: int
 
 
 def within_window(published_at: str, after_iso: Optional[str], before_iso: Optional[str]) -> bool:
@@ -173,33 +164,28 @@ def within_window(published_at: str, after_iso: Optional[str], before_iso: Optio
 # Channel resolution
 # ---------------------------
 def resolve_channel_id(seed: str, api_key: str) -> Optional[str]:
-    seed = seed.strip()
-    if seed.startswith("UC") and len(seed) >= 20:
-        return seed
+    # 1. Clean up potential invisible whitespace/formatting strings
+    clean_seed = re.sub(r'[^a-zA-Z0-9_-]', '', seed).strip()
 
-    m = re.search(r"(UC[a-zA-Z0-9_-]{18,})", seed)
-    if m:
-        return m.group(1)
+    # 2. Direct Validation: If it's a structural channel ID, return it immediately
+    if clean_seed.startswith("UC") and len(clean_seed) == 24:
+        return clean_seed
 
-    if seed.startswith("@"):
+    # 3. Handle Handles: If it's a handle, search for the channel ID
+    search_query = clean_seed if clean_seed.startswith("@") else f"@{clean_seed}"
+    try:
         data = api_get(
             "search",
-            {"part": "snippet", "q": seed, "type": "channel", "maxResults": 1},
+            {"part": "snippet", "q": search_query, "type": "channel", "maxResults": 1},
             api_key,
         )
         items = data.get("items", [])
         if items:
             return safe_get(items[0], ["snippet", "channelId"]) or safe_get(items[0], ["id", "channelId"])
+    except Exception:
+        pass
 
-    data = api_get(
-        "search",
-        {"part": "snippet", "q": seed, "type": "channel", "maxResults": 1},
-        api_key,
-    )
-    items = data.get("items", [])
-    if not items:
-        return None
-    return safe_get(items[0], ["snippet", "channelId"]) or safe_get(items[0], ["id", "channelId"])
+    return None
 
 
 def get_uploads_playlist_id(channel_id: str, api_key: str) -> Optional[str]:
@@ -214,7 +200,7 @@ def get_uploads_playlist_id(channel_id: str, api_key: str) -> Optional[str]:
     return safe_get(items[0], ["contentDetails", "relatedPlaylists", "uploads"])
 
 
-def list_playlist_video_ids(playlist_id: str, api_key: str, max_pages: int = 200) -> List[str]:
+def list_playlist_video_ids(playlist_id: str, api_key: str, max_pages: int = 2) -> List[str]:
     video_ids: List[str] = []
     page_token = None
 
@@ -261,7 +247,7 @@ def fetch_videos_details(video_ids: List[str], api_key: str) -> List[dict]:
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--api-key", required=True, help="YouTube Data API v3 key")
-    ap.add_argument("--out", default="features.json", help="Output JSON path (Default: features.json)")
+    ap.add_argument("--out", default="features.json", help="Output JSON path")
     ap.add_argument("--cache", default="youtube_music_cache.json", help="Cache JSON tracker path")
     ap.add_argument("--seeds", default=None, help="Optional text file path containing custom seeds")
     ap.add_argument("--min-minutes", type=int, default=15, help="Minimum video length minutes")
@@ -269,6 +255,7 @@ def main():
     ap.add_argument("--after", default=None, help="Include videos published after this ISO date")
     ap.add_argument("--before", default=None, help="Include videos published before this ISO date")
     ap.add_argument("--include-shorts", action="store_true", help="Allow shorts content to bypass filters")
+    ap.add_argument("--depth", type=int, default=2, help="Number of playlist pages to fetch per channel")
     args = ap.parse_args()
 
     seeds = DEFAULT_CHANNEL_SEEDS[:]
@@ -292,114 +279,120 @@ def main():
         after=after_iso,
         before=before_iso,
         include_shorts=args.include_shorts,
+        max_pages=args.depth
     )
 
     cache = load_cache(cfg.cache_path)
     seen: Dict[str, str] = cache.get("seen_video_ids", {})
 
-    # Load existing array from target file to maintain persistent data cleanly
-    master_deck = load_existing_features(cfg.out_json)
-    initial_count = len(master_deck)
+    # Read current state to measure delta calculations
+    initial_count = len(load_existing_features(cfg.out_json))
+    grand_added_count = 0
 
     resolved_channels: List[Tuple[str, str]] = []
 
     print(f"[i] Seeds total: {len(cfg.seeds)}")
     print(f"[i] Target Output File: {cfg.out_json}")
-    print(f"[i] Cache seen tracking: {len(seen)}")
+    print(f"[i] Current database features tally: {initial_count}")
+    print(f"[i] Query Depth limit per channel: {cfg.max_pages} pages")
 
     for seed in cfg.seeds:
-        cid = resolve_channel_id(seed, cfg.api_key)
-        if not cid:
-            print(f"[!] Could not resolve channel: {seed}")
+        try:
+            cid = resolve_channel_id(seed, cfg.api_key)
+            if not cid:
+                print(f"[!] Could not resolve channel: {seed}")
+                continue
+            resolved_channels.append((seed, cid))
+        except Exception as err:
+            print(f"[!] Error resolving channel {seed}: {err}")
             continue
-        resolved_channels.append((seed, cid))
 
     print(f"[i] Resolved channels: {len(resolved_channels)}")
 
     for seed, channel_id in resolved_channels:
-        uploads = get_uploads_playlist_id(channel_id, cfg.api_key)
-        if not uploads:
-            print(f"[!] No uploads playlist path found for: {seed}")
+        try:
+            uploads = get_uploads_playlist_id(channel_id, cfg.api_key)
+            if not uploads:
+                print(f"[!] No uploads playlist path found for: {seed}")
+                continue
+
+            video_ids = list_playlist_video_ids(uploads, cfg.api_key, max_pages=cfg.max_pages)
+            if not video_ids:
+                continue
+
+            video_ids = [vid for vid in video_ids if vid not in seen]
+
+            if not video_ids:
+                print(f"[i] No new content found for: {seed}")
+                continue
+
+            videos = fetch_videos_details(video_ids, cfg.api_key)
+            channel_added_count = 0
+
+            for v in videos:
+                vid = v.get("id")
+                snippet = v.get("snippet", {})
+                content = v.get("contentDetails", {})
+
+                title = snippet.get("title", "").strip()
+                channel_title = snippet.get("channelTitle", "").strip()
+                published_at = snippet.get("publishedAt")
+                if not published_at:
+                    continue
+
+                if not within_window(published_at, cfg.after, cfg.before):
+                    continue
+
+                if EXCLUDE_TITLE_RE.search(title):
+                    continue
+
+                duration_sec = parse_iso8601_duration(content.get("duration", "PT0S"))
+
+                if not cfg.include_shorts and duration_sec < 60:
+                    continue
+
+                if duration_sec < cfg.min_minutes * 60:
+                    continue
+
+                title_lower = title.lower()
+                content_type = "Music Feature"
+                if "review" in title_lower or "one hit wonderland" in title_lower: 
+                    content_type = "Album Review"
+                elif "interview" in title_lower: 
+                    content_type = "Artist Interview"
+                elif any(x in title_lower for x in ["documentary", "retrospective", "history", "story", "trainwreckords"]): 
+                    content_type = "Documentary"
+                elif any(x in title_lower for x in ["deep dive", "essay", "explained", "dive"]): 
+                    content_type = "Music Deep Dive"
+
+                url = f"https://www.youtube.com/watch?v={vid}"
+
+                feature_item = {
+                    "Artist": "Various Artists",
+                    "Title": title,
+                    "YouTubeLink": url,
+                    "Type": content_type,
+                    "Source": channel_title or seed,
+                    "Summary": f"A curated music feature from {channel_title or seed}."
+                }
+
+                # Safe atomic append check execution
+                current_deck = load_existing_features(cfg.out_json)
+                if not any(f.get('YouTubeLink') == url for f in current_deck):
+                    append_single_feature_to_json(cfg.out_json, feature_item)
+                    channel_added_count += 1
+                    grand_added_count += 1
+                    seen[vid] = published_at
+
+            print(f"  [SUCCESS] Siphoned +{channel_added_count} new features from {channel_title or seed}")
+        except Exception as e:
+            print(f"[!] Error processing channel data for {seed}: {e}")
             continue
 
-        video_ids = list_playlist_video_ids(uploads, cfg.api_key)
-        if not video_ids:
-            continue
-
-        video_ids = [vid for vid in video_ids if vid not in seen]
-
-        if not video_ids:
-            print(f"[i] No new content found for: {seed}")
-            continue
-
-        videos = fetch_videos_details(video_ids, cfg.api_key)
-        channel_added_count = 0
-
-        for v in videos:
-            vid = v.get("id")
-            snippet = v.get("snippet", {})
-            content = v.get("contentDetails", {})
-
-            title = snippet.get("title", "").strip()
-            channel_title = snippet.get("channelTitle", "").strip()
-            published_at = snippet.get("publishedAt")
-            if not published_at:
-                continue
-
-            if not within_window(published_at, cfg.after, cfg.before):
-                continue
-
-            if EXCLUDE_TITLE_RE.search(title):
-                continue
-
-            duration_sec = parse_iso8601_duration(content.get("duration", "PT0S"))
-
-            if not cfg.include_shorts and duration_sec < 60:
-                continue
-
-            if duration_sec < cfg.min_minutes * 60:
-                continue
-
-            # Standardized layout parsing matching your schema structure
-            title_lower = title.lower()
-            content_type = "Music Feature"
-            if "review" in title_lower or "one hit wonderland" in title_lower: 
-                content_type = "Album Review"
-            elif "interview" in title_lower: 
-                content_type = "Artist Interview"
-            elif any(x in title_lower for x in ["documentary", "retrospective", "history", "story", "trainwreckords"]): 
-                content_type = "Documentary"
-            elif any(x in title_lower for x in ["deep dive", "essay", "explained", "dive"]): 
-                content_type = "Music Deep Dive"
-
-            url = f"https://www.youtube.com/watch?v={vid}"
-
-            # Final clean mapping object setup
-            feature_item = {
-                "Artist": "Various Artists",
-                "Title": title,
-                "YouTubeLink": url,
-                "Type": content_type,
-                "Source": channel_title or seed,
-                "Summary": f"A curated music feature from {channel_title or seed}."
-            }
-
-            # Avoid adding internal structural array duplicates
-            if not any(f['YouTubeLink'] == url for f in master_deck):
-                master_deck.append(feature_item)
-                channel_added_count += 1
-                seen[vid] = published_at
-
-                # Immediate write out on tracking match
-                write_features_json(cfg.out_json, master_deck)
-
-        print(f"  [SUCCESS] Siphoned +{channel_added_count} new features from {seed}")
-
-    new_total = len(master_deck) - initial_count
-    if new_total > 0:
-        print(f"\n[✓] Grand Total: Added {new_total} new features into {cfg.out_json}")
+    if grand_added_count > 0:
+        print(f"\n[✓] Grand Total: Appended {grand_added_count} brand-new items into {cfg.out_json}")
     else:
-        print("\n[i] Scan completed. features.json is up to date.")
+        print("\n[i] Scan completed. No new tracks found to append.")
 
     cache["seen_video_ids"] = seen
     save_cache(cfg.cache_path, cache)
