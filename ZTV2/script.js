@@ -96,3 +96,22 @@ function buildContinuousBroadcast() {
         console.warn("Timeline built, but startPlayback function is missing or array is empty.");
     }
 }
+
+// Add this function to handle your HTML button click cleanly
+function tuneIn() {
+    console.log("[UI] Tune In button clicked. Initializing audio stream...");
+    
+    // Hide a splash screen overlay if you have one
+    const overlay = document.getElementById('splash-screen'); // adjust ID to match your HTML
+    if (overlay) {
+        overlay.style.display = 'none';
+    }
+    
+    // Start playback from the current timeline index
+    if (continuousPlaylist.length > 0) {
+        // Change 'playVideo' to match your actual player function name from Step 1
+        playVideo(continuousPlaylist[currentTrackIndex]); 
+    } else {
+        console.error("Playlist timeline isn't ready yet.");
+    }
+}
