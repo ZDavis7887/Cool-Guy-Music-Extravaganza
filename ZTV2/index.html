@@ -25,7 +25,12 @@
   
 <div id= winamp-container >
   
-  
+  <div id="search-container">
+  <div style="width:100%; max-width: 600px;">
+    <input id="search-bar" type="text" placeholder="Search tracks, artists, or features...">
+    <div id="search-results"></div>
+  </div>
+</div>
   <div id= album-info >
     <img id= album-art  src= default_album.png  alt= Album Art >
     <div id= album-name >Loading Album...</div>
@@ -55,12 +60,12 @@
       <button onclick= nextSong() >Next</button>
       <button onclick= toggleVideo() >Show/Hide Video</button>
     </div>
-    <div id= search-container-mobile > 
-      <div style= width:100%; max-width: 600px;display: flex; align-items: center; >
-      <input id= search-bar-mobile  type= text  placeholder= Search... >
-      <div id= search-results-mobile >
-      </div>
-    </div></div>
+    <div id="search-container-mobile"> 
+  <div style="width:100%; max-width: 600px; display: flex; align-items: center; flex-direction: column;">
+    <input id="search-bar-mobile" type="text" placeholder="Search...">
+    <div id="search-results-mobile"></div>
+  </div>
+</div>
     
     <div id= player ></div>
   </div>
