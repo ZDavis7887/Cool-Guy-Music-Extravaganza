@@ -1,183 +1,85 @@
-const API_KEY = "67151f1c5943c2b35b9750ab48ac296f";
-let tracklist = [], featurelist = [], playbackQueue = [];
-let player, typing, fullTextGlobal = "";
-let currentTrackIndex = 0, musicPlaytimeMs = 0;
-const MUSIC_BLOCK_LIMIT = 60 * 60 * 1000; 
-let isFeatureMode = false;
-let isFirstLoad = true; // CRITICAL: This resets only when the page is refreshed
+// Master queues for your assets
+let featureQueue = [];
+let trackQueue = [];
+let continuousPlaylist = [];
+let currentTrackIndex = 0;
 
-async function loadTracks() {
-    try {
-        const res = await fetch('upgraded_tracks.json');
-        tracklist = await res.json();
-        try {
-            const featRes = await fetch('features.json');
-            featurelist = await featRes.json();
-        } catch (e) {}
-        
-        playbackQueue = [...tracklist].sort(() => Math.random() - 0.5);
-        loadYouTubeAPI();
-        
-        setupSearch(document.getElementById('search-bar'), document.getElementById('search-results'));
-        setupSearch(document.getElementById('search-bar-mobile'), document.getElementById('search-results-mobile'));
-    } catch (e) { console.error(e); }
+// 1. The Shuffle Engine (Fisher-Yates)
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
 }
 
-function loadYouTubeAPI() {
-    const tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/iframe_api";
-    document.body.appendChild(tag);
-}
+// 2. Load both data sources simultaneously
+Promise.all([
+    fetch('features.json').then(res => res.json()),
+    fetch('tracks.json').then(res => res.json()) // Adjust filename if your playlist is named differently
+])
+.then(([features, tracks]) => {
+    // Shuffle both decks perfectly right out of the gate
+    featureQueue = shuffleArray(features);
+    trackQueue = shuffleArray(tracks);
+    
+    buildContinuousBroadcast();
+})
+.catch(err => console.error("Error loading broadcast assets:", err));
 
-window.onYouTubeIframeAPIReady = () => {
-    // Determine starting mode for the session
-    if (featurelist.length > 0 && Math.random() > 0.5) {
-        isFeatureMode = true;
-    }
-    playNextContent();
-};
-
-function playNextContent() {
-    let startAt = 0;
-
-    // THE JUMP-IN MECHANISM: Only applies to the VERY first video of the session
-    if (isFirstLoad) {
-        // Randomly pick a spot: Music (0-2 mins), Features (0-20 mins)
-        startAt = isFeatureMode ? Math.floor(Math.random() * 1200) : Math.floor(Math.random() * 120);
-        isFirstLoad = false; // Kill the flag so the next video starts at 0
-    }
-
-    if (isFeatureMode) {
-        const randomFeature = featurelist[Math.floor(Math.random() * featurelist.length)];
-        playTrack(randomFeature, 'FEATURE', startAt);
-    } else {
-        if (musicPlaytimeMs >= MUSIC_BLOCK_LIMIT && featurelist.length > 0) {
-            isFeatureMode = true;
-            playNextContent(); 
+// 3. Assemble the structured infinite timeline
+function buildContinuousBroadcast() {
+    let fIndex = 0;
+    let tIndex = 0;
+    
+    // Determine the absolute beginning on a 50/50 coin flip
+    const startWithFeature = Math.random() < 0.5;
+    
+    // Build out a massive playlist buffer (e.g., 500 items deep) to loop through
+    for (let block = 0; block < 60; block++) {
+        
+        // Block A: Handle the Feature slot
+        if (block === 0 && !startWithFeature) {
+            // If the coin flip said start with songs, skip this initial feature slot
         } else {
-            playTrack(playbackQueue[currentTrackIndex], 'MUSIC', startAt);
+            // Pull a feature. If we hit the end of the shuffled list, wrap around
+            continuousPlaylist.push({
+                ...featureQueue[fIndex % featureQueue.length],
+                broadcastType: 'feature'
+            });
+            fIndex++;
+        }
+        
+        // Block B: Handle the 7-Track Music Slot
+        for (let s = 0; s < 7; s++) {
+            continuousPlaylist.push({
+                ...trackQueue[tIndex % trackQueue.length],
+                broadcastType: 'song'
+            });
+            tIndex++;
         }
     }
+    
+    console.log("Broadcast timeline assembled successfully:", continuousPlaylist);
+    
+    // Fire up your video/audio player using the first item in the continuousPlaylist
+    startPlayback(continuousPlaylist[currentTrackIndex]);
 }
 
-async function playTrack(track, type, startTime = 0) {
-    const videoId = extractVideoId(track.YouTubeLink);
-    if (!videoId) { window.nextSong(); return; }
-
-    if (player && player.loadVideoById) { 
-        player.loadVideoById({
-            videoId: videoId,
-            startSeconds: startTime
-        }); 
-    } else {
-        player = new YT.Player('player', {
-            videoId: videoId,
-            playerVars: { 
-                'autoplay': 1, 
-                'origin': location.origin,
-                'start': startTime // Used for the initial setup
-            },
-            events: { 
-                'onStateChange': (e) => {
-                    if (e.data === 0) handleMediaEnd();
-                }
-            }
-        });
+// 4. Handle Track Transitions
+function onTrackEnded() {
+    currentTrackIndex++;
+    
+    // Safety check: if they somehow listen to all 500 pre-built tracks, rebuild the deck
+    if (currentTrackIndex >= continuousPlaylist.length) {
+        currentTrackIndex = 0;
+        buildContinuousBroadcast(); 
+        return;
     }
-    updateUI(track, type);
+    
+    const nextTrack = continuousPlaylist[currentTrackIndex];
+    console.log(`Transitioning to next block item. Type: ${nextTrack.broadcastType}`);
+    
+    // Your player logic to update the YouTube iframe/audio source and play
+    playTrack(nextTrack); 
 }
-
-function handleMediaEnd() {
-    if (isFeatureMode) {
-        isFeatureMode = false; 
-        musicPlaytimeMs = 0; 
-    } else {
-        // Track the total time played in the music block
-        musicPlaytimeMs += (player.getDuration() * 1000) || 210000;
-        currentTrackIndex = (currentTrackIndex + 1) % playbackQueue.length;
-    }
-    playNextContent();
-}
-
-function updateUI(track, type) {
-    const prefix = type === 'FEATURE' ? '[ ZTV FEATURE PRESENTATION ]' : '[ ZTV MUSIC ROTATION ]';
-    document.getElementById('now-playing').innerText = `${prefix} ${track.Artist || track.Source} - ${track.Title}`;
-    document.getElementById('album-art').src = track.AlbumArtLink || 'default_album.png';
-    document.getElementById('album-name').innerText = track.Album || (type === 'FEATURE' ? 'ZTV Special' : "");
-    document.getElementById('album-year').innerText = track.Year || "";
-
-    const summaryEl = document.getElementById('artist-summary');
-    const toggleBtn = document.getElementById('summary-toggle');
-    fullTextGlobal = track.Summary || "";
-
-    if (fullTextGlobal.length > 450) {
-        typeRPG(fullTextGlobal.slice(0, 450) + "...", summaryEl);
-        toggleBtn.style.display = "block";
-    } else {
-        typeRPG(fullTextGlobal, summaryEl);
-        toggleBtn.style.display = "none";
-    }
-}
-
-function extractVideoId(url) {
-    if (!url) return null;
-    try {
-        const urlObj = new URL(url);
-        const videoId = urlObj.searchParams.get('v');
-        if (videoId) return videoId.substring(0, 11);
-        if (url.includes('youtu.be/')) return url.split('youtu.be/')[1].substring(0, 11);
-    } catch (e) {
-        const match = url.match(/[?&]v=([^&#]*)/);
-        return match ? match[1].substring(0, 11) : null;
-    }
-    return null;
-}
-
-function typeRPG(text, container) {
-    clearInterval(typing);
-    let i = 0; container.innerText = "";
-    typing = setInterval(() => {
-        if (i < text.length) { container.innerText += text.charAt(i); i++; } 
-        else clearInterval(typing);
-    }, 10);
-}
-
-function setupSearch(input, results) {
-    if (!input || !results) return;
-    input.addEventListener('input', () => {
-        const q = input.value.toLowerCase().trim();
-        results.innerHTML = "";
-        if (!q) return;
-        tracklist.filter(t => t.Artist.toLowerCase().includes(q) || t.Title.toLowerCase().includes(q)).slice(0, 10).forEach(t => {
-            const d = document.createElement('div');
-            d.innerHTML = `<b>${t.Artist}</b> - ${t.Title}`;
-            d.style.cursor = "pointer";
-            d.style.padding = "5px";
-            d.onclick = () => { playTrack(t, 'MUSIC'); input.value = ""; results.innerHTML = ""; };
-            results.appendChild(d);
-        });
-    });
-}
-
-window.nextSong = () => { 
-    if (!isFeatureMode) {
-        musicPlaytimeMs += 210000; 
-        currentTrackIndex++; 
-    } else {
-        isFeatureMode = false;
-        musicPlaytimeMs = 0;
-    }
-    playNextContent(); 
-};
-
-window.tuneIn = () => { 
-    if(player) { player.unMute(); player.playVideo(); } 
-    document.getElementById('tv-tuner-overlay').style.display = "none"; 
-};
-
-window.showFullDescription = () => {
-    document.getElementById('artist-summary').innerText = fullTextGlobal;
-    document.getElementById('summary-toggle').style.display = "none";
-};
-
-loadTracks();
