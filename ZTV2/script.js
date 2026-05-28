@@ -89,7 +89,7 @@ function tuneIn() {
     }
     
     // Initialize YouTube Player Frame if it doesn't exist yet
-    if (!player && continuousPlaylist.length > 0) {
+   if (!player && continuousPlaylist.length > 0) {
         loadYouTubePlayer(continuousPlaylist[currentTrackIndex]);
     }
 }
