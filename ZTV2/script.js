@@ -127,7 +127,7 @@ function initPlayerInstance(videoId, item) {
         },
         events: {
             'onReady': (event) => {
-                event.target.playVideo();
+                event.target.loadYouTubePlayer();
                 updateUIElements(item);
             },
             'onStateChange': (event) => {
