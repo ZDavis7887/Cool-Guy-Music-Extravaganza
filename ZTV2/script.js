@@ -20,7 +20,7 @@ Promise.all([
         return res.json();
     }),
     fetch('upgraded_tracks.json').then(res => {
-        if (!res.ok) throw new Error("Failed to load tracks.json");
+        if (!res.ok) throw new Error("Failed to load upgraded_tracks.json");
         return res.json();
     })
 ])
