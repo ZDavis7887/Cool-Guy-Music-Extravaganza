@@ -24,7 +24,7 @@ YOUTUBE_API_BASE = "https://www.googleapis.com/youtube/v3"
 # Channel seeds
 # ---------------------------
 DEFAULT_CHANNEL_SEEDS = [
- "@fantano",
+  "@fantano",
   "@deepcuts_",
   "@professorskye",
   "@TrashTheory",
