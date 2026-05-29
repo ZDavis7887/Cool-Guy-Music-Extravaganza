@@ -11,7 +11,7 @@ from tqdm import tqdm
 
 # ========== CONFIG ==========
 csv_file = "Library - Music - All.csv"      # Your CSV file
-json_file = "tracks.json"                   # Final output
+json_file = "upgraded_tracks.json"                   # Final output
 checkpoint_file = "tracks_checkpoint.json"  # Save progress here
 failed_file = "failed_tracks.json"          # Save failed tracks here
 SAVE_EVERY_N_TRACKS = 100                   # Save checkpoint every N songs
