@@ -41,7 +41,16 @@ DEFAULT_CHANNEL_SEEDS = [
   "@SoundFieldShow",
   "@TheLineofBestFit",
   "@SpectrumPulse",
-  "@toddintheshadows"
+  "@toddintheshadows",
+  "@BangerTV",
+  "@SeaOfTranquility",
+  "@NotesReviews",
+  "@DeadEndHipHop",
+  "@PadChennington",
+  "@Rocked",
+  "@JustinHawkinsRidesAgain",
+  "@TheMetalTempestYT",
+  "@hiphopmadness",
 ]
 
 
