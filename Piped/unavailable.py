@@ -1,87 +1,45 @@
 import json
-import os
-import yt_dlp
+import requests
+import time
 
-# Paths to your files
-INPUT_JSON = "upgraded_tracks.json"
-BAD_TRACKS_JSON = "unavailable_tracks.json"  # Only contains the dead tracks
+# Settings
+INPUT_FILE = 'upgraded_tracks.json'
+OUTPUT_FILE = 'restricted_tracks.json'
+HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
 
-def check_video_status(url):
-    """
-    Returns True if available.
-    Returns (False, reason) if deleted, private, or blocked.
-    """
-    if not url or "youtube.com" not in url and "youtu.be" not in url:
-        return False, "Invalid or missing URL"
+def is_embeddable(url):
+    try:
+        # The oEmbed check is the "Gold Standard" for checking embed permissions
+        oembed_url = f"https://www.youtube.com/oembed?url={url}&format=json"
+        response = requests.get(oembed_url, headers=HEADERS, timeout=10)
+        return response.status_code == 200
+    except:
+        return False
 
-    ydl_opts = {
-        'extract_flat': True,
-        'simulate': True,
-        'skip_download': True,
-        'ignoreerrors': True,
-        'quiet': True,
-        'no_warnings': True,
-    }
-
-    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-        try:
-            info = ydl.extract_info(url, download=False)
-            if info is None:
-                return False, "Video unavailable (Private, deleted, or geoblocked)"
-            
-            title = info.get('title', '')
-            if title in ['[Deleted video]', '[Private video]']:
-                return False, f"Video is {title.strip('[]')}"
-                
-            return True, "Available"
-        except Exception as e:
-            return False, str(e)
-
-def extract_dead_tracks():
-    if not os.path.exists(INPUT_JSON):
-        print(f"Error: Could not find {INPUT_JSON}")
-        return
-
-    with open(INPUT_JSON, 'r', encoding='utf-8') as f:
+def run_cleanup():
+    print("Loading your tracks...")
+    with open(INPUT_FILE, 'r', encoding='utf-8') as f:
         tracks = json.load(f)
 
-    print(f"Loaded {len(tracks)} tracks from {INPUT_JSON}.")
-    print("Scanning for unavailable links (Original file will not be modified)...\n")
-    
-    unavailable_tracks = []
+    broken_tracks = []
+    print(f"Starting scan of {len(tracks)} tracks. This will take a while to stay 'under the radar' of YouTube.")
 
-    try:
-        for index, track in enumerate(tracks, start=1):
-            artist = track.get('Artist', 'Unknown Artist')
-            title = track.get('Title', 'Unknown Title')
-            url = track.get('YouTubeLink', '')
-
-            print(f"[{index}/{len(tracks)}] Checking: {artist} - {title}...", end="", flush=True)
-
-            is_available, reason = check_video_status(url)
-
-            if is_available:
-                print(" OK")
-            else:
-                print(f" ❌ UNAVAILABLE ({reason})")
-                
-                # Create a copy of the track object so we don't mutate anything by accident
-                bad_track_entry = track.copy()
-                bad_track_entry['Audit_Failure_Reason'] = reason
-                unavailable_tracks.append(bad_track_entry)
-                
-                # Append to the output file in real-time so you don't lose data if interrupted
-                with open(BAD_TRACKS_JSON, 'w', encoding='utf-8') as f:
-                    json.dump(unavailable_tracks, f, indent=4, ensure_ascii=False)
-
-    except KeyboardInterrupt:
-        print("\n\nAudit paused by user. Saving progress...")
+    for i, track in enumerate(tracks):
+        url = track.get('YouTubeLink', '')
         
-    print("\n" + "="*40)
-    print("Audit Complete!")
-    print(f"Total Tracks Checked: {index}")
-    print(f"Total Unavailable Tracks Found: {len(unavailable_tracks)}")
-    print(f"Saved dead tracks to: {BAD_TRACKS_JSON}")
+        if url and not is_embeddable(url):
+            print(f"[{i+1}/{len(tracks)}] BROKEN: {track.get('Title')}")
+            broken_tracks.append(track)
+        
+        # 3 second delay is crucial to prevent being blocked
+        time.sleep(3) 
+
+    # Save the bad ones
+    with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
+        json.dump(broken_tracks, f, indent=4)
+
+    print(f"\nDone! Found {len(broken_tracks)} broken tracks.")
+    print(f"Check '{OUTPUT_FILE}' for your list of links to fix.")
 
 if __name__ == "__main__":
-    extract_dead_tracks()
+    run_cleanup()
