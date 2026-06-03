@@ -25,7 +25,7 @@ function shuffleArray(array) {
 
 Promise.all([
     fetch('features.json').then(res => { if (!res.ok) throw new Error(); return res.json(); }).catch(() => []),
-    fetch('tracks.json').then(res => { if (!res.ok) throw new Error(); return res.json(); }).catch(() => [])
+    fetch('upgraded_tracks.json').then(res => { if (!res.ok) throw new Error(); return res.json(); }).catch(() => [])
 ])
 .then(([features, tracks]) => {
     console.log("[ZTV Data] Features loaded:", features.length, "Tracks loaded:", tracks.length);
@@ -78,9 +78,10 @@ function buildContinuousBroadcast() {
 }
 
 // ==========================================
-// 3. CORE UI & INTERACTIVE PLAYER CONTROLS (FIXED TECH CONFIG)
+// 3. CORE UI & INTERACTIVE PLAYER CONTROLS (FULLSCREEN RETAINED)
 // ==========================================
 let videoJSInstance = null;
+let wasInFullscreen = false; // Tracks fullscreen state between track swaps
 
 function tuneIn() {
     const overlay = document.getElementById('tv-tuner-overlay');
@@ -95,13 +96,20 @@ function loadVideoJSPlayer(item) {
     const playerContainer = document.getElementById('player');
     if (!playerContainer) return;
 
-    // 1. If an instance already exists, fully dispose of it to clear old states safely
+    // --- CLEAN THE URL TO STRIP PLAYLISTS ---
+    let cleanYouTubeLink = item.YouTubeLink;
+    if (cleanYouTubeLink.includes('&list=')) {
+        cleanYouTubeLink = cleanYouTubeLink.split('&list=')[0];
+    }
+
+    // Check if the current instance is in fullscreen before we destroy it
     if (videoJSInstance) {
+        wasInFullscreen = videoJSInstance.isFullscreen();
         videoJSInstance.dispose();
         videoJSInstance = null;
     }
 
-    // 2. Re-create a fresh video DOM target wrapper node inside your #player layout frame
+    // Re-create a fresh video DOM target wrapper node inside your #player layout frame
     playerContainer.innerHTML = `
         <video 
             id="ztv-stream-player" 
@@ -112,7 +120,7 @@ function loadVideoJSPlayer(item) {
             style="width: 100%; height: 100%;">
         </video>`;
 
-    // 3. Feed the target URL directly into the instantiation options block to satisfy the tech order check
+    // Initialize the player with the YouTube plugin activated
     videoJSInstance = videojs('ztv-stream-player', {
         autoplay: true,
         controls: true,
@@ -120,7 +128,7 @@ function loadVideoJSPlayer(item) {
         techOrder: ["youtube"],
         sources: [{
             type: "video/youtube",
-            src: item.YouTubeLink
+            src: cleanYouTubeLink
         }],
         youtube: { 
             iv_load_policy: 3,
@@ -129,13 +137,25 @@ function loadVideoJSPlayer(item) {
         }
     });
 
-    // 4. Bind our automated playlist continuation pipeline hook
+    // --- FORCE FULLSCREEN RETENTION ON LOAD ---
+    videoJSInstance.ready(function() {
+        if (wasInFullscreen) {
+            // A brief timeout gives the browser a millisecond to render the new video node
+            setTimeout(() => {
+                if (videoJSInstance) {
+                    videoJSInstance.requestFullscreen();
+                }
+            }, 50);
+        }
+    });
+
+    // Bind our automated playlist continuation pipeline hook
     videoJSInstance.on('ended', function() {
         console.log("[ZTV Engine] Track complete. Loading next rotation slot...");
         nextSong();
     });
 
-    // 5. Instantly push your Last.fm artwork and typewriter metadata text updates
+    // Instantly push your Last.fm artwork and typewriter metadata text updates
     updateUIElements(item);
 }
 
