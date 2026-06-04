@@ -11,7 +11,14 @@ function shuffle(array) { return array.sort(() => Math.random() - 0.5); }
 // ==========================================
 function tuneIn() {
     document.getElementById('tv-tuner-overlay').style.display = 'none';
-    if (continuousPlaylist.length > 0) loadVideoJSPlayer(continuousPlaylist[currentTrackIndex]);
+    
+    // 50/50 chance to start at a random point in the playlist
+    // OR you can just set currentTrackIndex = 0 if you want it to start at the beginning
+    currentTrackIndex = Math.floor(Math.random() * continuousPlaylist.length);
+    
+    if (continuousPlaylist.length > 0) {
+        loadVideoJSPlayer(continuousPlaylist[currentTrackIndex]);
+    }
 }
 
 function loadVideoJSPlayer(item, index = null) {
@@ -37,7 +44,8 @@ function loadVideoJSPlayer(item, index = null) {
 }
 
 function nextSong() { 
-    currentTrackIndex = Math.floor(Math.random() * continuousPlaylist.length);
+    // Move to the next index, and loop back to 0 if at the end
+    currentTrackIndex = (currentTrackIndex + 1) % continuousPlaylist.length;
     loadVideoJSPlayer(continuousPlaylist[currentTrackIndex]); 
 }
 
@@ -46,22 +54,34 @@ function nextSong() {
 // ==========================================
 function buildContinuousBroadcast() {
     continuousPlaylist = [];
+    
+    // 1. Shuffle both queues
     const sFeatures = shuffle([...featureQueue]);
     const sTracks = shuffle([...trackQueue]);
-    let fPtr = 0, tPtr = 0;
-    while (tPtr < sTracks.length) {
-        if (fPtr < sFeatures.length) {
-            continuousPlaylist.push({...sFeatures[fPtr], broadcastType: 'feature'});
-            fPtr++;
-        }
+    
+    let fPtr = 0;
+    let tPtr = 0;
+
+    // 2. Build the playlist in chunks of 8 (7 songs + 1 feature)
+    while (tPtr < sTracks.length || fPtr < sFeatures.length) {
+        
+        // Add 7 songs (if available)
         for (let i = 0; i < 7 && tPtr < sTracks.length; i++) {
             continuousPlaylist.push({...sTracks[tPtr], broadcastType: 'song'});
             tPtr++;
         }
+        
+        // Add 1 feature (if available)
+        if (fPtr < sFeatures.length) {
+            continuousPlaylist.push({...sFeatures[fPtr], broadcastType: 'feature'});
+            fPtr++;
+        }
     }
+    
+    // 3. Shuffle ONLY the final result to keep it fresh 
+    // but the ratio remains locked at 7:1
     continuousPlaylist = shuffle(continuousPlaylist);
 }
-
 function updateUpcomingTracksList() {
     const container = document.getElementById('upcoming-tracks');
     if (!container) return;
