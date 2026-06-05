@@ -305,6 +305,10 @@
   /* Responsive Tweaks */
 /* 📱 ZTV Mobile Responsive (max-width: 768px) */
 @media (max-width: 768px) {
+
+  #search-container-mobile, #search-bar-mobile, #search-results-mobile {
+        display:block;
+      }
     body {
       font-size: 16px;
       padding: 0;
@@ -418,7 +422,7 @@
     display:block;
   }
   #search-results-mobile {
-    position: absolute;
+    /*position: absolute;*/
     width: 100%;
     max-height: 200px;
     overflow-y: auto;
@@ -426,7 +430,7 @@
     color: #00ff00;
     border: 1px solid #00ff00;
     padding: 8px;
-    margin-top: 262.4px;
+    /* margin-top: 262.4px; */
   }
   #search-results {
     position: static;

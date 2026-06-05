@@ -64,7 +64,7 @@
     </div>
     <div id="search-container-mobile"> 
       <div style="width:100%; max-width: 600px; display: flex; align-items: center; flex-direction: column;">
-        <input id="search-bar-mobile" type="text" placeholder="Search...">
+       <input id="search-bar-mobile" type="text" placeholder="Search..." oninput="runSearchFilter(this.value, 'search-results-mobile')">
         <div id="search-results-mobile"></div>
       </div>
     </div>

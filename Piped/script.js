@@ -232,9 +232,19 @@ function resetMetadataUI() {
 // 5. SEARCH ENGINE
 // ==========================================
 function setupSearchFunctionality() {
-    const dBar = document.getElementById('search-bar'), mBar = document.getElementById('search-bar-mobile');
-    if (dBar) dBar.oninput = (e) => runSearchFilter(e.target.value, 'search-results');
-    if (mBar) mBar.oninput = (e) => runSearchFilter(e.target.value, 'search-results-mobile');
+    const dBar = document.getElementById('search-bar');
+    const mBar = document.getElementById('search-bar-mobile');
+
+    if (dBar) {
+        dBar.oninput = (e) => runSearchFilter(e.target.value, 'search-results');
+    }
+
+    if (mBar) {
+        // Adding both input and keyup for broader mobile support
+        const handleSearch = (e) => runSearchFilter(e.target.value, 'search-results-mobile');
+        mBar.addEventListener('input', handleSearch);
+        mBar.addEventListener('keyup', handleSearch);
+    }
 }
 
 function runSearchFilter(query, containerId) {
