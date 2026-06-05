@@ -53,42 +53,25 @@ function nextSong() {
 // 3. BROADCAST & SEARCH LOGIC
 // ==========================================
 function buildContinuousBroadcast() {
-    continuousPlaylist = [];
-    
-    // 1. SHUFFLE SOURCE DATA IMMEDIATELY
-    // This destroys alphabetical order before anything else happens.
+    // 1. Randomize all source data first
     const sFeatures = shuffle([...featureQueue]);
     const sTracks = shuffle([...trackQueue]);
     
+    continuousPlaylist = [];
     let fPtr = 0;
-    let tPtr = 0;
-    let blocks = [];
-
-    // 2. BUILD RANDOMIZED BLOCKS
-    while (tPtr < sTracks.length || fPtr < sFeatures.length) {
-        let block = [];
+    
+    // 2. Distribute features across the songs
+    // We want a feature every ~7 songs.
+    for (let i = 0; i < sTracks.length; i++) {
+        // Always add the song
+        continuousPlaylist.push({...sTracks[i], broadcastType: 'song'});
         
-        // Grab 7 random songs
-        for (let i = 0; i < 7 && tPtr < sTracks.length; i++) {
-            block.push({...sTracks[tPtr], broadcastType: 'song'});
-            tPtr++;
-        }
-        
-        // Grab 1 random feature
-        if (fPtr < sFeatures.length) {
-            block.push({...sFeatures[fPtr], broadcastType: 'feature'});
+        // Every 7th position, inject a feature
+        if ((i + 1) % 7 === 0 && fPtr < sFeatures.length) {
+            continuousPlaylist.push({...sFeatures[fPtr], broadcastType: 'feature'});
             fPtr++;
         }
-        
-        blocks.push(block);
     }
-
-    // 3. SHUFFLE THE BLOCKS
-    // This randomizes the order of your 7:1 chunks.
-    blocks = shuffle(blocks);
-
-    // 4. FLATTEN
-    continuousPlaylist = blocks.flat();
 }
 
 function updateUpcomingTracksList() {
