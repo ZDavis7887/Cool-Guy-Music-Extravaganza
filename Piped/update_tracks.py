@@ -31,7 +31,7 @@ def create_browser():
     # If you have other options like 'user_data_dir', keep them!
     driver = uc.Chrome(
         options=options,
-        version_main=147,  # <--- Change this to your actual Chrome version
+        version_main=148,  # <--- Change this to your actual Chrome version
         use_subprocess=True
     )
     return driver
