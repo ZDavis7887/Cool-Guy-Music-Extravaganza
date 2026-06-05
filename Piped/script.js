@@ -55,33 +55,42 @@ function nextSong() {
 function buildContinuousBroadcast() {
     continuousPlaylist = [];
     
-    // 1. Shuffle both queues
+    // 1. SHUFFLE SOURCE DATA IMMEDIATELY
+    // This destroys alphabetical order before anything else happens.
     const sFeatures = shuffle([...featureQueue]);
     const sTracks = shuffle([...trackQueue]);
     
     let fPtr = 0;
     let tPtr = 0;
+    let blocks = [];
 
-    // 2. Build the playlist in chunks of 8 (7 songs + 1 feature)
+    // 2. BUILD RANDOMIZED BLOCKS
     while (tPtr < sTracks.length || fPtr < sFeatures.length) {
+        let block = [];
         
-        // Add 7 songs (if available)
+        // Grab 7 random songs
         for (let i = 0; i < 7 && tPtr < sTracks.length; i++) {
-            continuousPlaylist.push({...sTracks[tPtr], broadcastType: 'song'});
+            block.push({...sTracks[tPtr], broadcastType: 'song'});
             tPtr++;
         }
         
-        // Add 1 feature (if available)
+        // Grab 1 random feature
         if (fPtr < sFeatures.length) {
-            continuousPlaylist.push({...sFeatures[fPtr], broadcastType: 'feature'});
+            block.push({...sFeatures[fPtr], broadcastType: 'feature'});
             fPtr++;
         }
+        
+        blocks.push(block);
     }
-    
-    // 3. Shuffle ONLY the final result to keep it fresh 
-    // but the ratio remains locked at 7:1
-    continuousPlaylist = shuffle(continuousPlaylist);
+
+    // 3. SHUFFLE THE BLOCKS
+    // This randomizes the order of your 7:1 chunks.
+    blocks = shuffle(blocks);
+
+    // 4. FLATTEN
+    continuousPlaylist = blocks.flat();
 }
+
 function updateUpcomingTracksList() {
     const container = document.getElementById('upcoming-tracks');
     if (!container) return;
