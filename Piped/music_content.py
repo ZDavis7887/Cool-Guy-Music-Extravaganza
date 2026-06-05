@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 #RUN THE FOLLOWING EVERY 30 DAYS
 #python music_content.py --api-key AIzaSyAy7hztoIzmTm-JLaUa1woMPbxvzJ5gsZE --since-days 30
+#FOR NEW CONTENT TO ADD TO LIST
+# python music_content.py --api-key AIzaSyAy7hztoIzmTm-JLaUa1woMPbxvzJ5gsZE --depth 10
 
 from __future__ import annotations
 
@@ -51,6 +53,14 @@ DEFAULT_CHANNEL_SEEDS = [
   "@JustinHawkinsRidesAgain",
   "@TheMetalTempestYT",
   "@hiphopmadness",
+  "grungeHQ",
+  "@TheHardTimesNews",
+  "@BehindtMusic",
+  "@StreamMusicandMore",
+  "@EveryAlbumEver",
+  "@RAWMUSICTV",
+  
+
 ]
 
 
