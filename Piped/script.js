@@ -52,44 +52,40 @@ function nextSong() {
 // ==========================================
 // 3. BROADCAST & SEARCH LOGIC
 // ==========================================
+
+// 1. INDUSTRY-STANDARD SHUFFLE (Fisher-Yates)
+function shuffle(array) {
+    let currentIndex = array.length, randomIndex;
+    while (currentIndex !== 0) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+        [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+    }
+    return array;
+}
+
+// 2. THE BROADCAST BUILDER
 function buildContinuousBroadcast() {
-    // 1. Randomize all source data first
-    const sFeatures = shuffle([...featureQueue]);
+    // Randomize the entire music library first
     const sTracks = shuffle([...trackQueue]);
+    // Randomize the features library
+    const sFeatures = shuffle([...featureQueue]);
     
     continuousPlaylist = [];
     let fPtr = 0;
     
-    // 2. Distribute features across the songs
-    // We want a feature every ~7 songs.
+    // Build the playlist by iterating through all shuffled tracks
     for (let i = 0; i < sTracks.length; i++) {
-        // Always add the song
+        // Add the random song
         continuousPlaylist.push({...sTracks[i], broadcastType: 'song'});
         
-        // Every 7th position, inject a feature
+        // Inject a random feature every 7th song
         if ((i + 1) % 7 === 0 && fPtr < sFeatures.length) {
             continuousPlaylist.push({...sFeatures[fPtr], broadcastType: 'feature'});
             fPtr++;
         }
     }
 }
-
-function updateUpcomingTracksList() {
-    const container = document.getElementById('upcoming-tracks');
-    if (!container) return;
-    container.innerHTML = '<h3>Up Next</h3>';
-    for (let i = 1; i <= 10; i++) {
-        const targetIndex = (currentTrackIndex + i) % continuousPlaylist.length;
-        const item = continuousPlaylist[targetIndex];
-        const div = document.createElement('div');
-        div.className = 'upcoming-item';
-        div.style.cursor = 'pointer';
-        div.innerText = item.broadcastType === 'feature' ? `[TV] ${item.Title}` : `${item.Artist} - ${item.Title}`;
-        div.onclick = () => loadVideoJSPlayer(item, targetIndex);
-        container.appendChild(div);
-    }
-}
-
 // ==========================================
 // 4. LAST.FM API ART & METADATA FETCHING
 // ==========================================
