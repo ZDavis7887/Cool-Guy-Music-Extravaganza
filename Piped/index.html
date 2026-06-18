@@ -33,7 +33,7 @@
     <div id="search-results"></div>
   </div>
 </div>
-  <div id= album-info >
+  <!--<div id= album-info >
     <img id= album-art  src= default_album.png  alt= Album Art >
     <div id= album-name >Loading Album...</div>
     <div id= album-year >Loading Year...</div>
@@ -43,14 +43,14 @@
 <button id="summary-toggle" onclick="showFullDescription()" style="display:none;">Read more</button>
 
     
-    <!-- <div id= equalizer >
+     <div id= equalizer >
       <div class= bar ></div>
       <div class= bar ></div>
       <div class= bar ></div>
       <div class= bar ></div>
       <div class= bar ></div>
-    </div> -->
-  </div>
+    </div> 
+  </div>-->
 
 <div id="music-player">
     <div id="now-playing-wrapper">
@@ -82,10 +82,14 @@
   </div>
 
   
-  <!-- <div id= upcoming-tracks >
-    <!-- Next 10 tracks will load here -->
-  </div>
-   -->
+  <div id="channel-selector-module">
+    <div class="title-bar"><span>Available Channels</span></div>
+    <div class="channel-grid">
+        <button class="channel-btn active" onclick="switchChannel('live')">ZTV</button>
+        <button class="channel-btn" onclick="switchChannel('deep-dives')">DEEP DIVE CENTRAL</button>
+        </div>
+</div>
+   
 </div>
 <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
 
