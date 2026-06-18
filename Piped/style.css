@@ -111,7 +111,7 @@
     #winamp-container {
       display: flex;
       background-color: black;
-      border: 2px solid #43a4355c
+      border: 2px solid #43a4355c;
       padding: 16px;
       width: 1530px;
       font-family: 'Courier New', Courier, monospace;
