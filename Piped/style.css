@@ -111,7 +111,7 @@
     #winamp-container {
       display: flex;
       background-color: black;
-      border: 2px solid #43a4355c;
+      border: 2px solid gray;
       padding: 16px;
       width: 1530px;
       font-family: 'Courier New', Courier, monospace;
@@ -314,8 +314,8 @@
 
     #player {
       margin-top: 10px;
-      width: 100%;
-      height: 915px;
+      width: 560px;
+      height: 315px;
       display: block;
     }
 
