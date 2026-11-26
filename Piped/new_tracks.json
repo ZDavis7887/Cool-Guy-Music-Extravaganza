@@ -1,50 +1,1250 @@
 [
-  {
-    "Artist": "Julia Jacklin",
-    "Title": "I Wish",
-    "Album": "I Wish",
+{
+    "Artist": "Above & Beyond",
+    "Title": "Another Chance",
+    "YouTube_Title": "Above & Beyond pres. OceanLab \"Another Chance\" (Above & Beyond Club Edit) Official Music Video",
+    "Album": "Acoustic: Live at the Hollywood Bowl",
     "Year": "Unknown",
-    "YouTube_Title": "Julia Jacklin - I Wish (feat. The Maes) [Official Audio]",
-    "YouTubeLink": "https://www.youtube.com/watch?v=x-6Bv-8D89A&list=RDx-6Bv-8D89A&start_radio=1&pp=ygUUSnVsaWEgSmFja2xpbiBJIFdpc2igBwE%3D"
+    "YouTubeLink": "https://www.youtube.com/watch?v=_EV_Le2L0V8&list=RD_EV_Le2L0V8&start_radio=1&pp=ygUbQWJvdmUgQmV5b25kIEFub3RoZXIgQ2hhbmNloAcB"
   },
   {
-    "Artist": "Magazine",
-    "Title": "Magazine - Tic Tic Nervoso",
-    "Album": "Magazine",
+    "Artist": "Above & Beyond",
+    "Title": "Black Room Boy",
+    "YouTube_Title": "Above & Beyond - Black Room Boy (Official Video)",
+    "Album": "Acoustic: Live at the Hollywood Bowl",
     "Year": "Unknown",
-    "YouTube_Title": "MAGAZINE - TIC TIC NERVOSO (videoclipe oficial ) 1984",
-    "YouTubeLink": "https://www.youtube.com/watch?v=RZplraDU758&list=RDRZplraDU758&start_radio=1&pp=ygUjTWFnYXppbmUgTWFnYXppbmUgLSBUaWMgVGljIE5lcnZvc2-gBwE%3D"
+    "YouTubeLink": "https://www.youtube.com/watch?v=COsciMAF5Ls&list=RDCOsciMAF5Ls&start_radio=1&pp=ygUbQWJvdmUgQmV5b25kIEJsYWNrIFJvb20gQm95oAcB"
   },
   {
-    "Artist": "Magazine",
-    "Title": "Tad",
-    "Album": "Tad",
+    "Artist": "Above & Beyond",
+    "Title": "Save Me",
+    "YouTube_Title": "bbno$ - save me (Official Music Video) | Diablo II: Resurrected - Reign of the Warlock",
+    "Album": "Acoustic: Live at the Hollywood Bowl",
     "Year": "Unknown",
-    "YouTube_Title": "MAGAZINE - Tad (Official Lyric Video)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=uL8EJz_AAac&list=RDuL8EJz_AAac&start_radio=1&pp=ygUMTWFnYXppbmUgVGFkoAcB0gcJCcQLAYcqIYzv"
+    "YouTubeLink": "https://www.youtube.com/watch?v=ZKl0OIZTN3k"
+  },
+  {
+    "Artist": "Above & Beyond",
+    "Title": "Good for Me",
+    "YouTube_Title": "Above & Beyond Acoustic - \"Good For Me\" Live from Porchester Hall (Official)",
+    "Album": "Acoustic: Live at the Hollywood Bowl",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/ifPsVauGgnY?si=UvdrNaoM_GQcMiC4"
+  },
+  {
+    "Artist": "Beach House",
+    "Title": "April Suzanne (Cover Version)",
+    "YouTube_Title": "Beach House - April Suzanne (Official Visualizer)",
+    "Album": "April Suzanne",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=svVNA2qWVIs&list=RDsvVNA2qWVIs&start_radio=1&pp=ygUnQmVhY2ggSG91c2UgQXByaWwgU3V6YW5uZSBDb3ZlciBWZXJzaW9uoAcB"
+  },
+  {
+    "Artist": "Beach House",
+    "Title": "April Suzanne (Remastered Version)",
+    "YouTube_Title": "Beach House - April Suzanne (Official Visualizer)",
+    "Album": "April Suzanne",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=svVNA2qWVIs&list=RDsvVNA2qWVIs&start_radio=1&pp=ygUsQmVhY2ggSG91c2UgQXByaWwgU3V6YW5uZSBSZW1hc3RlcmVkIFZlcnNpb26gBwE%3D"
+  },
+  {
+    "Artist": "Billy Thorpe",
+    "Title": "Children of the Sun",
+    "YouTube_Title": "Billy Thorpe - Children Of The Sun  (Exclusive Video)",
+    "Album": "Children of the Sun...Revisited",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/DLhChJRSK5o?si=wfSghms2Z5-QsZbS"
+  },
+  {
+    "Artist": "Blood Red Shoes",
+    "Title": "Start to End",
+    "YouTube_Title": "Blood Red Shoes - Lost Kids (Official Video)",
+    "Album": "Stay Lonely",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/rzl5Lk7ihPs?si=gb1MIKTdbz6-N7Jo"
+  },
+  {
+    "Artist": "Blood Red Shoes",
+    "Title": "Get Back Into Myself",
+    "YouTube_Title": "Blood Red Shoes - Back from the Dead (feat. JLX) (Official Video)",
+    "Album": "Stay Lonely",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/4d34AgeyZ6M?si=ZpFe5YYxRbNopA75"
+  },
+  {
+    "Artist": "Blood Red Shoes",
+    "Title": "Don't Say a Word",
+    "YouTube_Title": "ERROR: Private/Protected",
+    "Album": "Stay Lonely",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/_Dl8CN3y-IE?si=s7_zGIG9VARiqblB"
+  },
+  {
+    "Artist": "Blood Red Shoes",
+    "Title": "Screams",
+    "YouTube_Title": "Blood Red Shoes - Screams (Official Video)",
+    "Album": "Stay Lonely",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=hHQf6UIUCRk&list=RDhHQf6UIUCRk&start_radio=1&pp=ygUXQmxvb2QgUmVkIFNob2VzIFNjcmVhbXOgBwE%3D"
+  },
+  {
+    "Artist": "Butthole Surfers",
+    "Title": "Pepper",
+    "YouTube_Title": "Butthole Surfers - Pepper",
+    "Album": "Electriclarryland",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=KRXty8lDUW0&list=RDKRXty8lDUW0&start_radio=1&pp=ygUXQnV0dGhvbGUgU3VyZmVycyBQZXBwZXKgBwE%3D"
+  },
+  {
+    "Artist": "A Certain Ratio",
+    "Title": "Lucinda (EM)",
+    "YouTube_Title": "A Certain Ratio - Lucinda (EM) [Official Audio]",
+    "Album": "The Joy of Sextet",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/-R-AxkBEuGU?si=otpaourgDmTm7nWo"
+  },
+  {
+    "Artist": "A Certain Ratio",
+    "Title": "Crystal (EM) [Night Version]",
+    "YouTube_Title": "A Certain Ratio -  Crystal (Official Audio)",
+    "Album": "The Joy of Sextet",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=TWTAtkuVs0E&list=RDTWTAtkuVs0E&start_radio=1&pp=ygUoQSBDZXJ0YWluIFJhdGlvIENyeXN0YWwgRU0gTmlnaHQgVmVyc2lvbqAHAdIHCQkQCAGHKiGM7w%3D%3D"
+  },
+  {
+    "Artist": "A Certain Ratio",
+    "Title": "Gum (EM)",
+    "YouTube_Title": "A Certain Ratio - Gum (EM) [Official Audio]",
+    "Album": "The Joy of Sextet",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=r4snepNojNY&list=RDr4snepNojNY&start_radio=1&pp=ygUWQSBDZXJ0YWluIFJhdGlvIEd1bSBFTaAHAQ%3D%3D"
+  },
+  {
+    "Artist": "A Certain Ratio",
+    "Title": "Knife Slits Water EM 12”",
+    "YouTube_Title": "A Certain Ratio - Knife Slits Water (EM 12\" Version) [Official Audio]",
+    "Album": "The Joy of Sextet",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=hsvzPwL39dE&list=RDhsvzPwL39dE&start_radio=1&pp=ygUnQSBDZXJ0YWluIFJhdGlvIEtuaWZlIFNsaXRzIFdhdGVyIEVNIDEyoAcB"
+  },
+  {
+    "Artist": "The Decemberists",
+    "Title": "Margaret In Captivity",
+    "YouTube_Title": "The Decemberists - Joan in the Garden (Official Audio)",
+    "Album": "The Hazards of Love",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/jgPlu0hd0SI?si=xcnFGdwMSaSi42uJ"
+  },
+  {
+    "Artist": "The Decemberists",
+    "Title": "Won't Want For Love (Margaret In the Taiga)",
+    "YouTube_Title": "Won't Want For Love (Margaret In The Taiga)",
+    "Album": "The Hazards of Love",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=ZmIw1xnuBGI&list=RDZmIw1xnuBGI&start_radio=1&pp=ygU5VGhlIERlY2VtYmVyaXN0cyBXb250IFdhbnQgRm9yIExvdmUgTWFyZ2FyZXQgSW4gdGhlIFRhaWdhoAcB"
+  },
+  {
+    "Artist": "The Decemberists",
+    "Title": "The Queen’s Rebuke / The Crossing",
+    "YouTube_Title": "The Queen's Rebuke / The Crossing",
+    "Album": "The Hazards of Love",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=ScNUgpTLWHQ&list=RDScNUgpTLWHQ&start_radio=1&pp=ygUvVGhlIERlY2VtYmVyaXN0cyBUaGUgUXVlZW5zIFJlYnVrZSBUaGUgQ3Jvc3NpbmegBwE%3D"
+  },
+  {
+    "Artist": "Enanitos Verdes",
+    "Title": "La muralla verde",
+    "YouTube_Title": "Los Enanitos Verdes - La Muralla Verde (Official Audio)",
+    "Album": "Contra reloj",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/5Kf4ej-xFF0?si=TPivJypGxOxi5jEV"
+  },
+  {
+    "Artist": "Florence Road",
+    "Title": "7563",
+    "YouTube_Title": "Florence Road - 7563 (Official Video)",
+    "Album": "7563",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=c7QW3HdxVSI&list=RDc7QW3HdxVSI&start_radio=1&pp=ygUSRmxvcmVuY2UgUm9hZCA3NTYzoAcB"
+  },
+  {
+    "Artist": "Frankie Rose",
+    "Title": "Olo",
+    "YouTube_Title": "Frankie Rose - Olo",
+    "Album": "HILA",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=nYvKEuJGbOE&list=RDnYvKEuJGbOE&start_radio=1&pp=ygUQRnJhbmtpZSBSb3NlIE9sb6AHAdIHCQkQCAGHKiGM7w%3D%3D"
+  },
+  {
+    "Artist": "Frankie Rose",
+    "Title": "Shadow Twin",
+    "YouTube_Title": "Shadow Twin",
+    "Album": "HILA",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=tjbit-O-J2g&list=RDtjbit-O-J2g&start_radio=1&pp=ygUYRnJhbmtpZSBSb3NlIFNoYWRvdyBUd2luoAcB"
+  },
+  {
+    "Artist": "Frankie Rose",
+    "Title": "Best of Times",
+    "YouTube_Title": "Frankie Rose - Best of Times (Official Video)",
+    "Album": "HILA",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=KbVsDULscQU&list=RDKbVsDULscQU&start_radio=1&pp=ygUaRnJhbmtpZSBSb3NlIEJlc3Qgb2YgVGltZXOgBwE%3D"
+  },
+  {
+    "Artist": "Frankie Rose",
+    "Title": "TV Star",
+    "YouTube_Title": "Frankie Rose - Best of Times (Official Video)",
+    "Album": "HILA",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/QhwCnf-p6kA?si=g4YpZ0KZlv7-sQZf"
+  },
+  {
+    "Artist": "Gavin Friday",
+    "Title": "Cabarotica (Ecce Homo Orchestra Rework) - Gavin Friday (youtube)",
+    "YouTube_Title": "Gavin Friday - Ecce Homo (Official Video)",
+    "Album": "Decadance",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=HqmKmCIvSZU&list=RDHqmKmCIvSZU&start_radio=1&pp=ygVJR2F2aW4gRnJpZGF5IENhYmFyb3RpY2EgRWNjZSBIb21vIE9yY2hlc3RyYSBSZXdvcmsgLSBHYXZpbiBGcmlkYXkgeW91dHViZaAHAQ%3D%3D"
+  },
+  {
+    "Artist": "Gavin Friday",
+    "Title": "Amaranthus (Love Lies Bleeding) (Ecce Homo Orchestra Rework) - Gavin Friday (youtube)",
+    "YouTube_Title": "Amaranthus (Love Lies Bleeding) (Ecce Homo Orchestra Rework)",
+    "Album": "Decadance",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=RT8pndWQHkw&list=RDRT8pndWQHkw&start_radio=1&pp=ygVcR2F2aW4gRnJpZGF5IEFtYXJhbnRodXMgTG92ZSBMaWVzIEJsZWVkaW5nIEVjY2UgSG9tbyBPcmNoZXN0cmEgUmV3b3JrIC0gR2F2aW4gRnJpZGF5IHlvdXR1YmWgBwE%3D"
+  },
+  {
+    "Artist": "Gia Ford",
+    "Title": "Shell",
+    "YouTube_Title": "Gia Ford - Shell (Official Music Video)",
+    "Album": "Shell",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=iGzkWcxkY2U&list=RDiGzkWcxkY2U&start_radio=1&pp=ygUOR2lhIEZvcmQgU2hlbGygBwE%3D"
+  },
+  {
+    "Artist": "George Harrison",
+    "Title": "Wah‐Wah",
+    "YouTube_Title": "Nick Valensi (The Strokes) - Wah-Wah Live at George Fest [Official Live Video]",
+    "Album": "All Things Must Pass",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/n5eiooaOim0?si=DNTSi3JpGW1YYGqa"
+  },
+  {
+    "Artist": "George Harrison",
+    "Title": "Isn’t It a Pity (version one)",
+    "YouTube_Title": "Isn't It a Pity (Version 1) (2020 Mix)",
+    "Album": "All Things Must Pass",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=Cph6LXb_-g0&list=RDCph6LXb_-g0&start_radio=1&pp=ygUqR2VvcmdlIEhhcnJpc29uIElzbnQgSXQgYSBQaXR5IHZlcnNpb24gb25loAcB"
+  },
+  {
+    "Artist": "George Harrison",
+    "Title": "What Is Life",
+    "YouTube_Title": "George Harrison - What Is Life",
+    "Album": "All Things Must Pass",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=fiH9edd25Bc&list=RDfiH9edd25Bc&start_radio=1&pp=ygUcR2VvcmdlIEhhcnJpc29uIFdoYXQgSXMgTGlmZaAHAdIHCQkQCAGHKiGM7w%3D%3D"
+  },
+  {
+    "Artist": "George Harrison",
+    "Title": "Let It Down",
+    "YouTube_Title": "Dhani Harrison \"Let It Down\" Live at George Fest [Official Live Video]",
+    "Album": "All Things Must Pass",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=OoOaZ6lLGaQ&list=RDOoOaZ6lLGaQ&start_radio=1&pp=ygUbR2VvcmdlIEhhcnJpc29uIExldCBJdCBEb3duoAcB"
+  },
+  {
+    "Artist": "George Harrison",
+    "Title": "Run of the Mill",
+    "YouTube_Title": "Run of the Mill (2014 Remaster)",
+    "Album": "All Things Must Pass",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/oei34s1W95c?si=jLdl491xi_H-9iAw"
+  },
+  {
+    "Artist": "George Harrison",
+    "Title": "Beware of Darkness",
+    "YouTube_Title": "Ann Wilson (Heart) - Beware of Darkness Live at George Fest [Official Live Video]",
+    "Album": "All Things Must Pass",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=gRgi4N1EEcQ&list=RDgRgi4N1EEcQ&start_radio=1&pp=ygUiR2VvcmdlIEhhcnJpc29uIEJld2FyZSBvZiBEYXJrbmVzc6AHAQ%3D%3D"
+  },
+  {
+    "Artist": "George Harrison",
+    "Title": "Ballad of Sir Frankie Crisp (Let It Roll)",
+    "YouTube_Title": "George Harrison - Ballad Of Sir Frankie Crisp (Let It Roll)",
+    "Album": "All Things Must Pass",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=6QCWZJJr3BM&list=RD6QCWZJJr3BM&start_radio=1&pp=ygU3R2VvcmdlIEhhcnJpc29uIEJhbGxhZCBvZiBTaXIgRnJhbmtpZSBDcmlzcCBMZXQgSXQgUm9sbKAHAQ%3D%3D"
+  },
+  {
+    "Artist": "George Harrison",
+    "Title": "Awaiting on You All",
+    "YouTube_Title": "Awaiting on You All (2014 Remaster)",
+    "Album": "All Things Must Pass",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=_ivqxFB31I8&list=RD_ivqxFB31I8&start_radio=1&pp=ygUjR2VvcmdlIEhhcnJpc29uIEF3YWl0aW5nIG9uIFlvdSBBbGygBwE%3D"
+  },
+  {
+    "Artist": "George Harrison",
+    "Title": "Art of Dying",
+    "YouTube_Title": "Black Rebel Motorcycle Club \"Art of Dying\" Live at George Fest [Official Live Video]",
+    "Album": "All Things Must Pass",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/4dKf2P1P1Rs?si=rLw9gshudAtIZQSZ"
+  },
+  {
+    "Artist": "George Harrison",
+    "Title": "Isn’t It a Pity (version two)",
+    "YouTube_Title": "Isn't It a Pity (Version Two) (2014 Remaster)",
+    "Album": "All Things Must Pass",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=tYkX4-PCoXU&list=RDtYkX4-PCoXU&start_radio=1&pp=ygUqR2VvcmdlIEhhcnJpc29uIElzbnQgSXQgYSBQaXR5IHZlcnNpb24gdHdvoAcB"
+  },
+  {
+    "Artist": "George Harrison",
+    "Title": "Hear Me Lord",
+    "YouTube_Title": "Hear Me Lord (2014 Remaster)",
+    "Album": "All Things Must Pass",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=fkSAoroGKn4&list=RDfkSAoroGKn4&start_radio=1&pp=ygUcR2VvcmdlIEhhcnJpc29uIEhlYXIgTWUgTG9yZKAHAQ%3D%3D"
+  },
+  {
+    "Artist": "George Harrison",
+    "Title": "Out of the Blue",
+    "YouTube_Title": "George Harrison - Blow Away (Official Music Video)",
+    "Album": "All Things Must Pass",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/s07e_rdclQU?si=bFopfmK-XowYtPpy"
+  },
+  {
+    "Artist": "Heaven 17",
+    "Title": "Let Me Go",
+    "YouTube_Title": "Heaven 17 - Let Me Go (Remastered)",
+    "Album": "The Luxury Gap",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=mpPFxqgfBAI&list=RDmpPFxqgfBAI&start_radio=1&pp=ygUTSGVhdmVuIDE3IExldCBNZSBHb6AHAQ%3D%3D"
+  },
+  {
+    "Artist": "Heaven 17",
+    "Title": "Key to the World",
+    "YouTube_Title": "Key To The World (Remastered 2006)",
+    "Album": "The Luxury Gap",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=Tu3bcH_gRfw&list=RDTu3bcH_gRfw&start_radio=1&pp=ygUaSGVhdmVuIDE3IEtleSB0byB0aGUgV29ybGSgBwE%3D"
+  },
+  {
+    "Artist": "Heaven 17",
+    "Title": "Temptation",
+    "YouTube_Title": "Heaven 17 - Temptation (Official Video), Full HD (AI Remastered and Upscaled)",
+    "Album": "The Luxury Gap",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=jNiwdJO4_yU&list=RDjNiwdJO4_yU&start_radio=1&pp=ygUUSGVhdmVuIDE3IFRlbXB0YXRpb26gBwE%3D"
+  },
+  {
+    "Artist": "Heaven 17",
+    "Title": "Come Live With Me",
+    "YouTube_Title": "Heaven 17 - Come Live With Me (Official Video), Full HD (AI Remastered and Upscaled)",
+    "Album": "The Luxury Gap",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=pR71G-P90g0&list=RDpR71G-P90g0&start_radio=1&pp=ygUbSGVhdmVuIDE3IENvbWUgTGl2ZSBXaXRoIE1loAcB"
+  },
+  {
+    "Artist": "Heaven 17",
+    "Title": "Lady Ice and Mr Hex",
+    "YouTube_Title": "Lady Ice And Mr Hex (Remastered 2006)",
+    "Album": "The Luxury Gap",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=4x1fN44yvvA&list=RD4x1fN44yvvA&start_radio=1&pp=ygUdSGVhdmVuIDE3IExhZHkgSWNlIGFuZCBNciBIZXigBwE%3D"
+  },
+  {
+    "Artist": "Home Front",
+    "Title": "Flaw in the Design",
+    "YouTube_Title": "HOME FRONT - Flaw In The Design",
+    "Album": "Think of the Lie",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=5M3zh3hBX1Y&list=RD5M3zh3hBX1Y&start_radio=1&pp=ygUdSG9tZSBGcm9udCBGbGF3IGluIHRoZSBEZXNpZ26gBwE%3D"
+  },
+  {
+    "Artist": "Home Front",
+    "Title": "A Bit of Dust",
+    "YouTube_Title": "HOME FRONT - Nation (Official Video)",
+    "Album": "Think of the Lie",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/X5WTaG5xZzE?si=nTK1n8Ne1q1Cxlkf"
+  },
+  {
+    "Artist": "Home Front",
+    "Title": "Focus",
+    "YouTube_Title": "HOME FRONT - Nation (Official Video)",
+    "Album": "Think of the Lie",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/qBcFQVs_gos?si=JM4XZwzxFNf6dVLk"
+  },
+  {
+    "Artist": "Home Front",
+    "Title": "Security",
+    "YouTube_Title": "HOME FRONT - Light Sleeper (Official Video)",
+    "Album": "Think of the Lie",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/Jo8YR9hpuL0?si=ChYAb-dHL3Gdmtmf"
+  },
+  {
+    "Artist": "Home Front",
+    "Title": "Seagulls",
+    "YouTube_Title": "HOME FRONT - Seagulls Official Video",
+    "Album": "Think of the Lie",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=j45IhOtmNaw&list=RDj45IhOtmNaw&start_radio=1&pp=ygUTSG9tZSBGcm9udCBTZWFndWxsc6AHAQ%3D%3D"
+  },
+  {
+    "Artist": "Home Front",
+    "Title": "Kill the Time",
+    "YouTube_Title": "HOME FRONT - Nation (Official Video)",
+    "Album": "Think of the Lie",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/ENaA1_j1_Ao?si=W7RR76f_byqPRqc0"
+  },
+  {
+    "Artist": "Jason Bieler and the Baron Von Bielski Orchestra",
+    "Title": "Bring out Your Dead",
+    "YouTube_Title": "Jason Bieler and The Baron Von Bielski Orchestra - \"Apology\" - Official Music Video",
+    "Album": "Bring out Your Dead",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/OHalXckrjDc?si=AXsnzM-o4MXTGjfY"
+  },
+  {
+    "Artist": "KNEECAP",
+    "Title": "Éire go Deo",
+    "YouTube_Title": "KNEECAP feat . GRIAN CHATTEN - BETTER WAY TO LIVE (OFFICIAL MUSIC VIDEO)",
+    "Album": "Fenian",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/IXREjFPWoGY?si=u3XBe3IFWC99V_Tu"
+  },
+  {
+    "Artist": "KNEECAP",
+    "Title": "Smugglers & Scholars",
+    "YouTube_Title": "KNEECAP - LIARS TALE (OFFICIAL VIDEO)",
+    "Album": "Fenian",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/gHU5UJxRjxY?si=jNRJDiZCnA0brNhV"
+  },
+  {
+    "Artist": "KNEECAP",
+    "Title": "Carnival",
+    "YouTube_Title": "KNEECAP - FENIAN (OFFICIAL VIDEO)",
+    "Album": "Fenian",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/tN7QWhmu7oA?si=V5tuDQF5z-f-r3iO"
+  },
+  {
+    "Artist": "KNEECAP",
+    "Title": "Palestine",
+    "YouTube_Title": "KNEECAP feat MOZEY - THE RECAP (OFFICIAL VIDEO)",
+    "Album": "Fenian",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/F6hYLzvyly8?si=CS--TPk5gsCkYVy9"
+  },
+  {
+    "Artist": "KNEECAP",
+    "Title": "Liars Tale",
+    "YouTube_Title": "KNEECAP - LIARS TALE (OFFICIAL VIDEO)",
+    "Album": "Fenian",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=e061Py8MTHg&list=RDe061Py8MTHg&start_radio=1&pp=ygUSS05FRUNBUCBMaWFycyBUYWxloAcB"
+  },
+  {
+    "Artist": "KNEECAP",
+    "Title": "FENIAN",
+    "YouTube_Title": "KNEECAP - FENIAN (OFFICIAL VIDEO)",
+    "Album": "Fenian",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=PLDHQVJZuGQ&list=RDPLDHQVJZuGQ&start_radio=1&pp=ygUOS05FRUNBUCBGRU5JQU6gBwE%3D"
+  },
+  {
+    "Artist": "KNEECAP",
+    "Title": "Big Bad Mo",
+    "YouTube_Title": "KNEECAP - AMACH ANOCHT (Official Music Video)",
+    "Album": "Fenian",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/uDbevLgfHn8?si=I1bX7YDOOdEDh0g9"
+  },
+  {
+    "Artist": "KNEECAP",
+    "Title": "Headcase",
+    "YouTube_Title": "KNEECAP - Guilty Conscience (Official Music Video)",
+    "Album": "Fenian",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/PS6v2ZQ5aic?si=pg7P-Pg7F9j21Gyr"
+  },
+  {
+    "Artist": "KNEECAP",
+    "Title": "An Ra",
+    "YouTube_Title": "KNEECAP - AMACH ANOCHT (Official Music Video)",
+    "Album": "Fenian",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/VcjayZyBzZ0?si=ZhVtsV5G19Oxi8f1"
+  },
+  {
+    "Artist": "KNEECAP",
+    "Title": "Cold at the Top",
+    "YouTube_Title": "KNEECAP feat . GRIAN CHATTEN - BETTER WAY TO LIVE (OFFICIAL MUSIC VIDEO)",
+    "Album": "Fenian",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/ji-xlmwFFhA?si=eKhKWoYacsIDo-4I"
+  },
+  {
+    "Artist": "KNEECAP",
+    "Title": "Occupied 6",
+    "YouTube_Title": "KNEECAP - FENIAN (OFFICIAL VIDEO)",
+    "Album": "Fenian",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/aCm7t0Ekpk4?si=vgthL32ckP-pXsLU"
+  },
+  {
+    "Artist": "KNEECAP",
+    "Title": "Gael Phonics",
+    "YouTube_Title": "KNEECAP - Gael-Gigolos (Official Music Video)",
+    "Album": "Fenian",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/_ACUwqkfPF8?si=b_mBmt4G6VLBdK24"
+  },
+  {
+    "Artist": "KNEECAP",
+    "Title": "Cocaine Hill",
+    "YouTube_Title": "KNEECAP - Gael-Gigolos (Official Music Video)",
+    "Album": "Fenian",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/I_yxx2U7rmk?si=6MReg03yzSRzhLWd"
+  },
+  {
+    "Artist": "KNEECAP",
+    "Title": "Irish Goodbye",
+    "YouTube_Title": "KNEECAP and PAUL HARTNOLL - SAYŌNARA (OFFICIAL VIDEO)",
+    "Album": "Fenian",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=khXv1RvAZF0"
+  },
+  {
+    "Artist": "Nick Nicely",
+    "Title": "Hilly Fields (1892)",
+    "YouTube_Title": "nick nicely - Hilly Fields (1892)",
+    "Album": "Psychotropia",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=iuf3rD_pczs&list=RDiuf3rD_pczs&start_radio=1&pp=ygUdTmljayBOaWNlbHkgSGlsbHkgRmllbGRzIDE4OTKgBwE%3D"
+  },
+  {
+    "Artist": "Nick Nicely",
+    "Title": "A Hundred Years Later",
+    "YouTube_Title": "A Hundred Years Later",
+    "Album": "Psychotropia",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=7SvekhbBlP8&list=RD7SvekhbBlP8&start_radio=1&pp=ygUhTmljayBOaWNlbHkgQSBIdW5kcmVkIFllYXJzIExhdGVyoAcB"
+  },
+  {
+    "Artist": "Nick Nicely",
+    "Title": "D.C.T. Dreams",
+    "YouTube_Title": "Nick Nicely - DCT Dreams",
+    "Album": "Psychotropia",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=sn_tGoy3Cdw&list=RDsn_tGoy3Cdw&start_radio=1&pp=ygUWTmljayBOaWNlbHkgRENUIERyZWFtc6AHAQ%3D%3D"
+  },
+  {
+    "Artist": "Nick Nicely",
+    "Title": "The Doors of Perception",
+    "YouTube_Title": "The Doors of Perception",
+    "Album": "Psychotropia",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=mf0MWpkpmwM&list=RDmf0MWpkpmwM&start_radio=1&pp=ygUjTmljayBOaWNlbHkgVGhlIERvb3JzIG9mIFBlcmNlcHRpb26gBwHSBwkJEAgBhyohjO8%3D"
+  },
+  {
+    "Artist": "Osees",
+    "Title": "Enemy Destruct",
+    "YouTube_Title": "OSEES - Enemy Destruct (Live on KEXP)",
+    "Album": "Help",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=mbJVMeqNBAc&list=RDmbJVMeqNBAc&start_radio=1&pp=ygUUT3NlZXMgRW5lbXkgRGVzdHJ1Y3SgBwE%3D"
+  },
+  {
+    "Artist": "Osees",
+    "Title": "Ruby Go Home",
+    "YouTube_Title": "OSEES \"Ruby Go Home\" @ Teragram Ballroom Los Angeles CA • 2025-09-30",
+    "Album": "Help",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/opdlvS62xu4?si=4X4UU3tvKA9KLHwY"
+  },
+  {
+    "Artist": "Osees",
+    "Title": "Meat Step Lively",
+    "YouTube_Title": "THEE OH SEES - MEAT STEP LIVELY (OFFICIAL VIDEO)",
+    "Album": "Help",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=z1bHddYhtDw&list=RDz1bHddYhtDw&start_radio=1&pp=ygUWT3NlZXMgTWVhdCBTdGVwIExpdmVseaAHAQ%3D%3D"
+  },
+  {
+    "Artist": "Osees",
+    "Title": "A Flag in the Court",
+    "YouTube_Title": "Osees - \"A Foul Form\" (Official Video)",
+    "Album": "Help",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/7QAPhAHgcLQ?si=MQ7fAQF0_QO-tC4q"
+  },
+  {
+    "Artist": "Osees",
+    "Title": "Can You See?",
+    "YouTube_Title": "Oh Sees - Nite Expo (Official)",
+    "Album": "Help",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/7uAtH_lXx-k?si=5YoEiBGJ6ayEtT5Y"
+  },
+  {
+    "Artist": "Osees",
+    "Title": "Go Meet the Seed",
+    "YouTube_Title": "Thee Oh Sees - Go Meet The Seed (2009) (unofficial visuals)",
+    "Album": "Help",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=veydtY4ueI4&list=RDveydtY4ueI4&start_radio=1&pp=ygUWT3NlZXMgR28gTWVldCB0aGUgU2VlZKAHAQ%3D%3D"
+  },
+  {
+    "Artist": "Osees",
+    "Title": "Soda St. #1",
+    "YouTube_Title": "Soda St. #1",
+    "Album": "Help",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=vEYN93ZdSRo&list=RDvEYN93ZdSRo&start_radio=1&pp=ygUPT3NlZXMgU29kYSBTdCAxoAcB"
+  },
+  {
+    "Artist": "Osees",
+    "Title": "Destroyed Fortress Reappears",
+    "YouTube_Title": "Thee Oh Sees - Destroyed Fortress Reappears - 2/26/2009 - Cafe Du Nord",
+    "Album": "Help",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/GT3_v2wzWAo?si=igVE1vkbe0pYlN9Y"
+  },
+  {
+    "Artist": "Parquet Courts",
+    "Title": "Total Football",
+    "YouTube_Title": "Parquet Courts - Freebird II (Official Video)",
+    "Album": "Wide Awake!",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/sP9l9HBJ1o0?si=iK_bhx5UPu0LdBql"
+  },
+  {
+    "Artist": "Parquet Courts",
+    "Title": "Violence",
+    "YouTube_Title": "Parquet Courts - Almost Had To Start A Fight / In And Out Of Patience (Official Video)",
+    "Album": "Wide Awake!",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/GTrk8U9gqC0?si=0Xd6F4Z1Frh2OfPJ"
+  },
+  {
+    "Artist": "Parquet Courts",
+    "Title": "Before the Water Gets Too High",
+    "YouTube_Title": "Parquet Courts - Almost Had To Start A Fight / In And Out Of Patience (Official Video)",
+    "Album": "Wide Awake!",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/sIizlekltGc?si=vo6DU_nEkhFJ4VTb"
+  },
+  {
+    "Artist": "Parquet Courts",
+    "Title": "Mardi Gras Beads",
+    "YouTube_Title": "Parquet Courts - Mardi Gras Beads (Official Video)",
+    "Album": "Wide Awake!",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=iir8HyAKqQM&list=RDiir8HyAKqQM&start_radio=1&pp=ygUfUGFycXVldCBDb3VydHMgTWFyZGkgR3JhcyBCZWFkc6AHAQ%3D%3D"
+  },
+  {
+    "Artist": "Parquet Courts",
+    "Title": "Almost Had to Start a Fight / In and Out of Patience",
+    "YouTube_Title": "Parquet Courts - Almost Had To Start A Fight / In And Out Of Patience (Official Video)",
+    "Album": "Wide Awake!",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=l-Bka7yNyKA&list=RDl-Bka7yNyKA&start_radio=1&pp=ygVBUGFycXVldCBDb3VydHMgQWxtb3N0IEhhZCB0byBTdGFydCBhIEZpZ2h0IEluIGFuZCBPdXQgb2YgUGF0aWVuY2WgBwE%3D"
+  },
+  {
+    "Artist": "Parquet Courts",
+    "Title": "Freebird II",
+    "YouTube_Title": "Parquet Courts - Freebird II (Official Video)",
+    "Album": "Wide Awake!",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=jHfOqqQ1DLQ&list=RDjHfOqqQ1DLQ&start_radio=1&pp=ygUaUGFycXVldCBDb3VydHMgRnJlZWJpcmQgSUmgBwE%3D"
+  },
+  {
+    "Artist": "Parquet Courts",
+    "Title": "Normalization",
+    "YouTube_Title": "Parquet Courts - Almost Had To Start A Fight / In And Out Of Patience (Official Video)",
+    "Album": "Wide Awake!",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/jESSg24szAo?si=ga9dGGNSB9O4hl9T"
+  },
+  {
+    "Artist": "Parquet Courts",
+    "Title": "Back to Earth",
+    "YouTube_Title": "Parquet Courts - Almost Had To Start A Fight / In And Out Of Patience (Official Video)",
+    "Album": "Wide Awake!",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/VKMKaQy8pbQ?si=8LFVsKNlhQVufFtA"
+  },
+  {
+    "Artist": "Parquet Courts",
+    "Title": "Wide Awake",
+    "YouTube_Title": "Parquet Courts - Wide Awake (Official Video)",
+    "Album": "Wide Awake!",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=eZXS8Jpkiac&list=RDeZXS8Jpkiac&start_radio=1&pp=ygUZUGFycXVldCBDb3VydHMgV2lkZSBBd2FrZaAHAQ%3D%3D"
+  },
+  {
+    "Artist": "Parquet Courts",
+    "Title": "NYC Observation",
+    "YouTube_Title": "Parquet Courts -\"Walking at a Downtown Pace\" (Official Music Video)",
+    "Album": "Wide Awake!",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/-dKSuaoUpiY?si=xMX_y0HfMtyoBr1s"
+  },
+  {
+    "Artist": "Parquet Courts",
+    "Title": "Extinction",
+    "YouTube_Title": "Parquet Courts - Freebird II (Official Video)",
+    "Album": "Wide Awake!",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/xmdRhiFWAOo?si=4FOj3qVHyAw7I1y4"
+  },
+  {
+    "Artist": "Parquet Courts",
+    "Title": "Death Will Bring Change",
+    "YouTube_Title": "Parquet Courts - Freebird II (Official Video)",
+    "Album": "Wide Awake!",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/l9BxObmqejw?si=kb4J5EIukaHRn3bb"
+  },
+  {
+    "Artist": "Parquet Courts",
+    "Title": "Tenderness",
+    "YouTube_Title": "Parquet Courts - Freebird II (Official Video)",
+    "Album": "Wide Awake!",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/eNk4JC_3S7s?si=Q8ZIhSPU6ZPBKzpC"
   },
   {
     "Artist": "Phideaux",
     "Title": "Driving to Destruction",
+    "YouTube_Title": "Driving To Destruction",
     "Album": "AutoMoto Animus",
     "Year": "Unknown",
-    "YouTube_Title": "Car Vs Spinners – INSANE Crash & Destruction Challenge | BeamNG.drive ",
-    "YouTubeLink": "https://www.youtube.com/watch?v=t4PyuWIkY-w&pp=ygUfUGhpZGVhdXggRHJpdmluZyB0byBEZXN0cnVjdGlvbg%3D%3D"
+    "YouTubeLink": "https://www.youtube.com/watch?v=A_Uo66D99HM&list=RDA_Uo66D99HM&start_radio=1&pp=ygUfUGhpZGVhdXggRHJpdmluZyB0byBEZXN0cnVjdGlvbqAHAQ%3D%3D"
   },
   {
-    "Artist": "Red Vox",
-    "Title": "Red Vox - Bad Bad World",
-    "Album": "Pigeonhole",
+    "Artist": "Power Snatch",
+    "Title": "MACHETE",
+    "YouTube_Title": "Power Snatch & Tiberius b - Training (Official Audio)",
+    "Album": "EP2",
     "Year": "Unknown",
-    "YouTube_Title": "Red Vox - Bad Bad World",
-    "YouTubeLink": "https://www.youtube.com/watch?v=SW_xt5dFnAs&list=RDSW_xt5dFnAs&start_radio=1&pp=ygUfUmVkIFZveCBSZWQgVm94IC0gQmFkIEJhZCBXb3JsZKAHAQ%3D%3D"
+    "YouTubeLink": "https://youtu.be/KYFhyFeIwSs?si=ENe0RTnj0vrkqstv"
+  },
+  {
+    "Artist": "Power Snatch",
+    "Title": "NEW LEGS",
+    "YouTube_Title": "Power Snatch & Tiberius b - Training (Official Audio)",
+    "Album": "EP2",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/9EMgcRrAUjM?si=9AbE1iJ2xi0Zli98"
+  },
+  {
+    "Artist": "Power Snatch",
+    "Title": "BORN DEAD",
+    "YouTube_Title": "Power Snatch & Tiberius b - Training (Official Audio)",
+    "Album": "EP2",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=O2A7F5YJ3dQ&list=RDO2A7F5YJ3dQ&start_radio=1&pp=ygUWUG93ZXIgU25hdGNoIEJPUk4gREVBRKAHAQ%3D%3D"
+  },
+  {
+    "Artist": "Power Snatch",
+    "Title": "HELL IS A HALLWAY",
+    "YouTube_Title": "HELL IS A HALLWAY - Power Snatch (EP2)",
+    "Album": "EP2",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=ZAYkY5zisCg&list=RDZAYkY5zisCg&start_radio=1&pp=ygUeUG93ZXIgU25hdGNoIEhFTEwgSVMgQSBIQUxMV0FZoAcB"
+  },
+  {
+    "Artist": "Prolapse",
+    "Title": "Slash/Oblique",
+    "YouTube_Title": "Prolapse - Slash/Oblique",
+    "Album": "The Italian Flag",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=TxEcwsAv4II&list=RDTxEcwsAv4II&start_radio=1&pp=ygUVUHJvbGFwc2UgU2xhc2hPYmxpcXVloAcB"
+  },
+  {
+    "Artist": "Prolapse",
+    "Title": "Deanshanger",
+    "YouTube_Title": "Deanshanger - Prolapse Official Video [HD]",
+    "Album": "The Italian Flag",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=wcnGftJpaH0&list=RDwcnGftJpaH0&start_radio=1&pp=ygUUUHJvbGFwc2UgRGVhbnNoYW5nZXKgBwE%3D"
+  },
+  {
+    "Artist": "Prolapse",
+    "Title": "Cacophony No. A",
+    "YouTube_Title": "Cacophony No. A",
+    "Album": "The Italian Flag",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=i00CkBEnObc&list=RDi00CkBEnObc&start_radio=1&pp=ygUXUHJvbGFwc2UgQ2Fjb3Bob255IE5vIEGgBwE%3D"
+  },
+  {
+    "Artist": "Prolapse",
+    "Title": "Killing the Bland",
+    "YouTube_Title": "Prolapse - Doorstep Rhythmic Bloc (Official Video)",
+    "Album": "The Italian Flag",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/aWyHsJjFH0M?si=Fk9ddVvRPuohCBF0"
+  },
+  {
+    "Artist": "Prolapse",
+    "Title": "I Hate the Clicking Man",
+    "YouTube_Title": "Prolapse - Doorstep Rhythmic Bloc (Official Video)",
+    "Album": "The Italian Flag",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/tgLdPjCRXOI?si=yK-GQV3t1uaJTlaz"
+  },
+  {
+    "Artist": "Prolapse",
+    "Title": "Autocade",
+    "YouTube_Title": "Prolapse - Autocade",
+    "Album": "The Italian Flag",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=m6DO71MwVFw&list=RDm6DO71MwVFw&start_radio=1&pp=ygURUHJvbGFwc2UgQXV0b2NhZGWgBwHSBwkJEAgBhyohjO8%3D"
+  },
+  {
+    "Artist": "Prolapse",
+    "Title": "Flat Velocity Curve",
+    "YouTube_Title": "Prolapse - Flat Velocity Curve",
+    "Album": "The Italian Flag",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=Xeuocdc5EeI&list=RDXeuocdc5EeI&start_radio=1&pp=ygUcUHJvbGFwc2UgRmxhdCBWZWxvY2l0eSBDdXJ2ZaAHAdIHCQkQCAGHKiGM7w%3D%3D"
+  },
+  {
+    "Artist": "Prolapse",
+    "Title": "Return of Shoes",
+    "YouTube_Title": "Return of Shoes (BBC session)",
+    "Album": "The Italian Flag",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=7qo84U8gkMw&list=RD7qo84U8gkMw&start_radio=1&pp=ygUYUHJvbGFwc2UgUmV0dXJuIG9mIFNob2VzoAcB"
+  },
+  {
+    "Artist": "Prolapse",
+    "Title": "A Day at Death Seaside",
+    "YouTube_Title": "Prolapse  -  A Day at Death Seaside",
+    "Album": "The Italian Flag",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=rajnipRIIXc&list=RDrajnipRIIXc&start_radio=1&pp=ygUfUHJvbGFwc2UgQSBEYXkgYXQgRGVhdGggU2Vhc2lkZaAHAQ%3D%3D"
+  },
+  {
+    "Artist": "Robbie Williams",
+    "Title": "Lazy Days",
+    "YouTube_Title": "Robbie Williams - Lazy Days (XXV - Official Audio)",
+    "Album": "Life Thru a Lens",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/JAX_CpzFn3w?si=WxWrphXUMc5xDcn5"
+  },
+  {
+    "Artist": "Robbie Williams",
+    "Title": "Life Thru a Lens",
+    "YouTube_Title": "Robbie Williams - Life Thru A Lens (Live For MTV Europe 1998)",
+    "Album": "Life Thru a Lens",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=nmXFcrfQJKY&list=RDnmXFcrfQJKY&start_radio=1&pp=ygUgUm9iYmllIFdpbGxpYW1zIExpZmUgVGhydSBhIExlbnOgBwE%3D"
+  },
+  {
+    "Artist": "Robbie Williams",
+    "Title": "Ego a Go Go",
+    "YouTube_Title": "Robbie Williams | Go Mental (ft. Big Narstie & Atlantic Horns) - Official Video",
+    "Album": "Life Thru a Lens",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/9LGf1ISIMgw?si=eDqkH2qonVb965C6"
+  },
+  {
+    "Artist": "Robbie Williams",
+    "Title": "Angels",
+    "YouTube_Title": "Robbie Williams - Angels",
+    "Album": "Life Thru a Lens",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=luwAMFcc2f8&list=RDluwAMFcc2f8&start_radio=1&pp=ygUWUm9iYmllIFdpbGxpYW1zIEFuZ2Vsc6AHAQ%3D%3D"
+  },
+  {
+    "Artist": "Robbie Williams",
+    "Title": "South of the Border",
+    "YouTube_Title": "Robbie Williams - South of the Border",
+    "Album": "Life Thru a Lens",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=ICl0xxNYJ_Y&list=RDICl0xxNYJ_Y&start_radio=1&pp=ygUjUm9iYmllIFdpbGxpYW1zIFNvdXRoIG9mIHRoZSBCb3JkZXKgBwE%3D"
+  },
+  {
+    "Artist": "Robbie Williams",
+    "Title": "Old Before I Die",
+    "YouTube_Title": "Robbie Williams - Old Before I Die",
+    "Album": "Life Thru a Lens",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=mSCqeuaP3Lo&list=RDmSCqeuaP3Lo&start_radio=1&pp=ygUgUm9iYmllIFdpbGxpYW1zIE9sZCBCZWZvcmUgSSBEaWWgBwE%3D"
+  },
+  {
+    "Artist": "Robbie Williams",
+    "Title": "Let Me Entertain You",
+    "YouTube_Title": "1. Robbie Williams - Let Me Entertain You (Knebworth 2003)",
+    "Album": "Life Thru a Lens",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=4cqUvLvVYFE&list=RD4cqUvLvVYFE&start_radio=1&pp=ygUkUm9iYmllIFdpbGxpYW1zIExldCBNZSBFbnRlcnRhaW4gWW91oAcB"
+  },
+  {
+    "Artist": "Robbie Williams",
+    "Title": "Killing Me",
+    "YouTube_Title": "Robbie Williams - Killing Me (live @ Top Of The Pops 1998)",
+    "Album": "Life Thru a Lens",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=P0kCkhigw2I&list=RDP0kCkhigw2I&start_radio=1&pp=ygUaUm9iYmllIFdpbGxpYW1zIEtpbGxpbmcgTWWgBwE%3D"
+  },
+  {
+    "Artist": "Robbie Williams",
+    "Title": "Clean",
+    "YouTube_Title": "Clean",
+    "Album": "Life Thru a Lens",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=0wvDP2071J0&list=RD0wvDP2071J0&start_radio=1&pp=ygUVUm9iYmllIFdpbGxpYW1zIENsZWFuoAcB"
+  },
+  {
+    "Artist": "Roger Taylor",
+    "Title": "A Beautiful World",
+    "YouTube_Title": "Roger Taylor, Ndlovu Youth Choir - A Beautiful World (Official Music Video)",
+    "Album": "Violence Insane in a Beautiful World",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=0axXPlYURok&list=RD0axXPlYURok&start_radio=1&pp=ygUeUm9nZXIgVGF5bG9yIEEgQmVhdXRpZnVsIFdvcmxkoAcB0gcJCRAIAYcqIYzv"
+  },
+  {
+    "Artist": "Roger Taylor",
+    "Title": "Violence Insane",
+    "YouTube_Title": "Roger Taylor - Gangsters Are Running This World (Official Lyric Video)",
+    "Album": "Violence Insane in a Beautiful World",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtube.com/playlist?list=RD0LgRi3tPSWQ&playnext=1&si=DxQZnLkiWH9E0oeK"
+  },
+  {
+    "Artist": "Roger Taylor",
+    "Title": "What Really Matters",
+    "YouTube_Title": "Roger Taylor - I See You Now (Official Music Video)",
+    "Album": "Violence Insane in a Beautiful World",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/QDdv-RiMWg8?si=CaMYNneEm_CcsP_6"
+  },
+  {
+    "Artist": "Roger Taylor",
+    "Title": "Don’t Photograph Food",
+    "YouTube_Title": "Roger Taylor - I See You Now (Official Music Video)",
+    "Album": "Violence Insane in a Beautiful World",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/bExoJ-yDgbU?si=e0Pzc0KnXeyD2Kda"
+  },
+  {
+    "Artist": "Roger Taylor",
+    "Title": "I See You Now",
+    "YouTube_Title": "Roger Taylor - I See You Now (Official Music Video)",
+    "Album": "Violence Insane in a Beautiful World",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=KZivRNcsoJw&list=RDKZivRNcsoJw&start_radio=1&pp=ygUaUm9nZXIgVGF5bG9yIEkgU2VlIFlvdSBOb3egBwE%3D"
+  },
+  {
+    "Artist": "Roger Taylor",
+    "Title": "Chump",
+    "YouTube_Title": "Roger Taylor - A Nation Of Haircuts (Official Lyric Video)",
+    "Album": "Violence Insane in a Beautiful World",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/nJuv-dzrpKw?si=5MWTxP4V-8-KQjYVB"
+  },
+  {
+    "Artist": "Roger Taylor",
+    "Title": "Spit in His Eye",
+    "YouTube_Title": "Spit In His Eye",
+    "Album": "Violence Insane in a Beautiful World",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=8Dfp5sqE4Ao&list=RD8Dfp5sqE4Ao&start_radio=1&pp=ygUcUm9nZXIgVGF5bG9yIFNwaXQgaW4gSGlzIEV5ZaAHAQ%3D%3D"
+  },
+  {
+    "Artist": "Roger Taylor",
+    "Title": "Jealous Guy",
+    "YouTube_Title": "Roger Taylor & Jools Holland - Jealous Guy | Later... with Jools Holland (2024)",
+    "Album": "Violence Insane in a Beautiful World",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=sH6kzFSkkLc&list=RDsH6kzFSkkLc&start_radio=1&pp=ygUYUm9nZXIgVGF5bG9yIEplYWxvdXMgR3V5oAcB"
+  },
+  {
+    "Artist": "Roger Taylor",
+    "Title": "Come on Summer (It’s Party Time)",
+    "YouTube_Title": "Roger Taylor & Ndlovu Youth Choir - Come On Summer (It’s Party Time) (Official Lyric Video)",
+    "Album": "Violence Insane in a Beautiful World",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=oQ-FF5jJWN0&list=RDoQ-FF5jJWN0&start_radio=1&pp=ygUqUm9nZXIgVGF5bG9yIENvbWUgb24gU3VtbWVyIEl0cyBQYXJ0eSBUaW1loAcB"
+  },
+  {
+    "Artist": "Roger Taylor",
+    "Title": "A Great Big Beautiful World",
+    "YouTube_Title": "Roger Taylor, Ndlovu Youth Choir - A Beautiful World (Official Music Video)",
+    "Album": "Violence Insane in a Beautiful World",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=0axXPlYURok&list=RD0axXPlYURok&start_radio=1&pp=ygUoUm9nZXIgVGF5bG9yIEEgR3JlYXQgQmlnIEJlYXV0aWZ1bCBXb3JsZKAHAQ%3D%3D"
+  },
+  {
+    "Artist": "Shed Seven",
+    "Title": "Stand Together",
+    "YouTube_Title": "Shed Seven - Stand Together (Official Music Video)",
+    "Album": "Stand Together",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=vzp4IJYP59M&list=RDvzp4IJYP59M&start_radio=1&pp=ygUZU2hlZCBTZXZlbiBTdGFuZCBUb2dldGhlcqAHAQ%3D%3D"
   },
   {
     "Artist": "Sleep",
-    "Title": "Have Spacesuit Will Travel (Flexi edit)",
-    "Album": "Have Spacesuit Will Travel (Flexi edit)",
-    "Year": "Unknown",
+    "Title": "Have Spacesuit Will Travel (flexi edit)",
     "YouTube_Title": "Have Spacesuit Will Travel (4:20 Flexi Edit)",
-    "YouTubeLink": "https://www.youtube.com/watch?v=KhwiNPsaPfA&list=RDKhwiNPsaPfA&start_radio=1&pp=ygUrU2xlZXAgSGF2ZSBTcGFjZXN1aXQgV2lsbCBUcmF2ZWwgRmxleGkgZWRpdKAHAQ%3D%3D"
+    "Album": "Have Spacesuit Will Travel (flexi edit)",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=KhwiNPsaPfA&list=RDKhwiNPsaPfA&start_radio=1&pp=ygUrU2xlZXAgSGF2ZSBTcGFjZXN1aXQgV2lsbCBUcmF2ZWwgZmxleGkgZWRpdKAHAQ%3D%3D"
+  },
+  {
+    "Artist": "Slift",
+    "Title": "Ummon",
+    "YouTube_Title": "SLIFT - Aurore aux confins (official audio)",
+    "Album": "Ummon",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/fJG0AJJQuU0?si=ZwY9kU5LrJAfvv3W"
+  },
+  {
+    "Artist": "Slift",
+    "Title": "It’s Coming…",
+    "YouTube_Title": "N/A",
+    "Album": "Ummon",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/gZGIoauWAm8?si=nEvWiZpe8w9IVW-t"
+  },
+  {
+    "Artist": "Slift",
+    "Title": "Thousand Helmets of Gold",
+    "YouTube_Title": "SLIFT - Thousand Helmets of Gold (official audio)",
+    "Album": "Ummon",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=trSLixJfqhk&list=RDtrSLixJfqhk&start_radio=1&pp=ygUeU2xpZnQgVGhvdXNhbmQgSGVsbWV0cyBvZiBHb2xkoAcB"
+  },
+  {
+    "Artist": "Slift",
+    "Title": "Citadel on a Satellite",
+    "YouTube_Title": "SLIFT - Citadel on a Satellite (official audio)",
+    "Album": "Ummon",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=sC9Sb9Qf05c&list=RDsC9Sb9Qf05c&start_radio=1&pp=ygUcU2xpZnQgQ2l0YWRlbCBvbiBhIFNhdGVsbGl0ZaAHAQ%3D%3D"
+  },
+  {
+    "Artist": "Slift",
+    "Title": "Hyperion",
+    "YouTube_Title": "SLIFT - Hyperion (official audio)",
+    "Album": "Ummon",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=xrWBIsOaLX4&list=RDxrWBIsOaLX4&start_radio=1&pp=ygUOU2xpZnQgSHlwZXJpb26gBwE%3D"
+  },
+  {
+    "Artist": "Slift",
+    "Title": "Altitude Lake",
+    "YouTube_Title": "SLIFT - Altitude Lake (official audio)",
+    "Album": "Ummon",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=3Y7kB-Qfzag&list=RD3Y7kB-Qfzag&start_radio=1&pp=ygUTU2xpZnQgQWx0aXR1ZGUgTGFrZaAHAQ%3D%3D"
+  },
+  {
+    "Artist": "Slift",
+    "Title": "Unseen",
+    "YouTube_Title": "SLIFT - Unseen (Official Audio)",
+    "Album": "Unseen",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=7TjtpH0r96E&list=RD7TjtpH0r96E&start_radio=1&pp=ygUMU2xpZnQgVW5zZWVuoAcB"
+  },
+  {
+    "Artist": "Ultramarine",
+    "Title": "Fear Town",
+    "YouTube_Title": "Fear Town",
+    "Album": "The Best Plan, Man, is No Plan",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=SvfOjI6fv1I&list=RDSvfOjI6fv1I&start_radio=1&pp=ygUVVWx0cmFtYXJpbmUgRmVhciBUb3duoAcB"
+  },
+  {
+    "Artist": "Ultramarine",
+    "Title": "Transmission",
+    "YouTube_Title": "Transmission",
+    "Album": "The Best Plan, Man, is No Plan",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=PIBLEv6v3pg&list=RDPIBLEv6v3pg&start_radio=1&pp=ygUYVWx0cmFtYXJpbmUgVHJhbnNtaXNzaW9uoAcB"
+  },
+  {
+    "Artist": "White Reaper",
+    "Title": "Judy French",
+    "YouTube_Title": "White Reaper - Judy French [OFFICIAL MUSIC VIDEO]",
+    "Album": "The World’s Best American Band",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=Ahglrb_z7wQ&list=RDAhglrb_z7wQ&start_radio=1&pp=ygUYV2hpdGUgUmVhcGVyIEp1ZHkgRnJlbmNooAcB"
+  },
+  {
+    "Artist": "White Reaper",
+    "Title": "Eagle Beach",
+    "YouTube_Title": "White Reaper - Might Be Right [OFFICIAL MUSIC VIDEO]",
+    "Album": "The World’s Best American Band",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/T9KANMsJ8Ns?si=k-35OZkgYaJ8_Gkv"
+  },
+  {
+    "Artist": "White Reaper",
+    "Title": "Little Silver Cross",
+    "YouTube_Title": "White Reaper -  Little Silver Cross [OFFICIAL LIVE VIDEO]",
+    "Album": "The World’s Best American Band",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=dBdFYTFiK3Y&list=RDdBdFYTFiK3Y&start_radio=1&pp=ygUgV2hpdGUgUmVhcGVyIExpdHRsZSBTaWx2ZXIgQ3Jvc3OgBwE%3D"
+  },
+  {
+    "Artist": "White Reaper",
+    "Title": "The Stack",
+    "YouTube_Title": "White Reaper - The Stack [OFFICIAL AUDIO]",
+    "Album": "The World’s Best American Band",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=Es4tpU5R_2U&list=RDEs4tpU5R_2U&start_radio=1&pp=ygUWV2hpdGUgUmVhcGVyIFRoZSBTdGFja6AHAQ%3D%3D"
+  },
+  {
+    "Artist": "White Reaper",
+    "Title": "Party Next Door",
+    "YouTube_Title": "PARTYNEXTDOOR - SAVAGE ANTHEM (Official Audio)",
+    "Album": "The World’s Best American Band",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/YHJvQ0NGXlU?si=y-xQn_o49u6iq8l8"
+  },
+  {
+    "Artist": "White Reaper",
+    "Title": "Crystal Pistol",
+    "YouTube_Title": "White Reaper - Judy French [OFFICIAL MUSIC VIDEO]",
+    "Album": "The World’s Best American Band",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/6Rtq5cDVB0c?si=LIIjHQg5xT7oegI6"
+  },
+  {
+    "Artist": "White Reaper",
+    "Title": "Tell Me",
+    "YouTube_Title": "White Reaper - Might Be Right [OFFICIAL MUSIC VIDEO]",
+    "Album": "The World’s Best American Band",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/Oa60VbAzziM?si=ieBhO41_3TXfwQeh"
+  },
+  {
+    "Artist": "White Reaper",
+    "Title": "Daisies",
+    "YouTube_Title": "ERROR: Private/Protected",
+    "Album": "The World’s Best American Band",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/J0OjoY1Fk4k?si=RXrdQY3BeEUab39F"
+  },
+  {
+    "Artist": "White Reaper",
+    "Title": "Another Day",
+    "YouTube_Title": "White Reaper - Pages [OFFICIAL MUSIC VIDEO]",
+    "Album": "The World’s Best American Band",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/dKNouiIcgLU?si=TYu_gS1MvQZ-dhvv"
+  },
+  {
+    "Artist": "“Weird Al” Yankovic",
+    "Title": "Amish Paradise",
+    "YouTube_Title": "\"Weird\" Al Yankovic - Amish Paradise (Parody of \"Gangsta's Paradise\" - Official Video)",
+    "Album": "Bad Hair Day",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=lOfZLb33uCg&list=RDlOfZLb33uCg&start_radio=1&pp=ygUgV2VpcmQgQWwgWWFua292aWMgQW1pc2ggUGFyYWRpc2WgBwE%3D"
+  },
+  {
+    "Artist": "“Weird Al” Yankovic",
+    "Title": "Everything You Know Is Wrong",
+    "YouTube_Title": "\"Weird Al\" Yankovic - Word Crimes (Official 4K Video)",
+    "Album": "Bad Hair Day",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/KThlYHfIVa8?si=1TgfR-hXx-4m_lGr"
+  },
+  {
+    "Artist": "“Weird Al” Yankovic",
+    "Title": "Cavity Search",
+    "YouTube_Title": "\"Weird Al\" Yankovic - Cavity Search (Official Video)",
+    "Album": "Bad Hair Day",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=AH2qBkXVrdg&list=RDAH2qBkXVrdg&start_radio=1&pp=ygUfV2VpcmQgQWwgWWFua292aWMgQ2F2aXR5IFNlYXJjaKAHAQ%3D%3D"
+  },
+  {
+    "Artist": "“Weird Al” Yankovic",
+    "Title": "Callin’ In Sick",
+    "YouTube_Title": "\"Weird Al\" Yankovic - White & Nerdy (Official 4K Video)",
+    "Album": "Bad Hair Day",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/ppEW_KhHNVc?si=VJqMu7oGTXy1Z7tR"
+  },
+  {
+    "Artist": "“Weird Al” Yankovic",
+    "Title": "The Alternative Polka",
+    "YouTube_Title": "\"Weird Al\" Yankovic - Polkamania! (Official Music Video)",
+    "Album": "Bad Hair Day",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/iLPFE0NgeFE?si=2qfsi1rGL7poPM-L"
+  },
+  {
+    "Artist": "“Weird Al” Yankovic",
+    "Title": "Since You’ve Been Gone",
+    "YouTube_Title": "\"Weird Al\" Yankovic - Since You've Been Gone (Basically-Official Music Video)",
+    "Album": "Bad Hair Day",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=N4gpN4BCixE&list=RDN4gpN4BCixE&start_radio=1&pp=ygUnV2VpcmQgQWwgWWFua292aWMgU2luY2UgWW91dmUgQmVlbiBHb25loAcB"
+  },
+  {
+    "Artist": "“Weird Al” Yankovic",
+    "Title": "Gump",
+    "YouTube_Title": "\"Weird Al\" Yankovic - Gump (Parody of \"Lump\" - Official Video)",
+    "Album": "Bad Hair Day",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=hQwWaWFjd0Y&list=RDhQwWaWFjd0Y&start_radio=1&pp=ygUWV2VpcmQgQWwgWWFua292aWMgR3VtcKAHAQ%3D%3D"
+  },
+  {
+    "Artist": "“Weird Al” Yankovic",
+    "Title": "I’m So Sick of You",
+    "YouTube_Title": "ERROR: Private/Protected",
+    "Album": "Bad Hair Day",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/pOT5E6OsfyI?si=i14ESblqeLMF54fE"
+  },
+  {
+    "Artist": "“Weird Al” Yankovic",
+    "Title": "Syndicated Inc.",
+    "YouTube_Title": "\"Weird Al\" Yankovic - Mission Statement (Official 4K Video)",
+    "Album": "Bad Hair Day",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/0CZ9xjVj-LM?si=zcKhBC8GnwQTHsZB"
+  },
+  {
+    "Artist": "“Weird Al” Yankovic",
+    "Title": "I Remember Larry",
+    "YouTube_Title": "\"Weird Al\" Yankovic - Money For Nothing/Beverly Hillbillies (Official Video)",
+    "Album": "Bad Hair Day",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/MWOvq_kBO7c?si=5OfDLzlA8dfYQLyk"
+  },
+  {
+    "Artist": "“Weird Al” Yankovic",
+    "Title": "Phony Calls",
+    "YouTube_Title": "\"Weird Al\" Yankovic - Phony Calls (Official Video)",
+    "Album": "Bad Hair Day",
+    "Year": "Unknown",
+    "YouTubeLink": "https://www.youtube.com/watch?v=0kPwTfLNlVw&list=RD0kPwTfLNlVw&start_radio=1&pp=ygUdV2VpcmQgQWwgWWFua292aWMgUGhvbnkgQ2FsbHOgBwE%3D"
+  },
+  {
+    "Artist": "“Weird Al” Yankovic",
+    "Title": "The Night Santa Went Crazy",
+    "YouTube_Title": "ERROR: Private/Protected",
+    "Album": "Bad Hair Day",
+    "Year": "Unknown",
+    "YouTubeLink": "https://youtu.be/0FJU4GrXztE?si=Zfjnd5QXkt0bA4_1"
   }
 ]
